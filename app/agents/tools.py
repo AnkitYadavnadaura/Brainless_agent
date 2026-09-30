@@ -15,6 +15,7 @@ class RiskLevel(str, Enum):
 
 
 ToolHandler = Callable[[dict[str, Any]], Awaitable[Any] | Any]
+ArgumentValidator = Callable[[dict[str, Any]], dict[str, Any]]
 
 
 @dataclass(frozen=True, slots=True)
@@ -31,6 +32,7 @@ class ToolSpec:
     supported_platforms: tuple[str, ...] = ("any",)
     reversible: bool = True
     destructive: bool = False
+    argument_validator: ArgumentValidator | None = None
 
 
 class ToolRegistry:
@@ -51,16 +53,46 @@ class ToolRegistry:
     def contains(self, tool_id: str) -> bool:
         return tool_id in self._tools
 
+    def unregister(self, tool_id: str) -> ToolSpec:
+        try:
+            return self._tools.pop(tool_id)
+        except KeyError as error:
+            raise KeyError(f"Unknown tool: {tool_id}") from error
+
     @property
     def tool_ids(self) -> tuple[str, ...]:
         return tuple(self._tools)
 
-    async def invoke(self, tool_id: str, arguments: dict[str, Any]) -> Any:
+    def normalize_arguments(self, tool_id: str, arguments: dict[str, Any]) -> dict[str, Any]:
+        """Validate argument shape and apply a tool's runtime-owned normalization."""
         tool = self.get(tool_id)
         if not isinstance(arguments, dict):
             raise TypeError("Tool arguments must be an object")
-        missing = set(tool.input_schema) - set(arguments)
+        if tool_id == "blender.scene":
+            arguments = dict(arguments)
+            if "ordered_steps" in arguments and "steps" not in arguments:
+                arguments["steps"] = arguments.pop("ordered_steps")
+            arguments.setdefault("operation", "execute_plan")
+            arguments.setdefault("project", "scene.blend")
+            arguments.setdefault("visible", True)
+            arguments.setdefault("live", True)
+        supplied, required = set(arguments), set(tool.input_schema)
+        missing, extra = required - supplied, supplied - required
         if missing:
             raise ValueError(f"Missing tool arguments: {', '.join(sorted(missing))}")
-        result = tool.handler(arguments)
+        if extra:
+            raise ValueError(f"Unexpected tool arguments: {', '.join(sorted(extra))}")
+        normalized = dict(arguments)
+        if tool.argument_validator is not None:
+            normalized = tool.argument_validator(normalized)
+            if not isinstance(normalized, dict):
+                raise TypeError("Tool argument validator must return an object")
+            if set(normalized) != required:
+                raise ValueError("Tool argument validator changed the registered argument schema")
+        return normalized
+
+    async def invoke(self, tool_id: str, arguments: dict[str, Any]) -> Any:
+        tool = self.get(tool_id)
+        normalized = self.normalize_arguments(tool_id, arguments)
+        result = tool.handler(normalized)
         return await result if inspect.isawaitable(result) else result

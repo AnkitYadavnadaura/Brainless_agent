@@ -9,7 +9,7 @@ from uuid import uuid4
 
 from app.agents.models import Agent, AgentEvent, AgentStatus, EventType, ToolExecution
 from app.agents.tools import ToolRegistry
-from app.safety.permissions import PermissionDenied, PermissionPolicy
+from app.safety.permissions import PermissionDenied, PermissionPolicy, can_remember_tool
 from app.safety.leases import CapabilityLease, CapabilityLeaseRegistry
 
 AgentExecutor = Callable[[Agent, "AgentManager"], Awaitable[str]]
@@ -221,7 +221,8 @@ class AgentManager:
                 self._deny(agent.agent_id, agent.parent_agent_id, permission, "Agent does not possess this permission")
                 raise PermissionDenied(agent.agent_id, permission, "Agent does not possess this permission")
             try:
-                self.policy.check(agent.agent_id, permission)
+                self.policy.check(agent.agent_id, permission, tool=tool_id,
+                                  allow_remembered=can_remember_tool(tool))
             except PermissionDenied as error:
                 self._deny(agent.agent_id, agent.parent_agent_id, permission, error.reason)
                 raise

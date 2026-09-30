@@ -109,21 +109,23 @@ class ProposalValidator:
             raise ProposalRejected("Proposed tool is not registered") from error
         if proposal.action_type not in agent.available_tools:
             raise ProposalRejected("Proposed tool is not granted to agent")
-        if set(proposal.arguments) - set(tool.input_schema):
-            raise ProposalRejected("Proposal contains arguments outside the tool schema")
-        if set(tool.input_schema) - set(proposal.arguments):
-            raise ProposalRejected("Proposal omits required tool arguments")
+        try:
+            arguments = self.manager.tools.normalize_arguments(
+                proposal.action_type, proposal.arguments)
+        except (TypeError, ValueError) as error:
+            raise ProposalRejected(f"Invalid arguments for {proposal.action_type}: {error}") from error
         if not tool.required_permissions.issubset(agent.permissions):
             raise ProposalRejected("Agent lacks required tool permissions")
-        if len(tool.required_permissions) != 1:
-            raise ProposalRejected("Runtime computer action must have exactly one permission")
+        if not tool.required_permissions:
+            raise ProposalRejected("Runtime computer action must declare at least one permission")
         contract = self.contracts.get(proposal.action_type)
         if contract and contract.tool != proposal.action_type:
             raise ProposalRejected("Action contract does not match tool")
-        return ActionRequest(str(uuid4()), task_id, agent_id, proposal.action_type, dict(proposal.arguments),
+        return ActionRequest(str(uuid4()), task_id, agent_id, proposal.action_type, arguments,
                              dict(contract.preconditions) if contract else {}, dict(proposal.expected_state),
                              verification, tool.risk, contract.idempotency.value if contract else "unknown",
-                             contract.timeout_seconds if contract else None, next(iter(tool.required_permissions)))
+                             contract.timeout_seconds if contract else None,
+                             sorted(tool.required_permissions)[0])
 
     def validate(self, agent_id: str, proposal: ReasoningProposal) -> tuple[ActionRequest, ...]:
         if not isinstance(proposal, ReasoningProposal) or not proposal.proposal_id or not proposal.goal_id:

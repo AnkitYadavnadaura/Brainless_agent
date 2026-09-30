@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "C:\Users\user\OneDrive\Desktop\Brainless_agent-main\Brainless_agent\data\capability-sandbox\f65f9cd5-0d70-4c87-94b0-3c3fed40fad2\operation.py", line 5, in <module>
+    obj=bpy.context.object
+        ^^^^^^^^^^^^^^^^^^
+AttributeError: 'Context' object has no attribute 'object'
+register_class(...):
+Info: Registering key-config preferences class: 'Prefs', bl_idname 'Blender' has been registered before, unregistering previous

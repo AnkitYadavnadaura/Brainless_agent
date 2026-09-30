@@ -1,0 +1,111 @@
+{
+"task": {
+"name": "Play music on YouTube",
+"description": "Open YouTube in Chrome, search for music, select a relevant music video, and start playback.",
+"goal": "Start music playback on YouTube.",
+"priority": "normal"
+},
+"requirements": {
+"applications": [
+"Chrome"
+],
+"websites": [
+"YouTube"
+],
+"permissions": [
+"mouse",
+"keyboard"
+]
+},
+"execution": [
+{
+"step": 1,
+"action": "open_application",
+"target": "Chrome",
+"success_condition": "Chrome window is open and ready for interaction",
+"recovery": "If Chrome is already open, continue with the existing Chrome window."
+},
+{
+"step": 2,
+"action": "navigate",
+"target": "[https://www.youtube.com](https://www.youtube.com)",
+"success_condition": "YouTube homepage is loaded"
+},
+{
+"step": 3,
+"action": "wait",
+"duration_ms": 2000,
+"success_condition": "YouTube interface is visible and interactive"
+},
+{
+"step": 4,
+"action": "inspect",
+"target": "YouTube homepage",
+"success_condition": "Search box and YouTube controls are identifiable"
+},
+{
+"step": 5,
+"action": "click",
+"target": "YouTube search box",
+"success_condition": "Search box is focused"
+},
+{
+"step": 6,
+"action": "type",
+"value": "music",
+"success_condition": "The text 'music' appears in the search box"
+},
+{
+"step": 7,
+"action": "press_key",
+"key": "ENTER",
+"success_condition": "YouTube search results for music are displayed"
+},
+{
+"step": 8,
+"action": "wait",
+"duration_ms": 2000,
+"success_condition": "Search results have finished loading"
+},
+{
+"step": 9,
+"action": "inspect",
+"target": "YouTube search results",
+"success_condition": "At least one relevant music result is identifiable"
+},
+{
+"step": 10,
+"action": "click",
+"target": "first relevant music video",
+"success_condition": "The selected YouTube video page is open"
+},
+{
+"step": 11,
+"action": "wait",
+"duration_ms": 1500,
+"success_condition": "Video player is visible"
+},
+{
+"step": 12,
+"action": "inspect",
+"target": "YouTube video player",
+"success_condition": "The current playback state and Play button are identifiable"
+},
+{
+"step": 13,
+"action": "click",
+"target": "Play button",
+"success_condition": "The video begins playing"
+}
+],
+"verification": {
+"required": true,
+"success_condition": "A YouTube music video is actively playing.",
+"verification_actions": [
+"inspect the YouTube video player",
+"confirm the player is in a playing state",
+"confirm the playback progress is advancing"
+],
+"failure_action": "Identify the failed step, attempt an appropriate recovery, and retry the failed action. If playback cannot be started after recovery, report the task as failed."
+}
+}

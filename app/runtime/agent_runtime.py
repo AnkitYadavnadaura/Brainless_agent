@@ -19,10 +19,10 @@ from app.memory.memory_manager import MemoryManager
 from app.memory.sqlite_memory import SQLiteMemory
 from app.prompts.prompt_manager import PromptManager
 from app.providers.registry import ProviderRegistry
-from app.runtime.action_manager import ActionManager
+from app.runtime.action_manager import ActionLimitExceeded, ActionManager
 from app.runtime.recovery_manager import RecoveryManager
 from app.runtime.state_manager import RuntimeState, StateManager
-from app.safety.emergency_stop import EmergencyStop
+from app.safety.emergency_stop import EmergencyStop, EmergencyStopRequested
 from app.safety.pause import PauseController
 from app.safety.intervention import UserInterventionGate
 from app.providers.base_provider import UserInterventionRequired
@@ -31,6 +31,10 @@ from app.tasks.task import Task
 
 class TaskDurationExceeded(TimeoutError):
     """The configured task time budget elapsed."""
+
+
+RECOVERY_CONTROL_ERRORS = (ActionLimitExceeded, EmergencyStopRequested, TaskDurationExceeded,
+                           UserInterventionRequired)
 
 
 class AgentRuntime:
@@ -70,9 +74,11 @@ class AgentRuntime:
                         task, provider_name, task.prompt_profile or task.category, results, started,
                         final_result=not task.synthesis and provider_name == task.providers[-1],
                     )
+                except RECOVERY_CONTROL_ERRORS:
+                    raise
                 except Exception:
                     # Claude is an optional best-effort provider. Its changing UI,
-                    # regional availability, or login state must not discard useful
+                    # or regional availability must not discard useful
                     # ChatGPT/Gemini results. A Claude-only task still reports failure.
                     if provider_name != "claude" or not results:
                         raise
@@ -169,11 +175,16 @@ class AgentRuntime:
         try:
             return await self._act(f"extract {provider_name} response",
                 lambda: self.recovery.run(provider.extract_response,
-                                          lambda: self._recover_response(provider_name, provider)), task_started)
+                                          lambda: self._recover_response(provider_name, provider),
+                                          non_retryable=RECOVERY_CONTROL_ERRORS), task_started)
+        except RECOVERY_CONTROL_ERRORS:
+            raise
         except Exception:
             try:
                 return await self._act(f"extract {provider_name} response from clipboard",
                     lambda: self.fallback_extractor.extract_from_clipboard(provider), task_started)
+            except RECOVERY_CONTROL_ERRORS:
+                raise
             except Exception as clipboard_error:
                 screenshot = await self._capture(provider_name, provider, "ocr-fallback")
                 if screenshot:

@@ -13,6 +13,7 @@ class BrowserSettings(BaseModel):
     headless: bool = False
     profile_dir: Path = Path("data/browser-profile")
     navigation_timeout_seconds: int = Field(default=45, ge=1)
+    keep_open_on_exit: bool = True
 
 
 class AgentSettings(BaseModel):

@@ -1,0 +1,61 @@
+import bpy
+bpy.ops.wm.read_factory_settings(use_empty=True)
+m=bpy.data.materials.get('WallMaterial') or bpy.data.materials.new('WallMaterial')
+m.diffuse_color=(0.7, 0.65, 0.55, 1.0)
+obj=bpy.context.object
+if obj and hasattr(obj.data, 'materials'):
+    obj.data.materials.append(m)
+m=bpy.data.materials.get('GlassMaterial') or bpy.data.materials.new('GlassMaterial')
+m.diffuse_color=(0.08, 0.3, 0.5, 1.0)
+obj=bpy.context.object
+if obj and hasattr(obj.data, 'materials'):
+    obj.data.materials.append(m)
+m=bpy.data.materials.get('DoorMaterial') or bpy.data.materials.new('DoorMaterial')
+m.diffuse_color=(0.25, 0.1, 0.04, 1.0)
+obj=bpy.context.object
+if obj and hasattr(obj.data, 'materials'):
+    obj.data.materials.append(m)
+m=bpy.data.materials.get('FrameMaterial') or bpy.data.materials.new('FrameMaterial')
+m.diffuse_color=(0.05, 0.05, 0.05, 1.0)
+obj=bpy.context.object
+if obj and hasattr(obj.data, 'materials'):
+    obj.data.materials.append(m)
+bpy.ops.mesh.primitive_cube_add()
+bpy.ops.mesh.primitive_cube_add()
+bpy.ops.mesh.primitive_cube_add()
+bpy.ops.mesh.primitive_cube_add()
+bpy.ops.mesh.primitive_cube_add()
+bpy.ops.mesh.primitive_cube_add()
+bpy.ops.mesh.primitive_cube_add()
+bpy.ops.mesh.primitive_cube_add()
+bpy.ops.mesh.primitive_cube_add()
+bpy.ops.mesh.primitive_cube_add()
+bpy.ops.mesh.primitive_cube_add()
+bpy.ops.mesh.primitive_cube_add()
+bpy.ops.mesh.primitive_cube_add()
+bpy.ops.mesh.primitive_cube_add()
+bpy.ops.mesh.primitive_cube_add()
+bpy.ops.mesh.primitive_cube_add()
+bpy.ops.mesh.primitive_cube_add()
+bpy.ops.mesh.primitive_cube_add()
+bpy.ops.mesh.primitive_cube_add()
+bpy.ops.mesh.primitive_cube_add()
+bpy.ops.mesh.primitive_cube_add()
+bpy.ops.mesh.primitive_cube_add()
+bpy.ops.object.modifier_add(type='BEVEL')
+bpy.ops.object.modifier_add(type='BEVEL')
+bpy.ops.object.modifier_add(type='BEVEL')
+bpy.ops.object.modifier_add(type='BEVEL')
+bpy.ops.object.modifier_add(type='BEVEL')
+bpy.ops.object.modifier_add(type='BEVEL')
+bpy.ops.object.modifier_add(type='BEVEL')
+bpy.ops.object.modifier_add(type='BEVEL')
+bpy.ops.object.modifier_add(type='BEVEL')
+bpy.ops.mesh.primitive_plane_add()
+bpy.ops.object.camera_add()
+bpy.context.scene.camera = bpy.context.object
+bpy.ops.object.light_add(type='AREA')
+bpy.ops.object.light_add(type='AREA')
+bpy.context.scene.render.filepath = 'C:\\Users\\user\\OneDrive\\Desktop\\Brainless_agent-main\\Brainless_agent\\data\\capability-sandbox\\f65f9cd5-0d70-4c87-94b0-3c3fed40fad2\\render.png'
+bpy.ops.render.render(write_still=True)
+bpy.ops.wm.save_as_mainfile(filepath='C:\\Users\\user\\OneDrive\\Desktop\\Brainless_agent-main\\Brainless_agent\\data\\capability-sandbox\\f65f9cd5-0d70-4c87-94b0-3c3fed40fad2\\scene.blend')

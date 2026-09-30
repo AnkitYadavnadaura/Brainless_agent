@@ -24,11 +24,12 @@ class VoiceConfig:
     idle_timeout: float = 30
     max_session_duration: float = 900
     min_confidence: float = 0.75
-    sensitive_confidence: float = 0.92
     reconnect_limit: int = 3
     store_transcripts: bool = False
     store_audio: bool = False
     context_limit: int = 12
+    collect_tasks: bool = True
+    task_pause_seconds: float = 1.5
 
     @classmethod
     def from_env(cls) -> "VoiceConfig":
@@ -44,16 +45,20 @@ class VoiceConfig:
             idle_timeout=float(value("VOICE_IDLE_TIMEOUT", "30")),
             max_session_duration=float(value("VOICE_MAX_SESSION_DURATION", "900")),
             min_confidence=float(value("VOICE_MIN_CONFIDENCE", ".75")),
-            sensitive_confidence=float(value("VOICE_SENSITIVE_CONFIDENCE", ".92")),
             reconnect_limit=int(value("VOICE_RECONNECT_LIMIT", "3")),
             store_transcripts=value("VOICE_STORE_TRANSCRIPTS", "false").lower()
             == "true",
             store_audio=value("VOICE_STORE_AUDIO", "false").lower() == "true",
+            collect_tasks=value("VOICE_COLLECT_TASKS", "true").lower() == "true",
+            task_pause_seconds=float(value("VOICE_TASK_PAUSE_SECONDS", "1.5")),
         )
         config.validate()
         return config
 
     def validate(self) -> None:
+        if (type(self.collect_tasks) is not bool or not isfinite(self.task_pause_seconds)
+                or not 0 < self.task_pause_seconds <= 30):
+            raise ValueError("Voice task collection settings are invalid")
         if self.mode is not VoiceMode.OFF and not self.api_key:
             raise ValueError("ASSEMBLYAI_API_KEY is required when voice is enabled")
         if (
@@ -66,11 +71,8 @@ class VoiceConfig:
         if self.sample_rate != 16_000:
             raise ValueError("Voice input must be 16 kHz PCM16 mono")
         if (
-            not all(
-                isfinite(item)
-                for item in (self.min_confidence, self.sensitive_confidence)
-            )
-            or not 0 <= self.min_confidence <= self.sensitive_confidence <= 1
+            not isfinite(self.min_confidence)
+            or not 0 <= self.min_confidence <= 1
         ):
             raise ValueError("Voice confidence thresholds are invalid")
         if (

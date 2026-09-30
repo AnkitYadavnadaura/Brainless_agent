@@ -219,6 +219,20 @@ class SkillRegistry:
     def reject(self, skill_id: str, *, actor: str, reason: str) -> None:
         self.set_status(skill_id, SkillStatus.REJECTED, actor=actor, reason=reason)
     def deprecate(self, skill_id: str, *, actor: str = "system", reason: str = "deprecated") -> None: self.set_status(skill_id, SkillStatus.DEPRECATED, actor=actor, reason=reason)
+    def update_evaluation(self, skill_id: str, metrics: dict[str, float]) -> Skill:
+        with self._lock:
+            skill = self.get(skill_id)
+            merged = dict(skill.evaluation)
+            for key, value in metrics.items():
+                if value is None:
+                    continue
+                merged[key] = float(value)
+            data = _skill_dict(skill)
+            data["evaluation"] = merged
+            self.db.execute("UPDATE skills SET payload_json=? WHERE id=?", (json.dumps(data, sort_keys=True), skill_id))
+            self._audit(skill_id, "evaluated", "learning_loop", "updated evaluation metrics")
+            self.db.commit()
+            return self.get(skill_id)
     def candidates(self) -> tuple[Skill, ...]: return tuple(skill for skill in self._all() if skill.status is SkillStatus.CANDIDATE)
     def _all(self) -> list[Skill]:
         with self._lock: return [_skill(json.loads(row["payload_json"])) for row in self.db.execute("SELECT payload_json FROM skills")]

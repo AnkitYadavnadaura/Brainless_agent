@@ -1,37 +1,158 @@
 """Runtime-owned autonomous computer-agent components."""
 
-from app.autonomy.orchestrator import AutonomousRuntime
-from app.autonomy.task_engine import AutonomousTaskEngine
+from __future__ import annotations
 
-from app.autonomy.world_state import FactKind, WorldFact, WorldSnapshot, WorldStateManager
-from app.autonomy.contracts import ActionContract, Idempotency, RetryPolicy
-from app.autonomy.task_graph import GraphTask, GraphTaskStatus, TaskGraph, TaskScheduler
-from app.autonomy.task_engine import GoalCompletionVerifier
-from app.autonomy.planning import ContentTrust, PlanValidator, TaskContext, TaskContextManager
-from app.autonomy.config import AutonomyLimits
-from app.autonomy.observation import ScreenElement, ScreenObservation, ScreenUnderstandingProvider
+import importlib
 
-from app.autonomy.team import AgentTeamBuilder, TeamAssignment
-from app.autonomy.proposals import ActionRequest, ProposalRejected, ProposalType, ProposalValidator, ReasoningContext, ReasoningProposal, ReasoningProvider
-from app.autonomy.world_model import CausalEvidence, CausalModel, Prediction, TransitionComparison, WorldModel
-from app.autonomy.cognitive import CognitiveEngine, CounterfactualPlanner, Decision, DecisionEngine, Goal, IntentEngine, ObservationOption, PerceptionPlanner, Strategy
-from app.autonomy.reasoning_provider import ChatbotReasoningProvider, ProviderResponseError, ReasoningDecisionProvider
-from app.autonomy.events import AutonomousEvent, AutonomousEventBus, EventType
-from app.autonomy.mission import Mission, MissionStatus, MissionStore
-from app.autonomy.operator import AutonomousOperator, AutonomyMode, BlockerDetector, UserTakeoverManager
-from app.autonomy.perception_service import PerceptionService
-from app.autonomy.health import AgentHealth, AgentHealthMonitor
-from app.autonomy.mode_policy import ModePolicy
-from app.autonomy.task_runner import TaskEngineMissionRunner
-from app.autonomy.triggers import FilesystemWatcher, ProcessWatcher, Trigger, TriggerEngine, TriggerKind, TriggerStore
-from app.autonomy.benchmark import BenchmarkHarness, BenchmarkResult
-from app.autonomy.monitoring import AutonomyMetrics, Interruption, InterruptionKind, InterruptionManager, UserPresenceDetector
-from app.autonomy.event_store import EventStore
+_MODULES = {
+    "ActionContract": "app.autonomy.contracts",
+    "CapabilityCandidate": "app.autonomy.capability_lifecycle",
+    "AutomationCatalog": "app.autonomy.automation_catalog",
+    "AutomationDefinition": "app.autonomy.automation_catalog",
+    "build_blender_tool": "app.autonomy.blender_capability",
+    "build_unreal_tool": "app.autonomy.unreal_capability",
+    "health_check_blender": "app.autonomy.blender_capability",
+    "health_check_unreal": "app.autonomy.unreal_capability",
+    "CAR_MODEL_WORKFLOW": "app.autonomy.blender_workflows",
+    "BlenderWorkflow": "app.autonomy.blender_workflows",
+    "car_workflow_arguments": "app.autonomy.blender_workflows",
+    "AutomaticCapabilityService": "app.autonomy.capability_discovery",
+    "CapabilityDiscoveryError": "app.autonomy.capability_discovery",
+    "CapabilityLifecycle": "app.autonomy.capability_lifecycle",
+    "CapabilityRecord": "app.autonomy.capability_lifecycle",
+    "CapabilityStore": "app.autonomy.capability_lifecycle",
+    "CapabilityRequest": "app.autonomy.capability_lifecycle",
+    "RuntimeUpgradeManager": "app.autonomy.runtime_upgrade",
+    "UpgradeManifest": "app.autonomy.runtime_upgrade",
+    "TaskRoute": "app.autonomy.universal_router",
+    "UniversalTaskRouter": "app.autonomy.universal_router",
+    "MissionIntent": "app.autonomy.universal_mission",
+    "MissionUnderstanding": "app.autonomy.universal_mission",
+    "MissionStep": "app.autonomy.universal_mission",
+    "MissionPlan": "app.autonomy.universal_mission",
+    "StepResult": "app.autonomy.universal_mission",
+    "YouTubeBrowserAdapter": "app.autonomy.universal_mission",
+    "BrowserTeamMissionAdapter": "app.autonomy.universal_mission",
+    "UniversalMissionCoordinator": "app.autonomy.universal_mission",
+    "understand_request": "app.autonomy.universal_mission",
+    "plan_request": "app.autonomy.universal_mission",
+    "UniversalAgent": "app.autonomy.universal_mission",
+    "EnvironmentExplorer": "app.autonomy.environment",
+    "EnvironmentSnapshot": "app.autonomy.environment",
+    "BoundaryMemory": "app.autonomy.environment",
+    "ToolBuilder": "app.autonomy.tool_builder",
+    "VscodeWorker": "app.autonomy.vscode_worker",
+    "CapabilityGapCoordinator": "app.autonomy.capability_skilling",
+    "SelfSkillingCoordinator": "app.autonomy.capability_skilling",
+    "SkillPlanResult": "app.autonomy.capability_skilling",
+    "ToolDraft": "app.autonomy.tool_builder",
+    "AutomationRunner": "app.autonomy.automation_runner",
+    "AutomationRunResult": "app.autonomy.automation_runner",
+    "BlenderPlanError": "app.autonomy.blender_planner",
+    "BlenderPlanStep": "app.autonomy.blender_planner",
+    "parse_plan_response": "app.autonomy.blender_planner",
+    "planning_prompt": "app.autonomy.blender_planner",
+    "DiscoveryContext": "app.autonomy.capability_discovery",
+    "WebsiteCapabilityDiscovery": "app.autonomy.capability_discovery",
+    "ActionRequest": "app.autonomy.proposals",
+    "AgentHealth": "app.autonomy.health",
+    "AgentHealthMonitor": "app.autonomy.health",
+    "AgentTeamBuilder": "app.autonomy.team",
+    "ApprovalRequest": "app.autonomy.approvals",
+    "ApprovalStatus": "app.autonomy.approvals",
+    "ApprovalStore": "app.autonomy.approvals",
+    "ApprovalSystem": "app.autonomy.approvals",
+    "AutonomyGovernor": "app.autonomy.governor",
+    "AutonomyLimits": "app.autonomy.config",
+    "AutonomyMetrics": "app.autonomy.monitoring",
+    "AutonomyMode": "app.autonomy.operator",
+    "AutonomousEvent": "app.autonomy.events",
+    "AutonomousEventBus": "app.autonomy.events",
+    "AutonomousOperator": "app.autonomy.operator",
+    "AutonomousRuntime": "app.autonomy.orchestrator",
+    "AutonomousTaskEngine": "app.autonomy.task_engine",
+    "BenchmarkHarness": "app.autonomy.benchmark",
+    "BenchmarkResult": "app.autonomy.benchmark",
+    "BlockerDetector": "app.autonomy.operator",
+    "CapabilityAssessment": "app.autonomy.capability_broker",
+    "CapabilityBroker": "app.autonomy.capability_broker",
+    "CapabilityStatus": "app.autonomy.capability_broker",
+    "CausalEvidence": "app.autonomy.world_model",
+    "CausalModel": "app.autonomy.world_model",
+    "ChatbotReasoningProvider": "app.autonomy.reasoning_provider",
+    "CognitiveEngine": "app.autonomy.cognitive",
+    "ContentTrust": "app.autonomy.planning",
+    "CounterfactualPlanner": "app.autonomy.cognitive",
+    "Decision": "app.autonomy.cognitive",
+    "DecisionEngine": "app.autonomy.cognitive",
+    "EventStore": "app.autonomy.event_store",
+    "EventType": "app.autonomy.events",
+    "FactKind": "app.autonomy.world_state",
+    "FilesystemWatcher": "app.autonomy.triggers",
+    "Goal": "app.autonomy.cognitive",
+    "GoalCompletionVerifier": "app.autonomy.task_engine",
+    "GovernorDecision": "app.autonomy.governor",
+    "GovernorOutcome": "app.autonomy.governor",
+    "GraphTask": "app.autonomy.task_graph",
+    "GraphTaskStatus": "app.autonomy.task_graph",
+    "Idempotency": "app.autonomy.contracts",
+    "InputMismatch": "app.autonomy.proposals",
+    "IntentEngine": "app.autonomy.cognitive",
+    "Interruption": "app.autonomy.monitoring",
+    "InterruptionKind": "app.autonomy.monitoring",
+    "InterruptionManager": "app.autonomy.monitoring",
+    "Mission": "app.autonomy.mission",
+    "MissionContract": "app.autonomy.governor",
+    "MissionStatus": "app.autonomy.mission",
+    "MissionStore": "app.autonomy.mission",
+    "ModePolicy": "app.autonomy.mode_policy",
+    "ObservationOption": "app.autonomy.cognitive",
+    "PerceptionPlanner": "app.autonomy.cognitive",
+    "PerceptionService": "app.autonomy.perception_service",
+    "PlanValidator": "app.autonomy.planning",
+    "Prediction": "app.autonomy.world_model",
+    "ProcessWatcher": "app.autonomy.triggers",
+    "ProposalRejected": "app.autonomy.proposals",
+    "ProposalType": "app.autonomy.proposals",
+    "ProposalValidator": "app.autonomy.proposals",
+    "ProviderResponseError": "app.autonomy.reasoning_provider",
+    "ReasoningContext": "app.autonomy.proposals",
+    "ReasoningDecisionProvider": "app.autonomy.reasoning_provider",
+    "ReasoningProposal": "app.autonomy.proposals",
+    "ReasoningProvider": "app.autonomy.proposals",
+    "RetryPolicy": "app.autonomy.contracts",
+    "RuntimeMissionComposer": "app.autonomy.production_mission",
+    "ScreenElement": "app.autonomy.observation",
+    "ScreenObservation": "app.autonomy.observation",
+    "ScreenUnderstandingProvider": "app.autonomy.observation",
+    "Strategy": "app.autonomy.cognitive",
+    "TaskContext": "app.autonomy.planning",
+    "TaskContextManager": "app.autonomy.planning",
+    "TaskEngineMissionRunner": "app.autonomy.task_runner",
+    "TaskGraph": "app.autonomy.task_graph",
+    "TaskScheduler": "app.autonomy.task_graph",
+    "TeamAssignment": "app.autonomy.team",
+    "TransitionComparison": "app.autonomy.world_model",
+    "Trigger": "app.autonomy.triggers",
+    "TriggerEngine": "app.autonomy.triggers",
+    "TriggerKind": "app.autonomy.triggers",
+    "TriggerStore": "app.autonomy.triggers",
+    "UserPresenceDetector": "app.autonomy.monitoring",
+    "UserTakeoverManager": "app.autonomy.operator",
+    "VerifiedMissionCriterion": "app.autonomy.production_mission",
+    "WorldFact": "app.autonomy.world_state",
+    "WorldModel": "app.autonomy.world_model",
+    "WorldSnapshot": "app.autonomy.world_state",
+    "WorldStateManager": "app.autonomy.world_state",
+}
 
-from app.autonomy.production_mission import RuntimeMissionComposer, VerifiedMissionCriterion
-from app.autonomy.approvals import ApprovalRequest, ApprovalStatus, ApprovalStore, ApprovalSystem
-from app.autonomy.governor import AutonomyGovernor, GovernorDecision, GovernorOutcome, MissionContract
-from app.autonomy.capability_broker import CapabilityAssessment, CapabilityBroker, CapabilityStatus
+
+def __getattr__(name: str):
+    if name in _MODULES:
+        module = importlib.import_module(_MODULES[name])
+        return getattr(module, name)
+    raise AttributeError(f"module {__name__!r} has no attribute {name!r}")
+
 
 __all__ = [
     "ActionContract", "ActionRequest", "AgentHealth", "AgentHealthMonitor", "AgentTeamBuilder",
@@ -48,7 +169,12 @@ __all__ = [
     "PerceptionPlanner", "PerceptionService", "PlanValidator", "Prediction", "ProcessWatcher",
     "ProposalRejected", "ProposalType", "ProposalValidator", "ProviderResponseError",
     "ReasoningContext", "ReasoningDecisionProvider", "ReasoningProposal", "ReasoningProvider",
-    "RetryPolicy", "RuntimeMissionComposer", "ScreenElement", "ScreenObservation",
+    "RetryPolicy", "RuntimeMissionComposer", "MissionIntent", "MissionUnderstanding",
+    "MissionStep", "MissionPlan", "StepResult", "YouTubeBrowserAdapter",
+    "UniversalMissionCoordinator", "UniversalAgent", "BrowserTeamMissionAdapter", "EnvironmentExplorer",
+    "CapabilityGapCoordinator", "SelfSkillingCoordinator", "SkillPlanResult",
+    "EnvironmentSnapshot", "BoundaryMemory", "ToolBuilder", "ToolDraft",
+    "understand_request", "plan_request", "ScreenElement", "ScreenObservation",
     "ScreenUnderstandingProvider", "Strategy", "TaskContext", "TaskContextManager",
     "TaskEngineMissionRunner", "TaskGraph", "TaskScheduler", "TeamAssignment", "TransitionComparison",
     "Trigger", "TriggerEngine", "TriggerKind", "TriggerStore", "UserPresenceDetector",

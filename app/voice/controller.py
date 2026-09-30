@@ -4,7 +4,7 @@ from __future__ import annotations
 import asyncio
 from collections.abc import Callable
 
-from app.voice.config import VoiceConfig
+from app.voice.config import VoiceConfig, VoiceMode
 from app.voice.service import VoiceService
 
 
@@ -32,16 +32,20 @@ class VoiceControlPlane:
             "idle_timeout",
             "max_session_duration",
             "min_confidence",
-            "sensitive_confidence",
+            "mode",
+            "collect_tasks",
+            "task_pause_seconds",
         }
         unknown = set(settings) - allowed
         if unknown:
             raise ValueError("Unsupported voice configuration field")
+        if isinstance(settings.get("task_pause_seconds"), bool):
+            raise ValueError("Voice task collection settings are invalid")
         try:
             idle_timeout = float(settings.get("idle_timeout", 30))
             max_session_duration = float(settings.get("max_session_duration", 900))
             min_confidence = float(settings.get("min_confidence", 0.75))
-            sensitive_confidence = float(settings.get("sensitive_confidence", 0.92))
+            task_pause_seconds = float(settings.get("task_pause_seconds", 1.5))
         except (TypeError, ValueError) as error:
             raise ValueError("Voice numeric configuration is invalid") from error
         config = VoiceConfig(
@@ -51,7 +55,9 @@ class VoiceControlPlane:
             idle_timeout=idle_timeout,
             max_session_duration=max_session_duration,
             min_confidence=min_confidence,
-            sensitive_confidence=sensitive_confidence,
+            mode=VoiceMode(str(settings.get("mode", VoiceMode.PUSH_TO_TALK.value))),
+            collect_tasks=settings.get("collect_tasks", True),
+            task_pause_seconds=task_pause_seconds,
         )
         config.validate()
         self._service = self._factory(config)
@@ -98,6 +104,10 @@ class VoiceControlPlane:
     def health_check(self) -> bool:
         return bool(self._service and self._service.health_check())
 
+    async def mission_finished(self, mission) -> None:
+        if self._service:
+            await self._service.mission_finished(mission)
+
     def snapshot(self) -> dict[str, object]:
         if self._service:
             return {**self._service.snapshot(), "configured": True}
@@ -109,4 +119,6 @@ class VoiceControlPlane:
             "final_transcript": "",
             "error": None,
             "configured": False,
+            "assistant_question": None,
+            "request_collection": {"active": False, "awaiting_finish": False, "part_count": 0},
         }

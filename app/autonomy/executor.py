@@ -21,7 +21,7 @@ from app.autonomy.models import (ActionProposal, ActionResult, AuditRecord, Comp
 from app.autonomy.resources import ResourceLockManager
 from app.autonomy.contracts import Idempotency
 from app.autonomy.recovery import RecoveryEngine, RecoveryStrategy
-from app.safety.permissions import ApprovalRequired, PermissionDenied
+from app.safety.permissions import ApprovalRequired, PermissionDenied, can_remember_tool
 from app.safety.redaction import redact
 
 
@@ -89,6 +89,10 @@ class ActionRuntime:
             return self._result(action, False, str(error), monotonic(), code)
         return await self.perform(request.to_computer_action(proposal.reason))
 
+    def result_for(self, action_id: str) -> ActionResult | None:
+        """Read a completed, redacted action result without executing it again."""
+        return self._completed_actions.get(action_id)
+
     async def perform(self, action: ComputerAction) -> ActionResult:
         # An action identity is single-use within a runtime. Recovery must
         # re-observe and create a new action instead of replaying side effects.
@@ -107,22 +111,28 @@ class ActionRuntime:
         if governed.decision is GovernorDecision.DENY:
             return self._result(action, False, governed.reason, started, ErrorCode.POLICY_DENIED,
                                 policy=f"governor:{governed.reason}")
-        mode_decision = "approval" if governed.decision is GovernorDecision.APPROVAL else self.mode_policy.decision(tool)
+        mode_decision = self.mode_policy.decision(tool)
         if mode_decision == "deny":
             return self._result(action, False, "Autonomy mode forbids this action", started, ErrorCode.POLICY_DENIED, policy="mode_deny")
-        if mode_decision == "approval":
-            policy_decision, approval_status = "mode_approval", "required"
-            if self.approval_handler is None:
-                return self._result(action, False, "Autonomy mode requires approval", started,
-                                    ErrorCode.APPROVAL_REQUIRED, policy=policy_decision,
-                                    approval=approval_status)
-            approved = self.approval_handler(action)
-            if hasattr(approved, "__await__"):
-                approved = await approved
-            if not approved:
-                return self._result(action, False, "Approval denied", started,
-                                    ErrorCode.POLICY_DENIED, policy="deny", approval="denied")
-            approval_status = "approved"
+        if governed.decision is GovernorDecision.APPROVAL:
+            mode_decision = "approval"
+        remember_eligible = can_remember_tool(tool)
+        grants = self.manager.policy.grant_store
+        if (mode_decision == "approval" and governed.decision is not GovernorDecision.APPROVAL
+                and remember_eligible and grants is not None
+                and all(grants.allows(tool.tool_id, permission) for permission in tool.required_permissions)):
+            mode_decision = "allow"
+        # Preflight every registered capability without spending one-shot grants.
+        # A denial must win before a prompt is shown, regardless of iteration order.
+        needs_permission_approval = False
+        for permission in sorted(tool.required_permissions):
+            try:
+                self.manager.policy.check(action.agent_id, permission, tool=tool.tool_id,
+                                          consume=False, allow_remembered=remember_eligible)
+            except ApprovalRequired:
+                needs_permission_approval = True
+            except PermissionDenied as error:
+                return self._result(action, False, str(error), started, ErrorCode.POLICY_DENIED, policy="deny")
         contract = self.contracts.get(action.action_type)
         if contract:
             if contract.tool != action.action_type or action.permission not in contract.required_permissions:
@@ -133,23 +143,22 @@ class ActionRuntime:
                 contract.validate(pre_state, action.permission)
             except ValueError as error:
                 return self._result(action, False, str(error), started, ErrorCode.INVALID_ARGUMENT)
-        try:
-            self.manager.policy.check(action.agent_id, action.permission)
-        except ApprovalRequired as error:
-            policy_decision, approval_status = "require_approval", "required"
+        approved_permissions: tuple[str, ...] = ()
+        if needs_permission_approval or mode_decision == "approval":
+            policy_decision = "require_approval" if needs_permission_approval else "mode_approval"
+            approval_status = "required"
             if self.approval_handler is None:
-                return self._result(action, False, str(error), started, ErrorCode.APPROVAL_REQUIRED,
+                return self._result(action, False, "Human approval is required", started, ErrorCode.APPROVAL_REQUIRED,
                                     policy=policy_decision, approval=approval_status)
+            # One exact action decision satisfies both mode and capability gates.
             approved = self.approval_handler(action)
             if hasattr(approved, "__await__"):
                 approved = await approved
             if not approved:
                 return self._result(action, False, "Approval denied", started, ErrorCode.POLICY_DENIED,
                                     policy="deny", approval="denied")
-            self.manager.policy.approve_once(action.agent_id, action.permission)
+            approved_permissions = tuple(sorted(tool.required_permissions))
             approval_status = "approved"
-        except PermissionDenied as error:
-            return self._result(action, False, str(error), started, ErrorCode.POLICY_DENIED, policy="deny")
         try:
             async with self.locks.acquire(action.agent_id, self._resources.get(action.action_type, {action.action_type.split('.')[0]})):
                 # AgentManager enforces allow-list, permission, policy, schema, and records the tool event.
@@ -158,11 +167,22 @@ class ActionRuntime:
                 prediction = self.world_model.predict(action.action_id, action.expected_state)
                 self._journal(action.task_id, "PREDICTION_RECORDED", {"action_id": prediction.action_id, "before_version": prediction.before_version, "expected": prediction.expected, "confidence": prediction.confidence})
                 self._journal(action.task_id, "OBSERVATION_CAPTURED", {"action_id": action.action_id, "phase": "before", "world_version": before_snapshot.version})
-                if contract and contract.timeout_seconds is not None:
-                    async with asyncio.timeout(contract.timeout_seconds):
+                # Consent and resource waits may span an operator pause or takeover.
+                # Recheck the live authority after the final await before execution.
+                if self.mode_policy.decision(tool) == "deny":
+                    return self._result(action, False, "Autonomy mode forbids this action", started,
+                                        ErrorCode.POLICY_DENIED, policy="mode_deny", approval=approval_status)
+                current_governed = self.governor.evaluate(action, tool)
+                if current_governed.decision is GovernorDecision.DENY:
+                    return self._result(action, False, current_governed.reason, started,
+                                        ErrorCode.POLICY_DENIED, policy=f"governor:{current_governed.reason}",
+                                        approval=approval_status)
+                with self.manager.policy.approved_scope(action.agent_id, tool.tool_id, approved_permissions):
+                    if contract and contract.timeout_seconds is not None:
+                        async with asyncio.timeout(contract.timeout_seconds):
+                            output = await self.manager.execute_tool(action.agent_id, action.action_type, action.arguments)
+                    else:
                         output = await self.manager.execute_tool(action.agent_id, action.action_type, action.arguments)
-                else:
-                    output = await self.manager.execute_tool(action.agent_id, action.action_type, action.arguments)
                 observed = await self.controller.observe()
                 after_snapshot = self.world_state.capture(observed, source="after_action", evidence=action.action_id)
                 comparison = self.world_model.compare(action.action_id, after_snapshot)

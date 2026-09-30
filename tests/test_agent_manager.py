@@ -15,13 +15,13 @@ def build_manager(policy: PermissionPolicy | None = None) -> tuple[AgentManager,
     registry = ToolRegistry()
     registry.register(ToolSpec("browser.read_title", "Read title", "Reads a browser title",
                                frozenset({Permission.BROWSER_READ.value}), RiskLevel.LOW,
-                               lambda arguments: f"title:{arguments['page']}"))
+                               lambda arguments: f"title:{arguments['page']}", ("page",)))
     registry.register(ToolSpec("keyboard.write", "Type text", "Writes keys",
                                frozenset({Permission.KEYBOARD_WRITE.value}), RiskLevel.HIGH,
-                               lambda arguments: arguments["text"]))
+                               lambda arguments: arguments["text"], ("text",)))
     registry.register(ToolSpec("filesystem.write", "Write file", "Writes a file",
                                frozenset({Permission.FILESYSTEM_WRITE.value}), RiskLevel.HIGH,
-                               lambda arguments: arguments["path"]))
+                               lambda arguments: arguments["path"], ("path",)))
     manager = AgentManager(registry, policy=policy)
     root = manager.create_root("Root", "orchestrator", "Coordinate work", {
         Permission.BROWSER_READ.value, Permission.KEYBOARD_WRITE.value, Permission.FILESYSTEM_WRITE.value,

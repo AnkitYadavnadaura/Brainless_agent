@@ -46,6 +46,14 @@ def test_broker_prefers_compatible_local_agent_before_discovery():
     assert assessment.missing_tools == ()
 
 
+def test_blender_creation_language_routes_to_blender_capability():
+    requirements = CapabilityAnalyzer().analyze(
+        "create a whole building with windows and doors"
+    )
+    assert requirements.role == "BlenderAgent"
+    assert requirements.tools == frozenset({"blender.scene"})
+
+
 def test_dashboard_pauses_unsupported_goal_and_starts_constrained_discovery(tmp_path):
     async def scenario():
         base, _, _ = dashboard(tmp_path)

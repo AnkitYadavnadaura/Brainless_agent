@@ -1,9 +1,11 @@
 import json
+from unittest.mock import AsyncMock
 
 import pytest
 
 from app.browser.browser_manager import BrowserManager
 from app.config.settings import BrowserSettings
+from app.providers.base_provider import ChatbotProvider, ProviderSelectors
 
 
 class FakePage:
@@ -40,6 +42,25 @@ def manager(tmp_path):
     instance = BrowserManager(BrowserSettings(), tmp_path)
     instance._context = FakeContext()
     return instance
+
+
+@pytest.mark.asyncio
+async def test_provider_open_starts_browser_manager_on_first_use(tmp_path):
+    browser = BrowserManager(BrowserSettings(), tmp_path)
+
+    async def start_browser():
+        browser._context = FakeContext()
+
+    browser.start = AsyncMock(side_effect=start_browser)
+    provider = ChatbotProvider(
+        browser, "https://chatgpt.com/",
+        ProviderSelectors(input=(), response=(), stop=()),
+    )
+
+    await provider.open()
+
+    browser.start.assert_awaited_once()
+    assert provider.page.url == "https://chatgpt.com/"
 
 
 @pytest.mark.asyncio
@@ -80,3 +101,28 @@ async def test_off_origin_saved_url_is_ignored(tmp_path):
 
     page = await browser.conversation_page("chatgpt", "prompt", "https://chatgpt.com/")
     assert page.url == "https://chatgpt.com/"
+
+
+@pytest.mark.asyncio
+async def test_project_reasoning_and_retries_use_one_tab(tmp_path):
+    from app.providers.base_provider import ChatbotProvider, ProviderSelectors
+    browser=manager(tmp_path)
+    existing=await browser._context.new_page()
+    existing.url='https://chatgpt.com/'
+    provider=ChatbotProvider(browser,'https://chatgpt.com/',ProviderSelectors(input=(),response=(),stop=()))
+    provider.name='chatgpt'
+    provider.use_conversation_session('persistent-3d-project')
+    for prompt in ('plan','checkpoint review','repair failed action','user update'):
+        provider.prepare_conversation(prompt)
+        await provider.open()
+        assert provider.page is existing
+        existing.url='https://chatgpt.com/c/one-project'
+        provider.remember_conversation()
+    assert len(browser._context.created)==1
+    restarted=manager(tmp_path)
+    restored=ChatbotProvider(restarted,'https://chatgpt.com/',ProviderSelectors(input=(),response=(),stop=()))
+    restored.name='chatgpt'
+    restored.use_conversation_session('persistent-3d-project')
+    restored.prepare_conversation('resume')
+    await restored.open()
+    assert restored.page.url=='https://chatgpt.com/c/one-project'

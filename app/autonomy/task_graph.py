@@ -4,7 +4,7 @@ from __future__ import annotations
 from dataclasses import dataclass, field
 from datetime import datetime
 from enum import Enum
-from typing import Iterable
+from typing import Any, Iterable
 
 
 class GraphTaskStatus(str, Enum):
@@ -26,6 +26,7 @@ class GraphTask:
     permissions: frozenset[str] = frozenset()
     resources: frozenset[str] = frozenset()
     tool: str | None = None
+    arguments: dict[str, Any] | None = None
     priority: int = 0
     deadline: datetime | None = None
     estimated_cost: float = 0.0

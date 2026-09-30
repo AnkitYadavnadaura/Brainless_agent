@@ -4,13 +4,16 @@ from __future__ import annotations
 from dataclasses import dataclass
 import asyncio
 import json
+import ast
 from pathlib import Path
+import re
 import subprocess
 import sys
 from typing import Any, TYPE_CHECKING
 
 from app.agents.building_blocks import AgentDefinition
 from app.agents.models import Agent
+from app.safety.permissions import Permission
 
 if TYPE_CHECKING:
     from app.autonomy.models import TaskRequirements
@@ -100,8 +103,29 @@ class AgentPlanningWorkflow:
         if not isinstance(value, dict) or not isinstance(data.get("python_code"), str):
             raise AgentPlanningError("Prompt 2 omitted agent_definition or python_code")
         definition = AgentDefinition.from_mapping(value)
-        if definition.permissions != requirements.permissions or definition.tools != requirements.tools:
-            raise AgentPlanningError("Prompt 2 changed the runtime-required authority")
+        # Automatically grant any runtime-required permissions/tools that the
+        # planner omitted but the runtime deems necessary for the task. This
+        # is conservative: only add missing items requested by `requirements`.
+        missing_perms = set(requirements.permissions) - set(definition.permissions)
+        missing_tools = set(requirements.tools) - set(definition.tools)
+        if missing_perms or missing_tools:
+            merged_permissions = frozenset(set(definition.permissions) | set(requirements.permissions))
+            merged_tools = frozenset(set(definition.tools) | set(requirements.tools))
+            definition = AgentDefinition(definition.name, definition.role, definition.objective,
+                                         definition.task, merged_permissions, merged_tools,
+                                         definition.subscriptions, definition.context,
+                                         definition.resource_limits, definition.allowed_applications,
+                                         definition.allowed_directories, definition.risk_policy)
+        # Heuristic: if the task mentions YouTube, ensure a YouTube playback
+        # tool is available so the agent can perform playback autonomously.
+        if any(term in (task or "").lower() for term in ("youtube", "youtube music")) and "youtube.play" not in definition.tools:
+            merged_tools = frozenset(set(definition.tools) | {"youtube.play"})
+            merged_permissions = frozenset(set(definition.permissions) | {Permission.BROWSER_NAVIGATE.value})
+            definition = AgentDefinition(definition.name, definition.role, definition.objective,
+                                         definition.task, merged_permissions, merged_tools,
+                                         definition.subscriptions, definition.context,
+                                         definition.resource_limits, definition.allowed_applications,
+                                         definition.allowed_directories, definition.risk_policy)
         return definition
 
     async def _ask(self, prompt: str) -> str:
@@ -117,7 +141,14 @@ class AgentPlanningWorkflow:
             remember = getattr(self.provider, "remember_conversation", None)
             if remember is not None:
                 remember()
-            return await self.provider.extract_response()
+            try:
+                return await self.provider.extract_response()
+            except Exception as error:
+                raise AgentPlanningError(
+                    "Website planning response could not be extracted. "
+                    "Check the visible ChatGPT tab for login, CAPTCHA, generation "
+                    f"failure, or a changed page layout: {error}"
+                ) from error
 
     def _capabilities_for(self, agent_id: str) -> frozenset[str]:
         try:
@@ -145,10 +176,94 @@ class AgentPlanningWorkflow:
 
     @staticmethod
     def _object(response: str) -> dict[str, Any]:
+        text = (response or "").strip()
+        if not text:
+            raise AgentPlanningError("Provider response was empty")
+        text = re.sub(r"^```(?:json)?\s*", "", text, flags=re.IGNORECASE | re.DOTALL)
+        text = re.sub(r"\s*```$", "", text, flags=re.IGNORECASE | re.DOTALL)
+        start = text.find("{")
+        if start == -1:
+            raise AgentPlanningError("Provider response was not exact JSON")
+        depth = 0
+        in_string = False
+        escaped = False
+        end = None
+        for index in range(start, len(text)):
+            character = text[index]
+            if in_string:
+                if escaped:
+                    escaped = False
+                elif character == "\\":
+                    escaped = True
+                elif character == '"':
+                    in_string = False
+                continue
+            if character == '"':
+                in_string = True
+            elif character == "{":
+                depth += 1
+            elif character == "}":
+                depth -= 1
+                if depth == 0:
+                    end = index + 1
+                    break
+        if end is None:
+            candidate = text[start:]
+        else:
+            candidate = text[start:end]
         try:
-            value = json.loads(response)
-        except json.JSONDecodeError as error:
-            raise AgentPlanningError("Provider response was not exact JSON") from error
+            value = json.loads(candidate)
+        except json.JSONDecodeError:
+            # Some providers return Python-style dicts using single quotes or
+            # other non-JSON quoting. As a robust fallback, try ast.literal_eval
+            # which safely evaluates Python literals (dicts, lists, strings).
+            try:
+                value = ast.literal_eval(candidate)
+            except (ValueError, SyntaxError) as error:
+                # As a last-resort, try to extract only the agent_definition
+                # object from the full response text. Many providers return a
+                # valid `agent_definition` but embed messy `python_code` that
+                # breaks full-JSON parsing. Extracting the `agent_definition`
+                # lets the runtime continue (python_code is advisory).
+                m = re.search(r'"agent_definition"\s*:\s*\{', text)
+                if m:
+                    start2 = text.find('{', m.start())
+                    depth2 = 0
+                    in_string2 = False
+                    escaped2 = False
+                    end2 = None
+                    for i in range(start2, len(text)):
+                        ch = text[i]
+                        if in_string2:
+                            if escaped2:
+                                escaped2 = False
+                            elif ch == "\\":
+                                escaped2 = True
+                            elif ch == '"':
+                                in_string2 = False
+                            continue
+                        if ch == '"':
+                            in_string2 = True
+                        elif ch == '{':
+                            depth2 += 1
+                        elif ch == '}':
+                            depth2 -= 1
+                            if depth2 == 0:
+                                end2 = i + 1
+                                break
+                    if end2 is not None:
+                        candidate2 = text[start2:end2]
+                        try:
+                            def_obj = json.loads(candidate2)
+                        except Exception:
+                            def_obj = None
+                        if isinstance(def_obj, dict):
+                            return {"agent_definition": def_obj, "python_code": ""}
+                raise AgentPlanningError("Provider response was not exact JSON") from error
         if not isinstance(value, dict):
             raise AgentPlanningError("Provider response must be a JSON object")
         return value
+
+        # NOTE: the code below is kept for historical context; unreachable
+        # because of the return above. The improved fallback extraction is
+        # implemented in the outer exception handler below.

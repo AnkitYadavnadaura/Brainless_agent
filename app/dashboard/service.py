@@ -133,8 +133,13 @@ class RuntimeCommandGateway:
             mission.status = transitions[requested]
             mission.touch()
             self.runtime.missions.save(mission)
+            if (requested in {DashboardCommand.PAUSE_MISSION, DashboardCommand.CANCEL_MISSION}
+                    and self.runtime.approval_system):
+                self.runtime.approval_system.cancel(mission_id=mission_id)
         elif requested is DashboardCommand.TAKE_OVER:
             self.runtime.operator.takeover.begin()
+            if self.runtime.approval_system:
+                self.runtime.approval_system.cancel()
         elif requested is DashboardCommand.RELEASE_TAKEOVER:
             self.runtime.operator.takeover.resume()
         elif requested in {DashboardCommand.APPROVE, DashboardCommand.DENY}:
@@ -148,7 +153,7 @@ class RuntimeCommandGateway:
             if self.runtime.voice is None: raise ValueError("Voice control is unavailable")
             api_key = str(payload.get("api_key", ""))
             settings = {key: payload[key] for key in ("model", "language", "idle_timeout",
-                "max_session_duration", "min_confidence", "sensitive_confidence") if key in payload}
+                "max_session_duration", "min_confidence", "mode", "collect_tasks", "task_pause_seconds") if key in payload}
             self.runtime.voice.configure(api_key, settings)
         elif requested is DashboardCommand.START_VOICE:
             if self.runtime.voice is None: raise ValueError("Voice control is unavailable")

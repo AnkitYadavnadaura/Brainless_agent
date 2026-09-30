@@ -75,7 +75,26 @@ function voice() {
   const voice = state.data.voice;
   const commands = voice.history || [];
   const confidence = commands.length ? commands.reduce((sum, item) => sum + Number(item.confidence || 0), 0) / commands.length : null;
-  return `<div class="voice-toolbar"><button class="button" data-voice-configure>Configure AssemblyAI</button><button class="button button-primary push-to-talk" data-voice-talk ${voice.configured ? '' : 'disabled'}>Hold to talk</button><button class="button" data-command="stop_voice">Stop voice</button><small>Push-to-talk starts on press and stops on release.</small></div><div class="cards"><article class="card accent"><span>VOICE STATUS</span><strong>${esc(voice.status).toUpperCase()}</strong><small>${esc(voice.mode || 'Not configured')}</small></article><article class="card"><span>ASSEMBLYAI</span><strong>${esc(voice.connection).toUpperCase()}</strong><small>${esc(voice.model || 'No model')}</small></article><article class="card"><span>VOICE COMMANDS</span><strong>${commands.length}</strong><small>Bounded current session</small></article><article class="card"><span>AVG CONFIDENCE</span><strong>${confidence == null ? 'N/A' : Math.round(confidence * 100) + '%'}</strong><small>Finalized turns only</small></article></div><div class="grid"><section class="panel transcript-panel"><div class="panel-header"><h2>Live transcript</h2>${status(voice.status)}</div><p class="partial">${esc(voice.current_transcript || 'Waiting for speech…')}</p><p class="final">${voice.final_transcript ? '✓ ' + esc(voice.final_transcript) : 'No finalized turn'}</p><dl><dt>Session</dt><dd><code>${shortId(voice.session_id)}</code></dd><dt>Microphone</dt><dd>${esc(voice.microphone)}</dd><dt>Sample rate</dt><dd>${voice.sample_rate ? voice.sample_rate + ' Hz PCM16 mono' : '—'}</dd><dt>Active mission</dt><dd><code>${shortId(voice.active_mission)}</code></dd></dl>${voice.error ? `<p class="voice-error">${esc(voice.error)}</p>` : ''}</section><section class="panel"><h2>Privacy boundary</h2><p class="muted">Partial turns update ephemeral session state only. Final turns enter structured intent processing. Raw audio is never stored. Transcript persistence is disabled by default.</p><p class="muted">Speech confidence does not grant action authority. Every accepted mission still passes through the governor, policy, permissions, tools, observation, and verification.</p></section></div><section style="margin-top:13px">${table(['Time', 'Transcript', 'Intent', 'Mission', 'Status', 'Confidence', 'Result'], commands.slice().reverse().map(item => `<tr><td>${formatTime(item.timestamp)}</td><td>${esc(item.transcript || '[NOT STORED]')}</td><td>${status(item.intent)}</td><td><code>${shortId(item.mission_id)}</code></td><td>${status(item.status)}</td><td>${Math.round(Number(item.confidence || 0) * 100)}%</td><td>${esc(item.result)}</td></tr>`), 'voice commands')}</section>`;
+  const collection = voice.request_collection || {};
+  const collectionEnabled = voice.collect_tasks !== false;
+  const questionText = voice.assistant_question || (collection.awaiting_finish
+    ? 'Anything else you would like to add? Say no when your request is complete.' : '');
+  const collectionPanel = collection.active
+    ? `<section class="panel voice-collection" role="status"><p class="eyebrow">COLLECTING YOUR REQUEST</p><p>${Number(collection.part_count || 0)} spoken ${Number(collection.part_count || 0) === 1 ? 'part' : 'parts'} collected. ${collection.awaiting_finish ? 'Add more details, or say “no, that’s all” to finish.' : 'Keep speaking; pauses will not submit your task.'}</p><small>Planning starts after you finish your request.</small></section>`
+    : '';
+  const collectionGuidance = collectionEnabled
+    ? 'Speak your full request across pauses. When asked “Anything else?”, add details or say “no, that’s all” to start planning.'
+    : 'Task collection is off: finalized speech is analyzed immediately.';
+  const privacyCopy = collectionEnabled
+    ? 'Spoken task parts stay in session memory until you finish. Your combined request is then sent to the browser LLM. Permission and follow-up answers are handled in their current context.'
+    : 'Partial turns update session state only. Finalized speech is sent to the browser LLM.';
+  const question = questionText
+    ? `<section class="panel voice-question" role="status"><p class="eyebrow">VOICE ASSISTANT · ANSWER ALOUD</p><h2>${esc(questionText)}</h2></section>`
+    : '';
+  const statusLabel = questionText
+    ? voice.connection === 'connected' ? 'WAITING FOR REPLY · MIC CONNECTED' : 'WAITING FOR REPLY · RESTART LISTENING'
+    : collection.active ? 'COLLECTING REQUEST' : String(voice.status || 'unknown').toUpperCase();
+  return `${question}${collectionPanel}<div class="voice-toolbar"><small>${esc(collectionGuidance)} The microphone stays connected until Stop voice or the session timeout. Say “stop” or “pause” to interrupt actions.</small></div><div class="cards"><article class="card accent"><span>VOICE STATUS</span><strong>${esc(statusLabel)}</strong><small>${esc(voice.mode || 'Not configured')}</small></article><article class="card"><span>ASSEMBLYAI</span><strong>${esc(voice.connection).toUpperCase()}</strong><small>${esc(voice.model || 'No model')}</small></article><article class="card"><span>VOICE COMMANDS</span><strong>${commands.length}</strong><small>Bounded current session</small></article><article class="card"><span>AVG CONFIDENCE</span><strong>${confidence == null ? 'N/A' : Math.round(confidence * 100) + '%'}</strong><small>Finalized turns only</small></article></div><div class="grid"><section class="panel transcript-panel"><div class="panel-header"><h2>Live transcript</h2>${status(voice.status)}</div><p class="partial">${esc(voice.current_transcript || 'Waiting for speech…')}</p><p class="final">${voice.final_transcript ? '✓ ' + esc(voice.final_transcript) : 'No finalized turn'}</p><dl><dt>Session</dt><dd><code>${shortId(voice.session_id)}</code></dd><dt>Microphone</dt><dd>${esc(voice.microphone)}</dd><dt>Sample rate</dt><dd>${voice.sample_rate ? voice.sample_rate + ' Hz PCM16 mono' : '—'}</dd><dt>Active mission</dt><dd><code>${shortId(voice.active_mission)}</code></dd></dl>${voice.error ? `<p class="voice-error">${esc(voice.error)}</p>` : ''}</section><section class="panel"><h2>Privacy boundary</h2><p class="muted">${esc(privacyCopy)} Raw audio is never stored. Transcript persistence is disabled by default.</p><p class="muted">Speech confidence does not grant action authority. Every accepted mission still passes through the governor, policy, permissions, tools, observation, and verification.</p></section></div><section style="margin-top:13px">${table(['Time', 'Transcript', 'Intent', 'Mission', 'Status', 'Confidence', 'Result'], commands.slice().reverse().map(item => `<tr><td>${formatTime(item.timestamp)}</td><td>${esc(item.transcript || '[NOT STORED]')}</td><td>${status(item.intent)}</td><td><code>${shortId(item.mission_id)}</code></td><td>${status(item.status)}</td><td>${Math.round(Number(item.confidence || 0) * 100)}%</td><td>${esc(item.result)}</td></tr>`), 'voice commands')}</section>`;
 }
 
 function perception() {
@@ -171,6 +190,17 @@ function render() {
   const meta = viewMeta[state.view] || viewMeta.overview;
   $('#pageTitle').textContent = meta[0];
   $('#pageDescription').textContent = meta[1];
+  $('#configureAssemblyAI').hidden = state.view !== 'voice';
+  const voice = state.data.voice;
+  const configured = Boolean(voice.configured);
+  const listening = voice.connection === 'connected';
+  const startButton = $('#voiceStart');
+  startButton.hidden = state.view !== 'voice';
+  startButton.disabled = !configured || listening;
+  startButton.textContent = listening ? 'Listening' : 'Start listening';
+  startButton.setAttribute('aria-label', startButton.textContent);
+  startButton.setAttribute('aria-pressed', String(listening));
+  $('#voiceStop').hidden = state.view !== 'voice';
   $('#content').innerHTML = (views[state.view] || overview)();
   $('#content').setAttribute('aria-busy', 'false');
   $('#missionCount').textContent = state.data.overview.active_missions;
@@ -249,11 +279,6 @@ async function command(name, payload = {}) {
     return result;
   } catch (error) { toast(error.message, 'error'); return null; }
   finally { controls.forEach(control => { control.disabled = false; control.removeAttribute('aria-busy'); }); }
-  try {
-    await api('/api/commands', {method: 'POST', body: JSON.stringify({command: name, payload})});
-    toast(`${name.replaceAll('_', ' ')} accepted by runtime`);
-    await refresh({quiet: true});
-  } catch (error) { toast(error.message, 'error'); }
 }
 
 document.querySelectorAll('nav button').forEach(button => button.addEventListener('click', () => {
@@ -267,26 +292,51 @@ $('#menu').addEventListener('click', event => { const open = $('#sidebar').class
 $('#refresh').addEventListener('click', () => refresh());
 $('#takeover').addEventListener('click', () => command(state.data?.takeover_mode === 'takeover' ? 'release_takeover' : 'take_over'));
 $('#newMission').addEventListener('click', () => $('#missionDialog').showModal());
+$('#configureAssemblyAI').addEventListener('click', () => {
+  const dialog = $('#voiceDialog');
+  $('#voiceCollectTasks').value = String(state.data?.voice?.collect_tasks !== false);
+  $('#voiceTaskPause').value = state.data?.voice?.task_pause_seconds || 1.5;
+  if (!dialog.open) dialog.showModal();
+});
+// A listening session spans pauses and completion questions. Only the explicit
+// Stop control ends it; releasing a pointer must not discard a collected task.
+$('#voiceStart').addEventListener('click', () => command('start_voice'));
+$('#voiceStop').addEventListener('click', () => command('stop_voice'));
 $('#content').addEventListener('click', event => { const button = event.target.closest('[data-open-view]'); if (!button) return; state.view = button.dataset.openView; location.hash = state.view; render(); });
 $('#content').addEventListener('click', event => { if (event.target.closest('[data-open-mission]')) $('#missionDialog').showModal(); });
 $('#connect').addEventListener('click', event => { event.preventDefault(); state.token = $('#token').value.trim(); sessionStorage.setItem('ba-token', state.token); $('#auth').close(); refresh(); stream(); });
 $('#submitMission').addEventListener('click', async event => { event.preventDefault(); const goal = $('#missionGoal').value.trim(); if (!goal) return $('#missionGoal').reportValidity(); $('#missionDialog').close(); const result = await command('create_mission', {goal, priority: Number($('#missionPriority').value)}); if (result?.capability_status === 'discovery_required') toast('Capability missing: original mission paused and free-option research started.'); $('#missionGoal').value = ''; });
 $('#content').addEventListener('click', event => { if (!event.target.closest('[data-create-agent]')) return; const parents = state.data.agents.filter(agent => !['terminated'].includes(agent.status)); $('#agentParent').innerHTML = parents.map(agent => `<option value="${esc(agent.agent_id)}">${esc(agent.name)} · ${shortId(agent.agent_id)}</option>`).join(''); $('#agentDialog').showModal(); });
 $('#submitAgent').addEventListener('click', async event => { event.preventDefault(); const form = $('#agentDialog form'); if (!form.reportValidity()) return; const split = value => value.split(',').map(item => item.trim()).filter(Boolean); const payload = {parent_agent_id: $('#agentParent').value, agent: {name: $('#agentName').value.trim(), role: $('#agentRole').value.trim(), objective: $('#agentObjective').value.trim(), task: $('#agentTask').value.trim() || null, permissions: split($('#agentPermissions').value), tools: split($('#agentTools').value), risk_policy: $('#agentRisk').value}}; const result = await command('create_agent', payload); if (result) { $('#agentDialog').close(); form.reset(); } });
-$('#submitVoiceConfig').addEventListener('click', async event => { event.preventDefault(); const input = $('#assemblyApiKey'); if (!input.reportValidity()) return; const payload = {api_key: input.value.trim(), model: $('#assemblyModel').value.trim(), min_confidence: Number($('#voiceConfidence').value)}; const language = $('#voiceLanguage').value.trim(); if (language) payload.language = language; input.value = ''; $('#voiceDialog').close(); await command('configure_voice', payload); });
+$('#voiceDialog form').addEventListener('submit', async event => {
+  event.preventDefault();
+  const form = event.currentTarget;
+  if (!form.reportValidity()) return;
+  const input = $('#assemblyApiKey');
+  const submit = $('#submitVoiceConfig');
+  const payload = {
+    api_key: input.value.trim(),
+    model: $('#assemblyModel').value.trim(),
+    min_confidence: Number($('#voiceConfidence').value),
+    mode: $('#voiceMode').value,
+    collect_tasks: $('#voiceCollectTasks').value === 'true',
+    task_pause_seconds: Number($('#voiceTaskPause').value),
+  };
+  const language = $('#voiceLanguage').value.trim();
+  if (language) payload.language = language;
+  submit.disabled = true;
+  try {
+    if (await command('configure_voice', payload) !== null) {
+      input.value = '';
+      $('#voiceDialog').close();
+    }
+  } finally {
+    submit.disabled = false;
+  }
+});
 $('#submitGuidance').addEventListener('click', async event => { event.preventDefault(); const input = $('#guidanceLabel'); if (!input.reportValidity()) return; const payload = {label: input.value.trim(), role: $('#guidanceRole').value}; $('#guidanceDialog').close(); toast('Drag over the requested desktop control; press Esc to cancel.'); await command('guide_screen_region', payload); input.value = ''; });
 $('#content').addEventListener('click', event => { const button = event.target.closest('[data-command]'); if (button) command(button.dataset.command, {mission_id: button.dataset.mission, approval_id: button.dataset.approval}); });
-$('#content').addEventListener('click', event => { if (event.target.closest('[data-voice-configure]')) $('#voiceDialog').showModal(); });
 $('#content').addEventListener('click', event => { if (event.target.closest('[data-guide-region]')) $('#guidanceDialog').showModal(); });
-$('#connect').addEventListener('click', event => { event.preventDefault(); state.token = $('#token').value.trim(); sessionStorage.setItem('ba-token', state.token); $('#auth').close(); refresh(); stream(); });
-$('#submitMission').addEventListener('click', event => { event.preventDefault(); const goal = $('#missionGoal').value.trim(); if (!goal) return $('#missionGoal').reportValidity(); $('#missionDialog').close(); command('create_mission', {goal, priority: Number($('#missionPriority').value)}); $('#missionGoal').value = ''; });
-$('#submitVoiceConfig').addEventListener('click', async event => { event.preventDefault(); const input = $('#assemblyApiKey'); if (!input.reportValidity()) return; const payload = {api_key: input.value.trim(), model: $('#assemblyModel').value.trim(), min_confidence: Number($('#voiceConfidence').value)}; const language = $('#voiceLanguage').value.trim(); if (language) payload.language = language; input.value = ''; $('#voiceDialog').close(); await command('configure_voice', payload); });
-$('#content').addEventListener('click', event => { const button = event.target.closest('[data-command]'); if (button) command(button.dataset.command, {mission_id: button.dataset.mission, approval_id: button.dataset.approval}); });
-$('#content').addEventListener('click', event => { if (event.target.closest('[data-voice-configure]')) $('#voiceDialog').showModal(); });
-let voicePressed = false;
-$('#content').addEventListener('pointerdown', event => { if (!event.target.closest('[data-voice-talk]')) return; event.preventDefault(); voicePressed = true; command('start_voice'); });
-document.addEventListener('pointerup', () => { if (!voicePressed) return; voicePressed = false; command('stop_voice'); });
-document.addEventListener('pointercancel', () => { if (!voicePressed) return; voicePressed = false; command('stop_voice'); });
 $('#content').addEventListener('click', event => { const button = event.target.closest('[data-mission-view]'); if (!button) return; state.selectedMission = button.dataset.missionView; state.view = 'missionDetail'; history.replaceState(null, '', '#missions'); $('#pageTitle').textContent = 'Mission detail'; render(); });
 $('#content').addEventListener('click', event => { const button = event.target.closest('[data-back]'); if (!button) return; state.selectedMission = null; state.view = button.dataset.back; location.hash = state.view; render(); });
 $('#search').addEventListener('keydown', async event => { if (event.key !== 'Enter') return; try { const results = await api(`/api/search?q=${encodeURIComponent(event.target.value)}`); $('#pageTitle').textContent = 'Search results'; $('#pageDescription').textContent = `${results.length} structured runtime records matched “${event.target.value}”.`; $('#content').innerHTML = table(['Category', 'Record'], results.map(result => `<tr><td>${status(result.category)}</td><td><pre>${esc(JSON.stringify(result.item, null, 2))}</pre></td></tr>`), 'search results'); } catch (error) { toast(error.message, 'error'); } });

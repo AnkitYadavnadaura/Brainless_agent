@@ -4,7 +4,12 @@ __pycache__/
 .env
 data/*.db
 data/browser-profile/
+data/chromium-leader/
+data/browser-team/
+data/runtime/
 data/conversation-urls.json
+data/permission-grants.json
+data/tessdata/
 data/generated-agents/
 screenshots/*.png
 .pytest_cache/

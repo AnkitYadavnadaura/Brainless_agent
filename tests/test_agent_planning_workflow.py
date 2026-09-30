@@ -107,3 +107,17 @@ def test_prompt2_creates_and_runs_only_a_validated_definition_artifact(tmp_path)
         assert "os.system" not in artifact and "must-not-run" not in artifact
         assert len(provider.prompts) == 2
     asyncio.run(scenario())
+
+
+def test_object_extractor_handles_markdown_and_leading_text():
+    text = "Here is the response:\n```json\n{\"agent_definition\": {\"name\": \"Web worker\"}, \"python_code\": \"print(1)\"}\n```"
+    value = AgentPlanningWorkflow._object(text)
+    assert value["agent_definition"]["name"] == "Web worker"
+    assert value["python_code"] == "print(1)"
+
+
+def test_object_extractor_handles_single_quoted_python_dicts():
+    text = "Sure — here is the object: {'agent_definition': {'name': 'Web worker'}, 'python_code': 'print(1)'}"
+    value = AgentPlanningWorkflow._object(text)
+    assert value["agent_definition"]["name"] == "Web worker"
+    assert value["python_code"] == "print(1)"

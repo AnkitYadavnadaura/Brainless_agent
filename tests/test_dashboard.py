@@ -64,8 +64,17 @@ def test_dashboard_http_api_auth_static_load_and_replay(tmp_path):
         body = page.read()
         assert b"Command Center" in body
         assert b"Missions" in body and b"aria-live" in body
+        assert page.headers["Cache-Control"] == "no-cache"
         assert page.headers["X-Frame-Options"] == "DENY"
         assert "frame-ancestors 'none'" in page.headers["Content-Security-Policy"]
+        script = urlopen(base + "/static/app.js", timeout=2)
+        assert script.headers["Cache-Control"] == "no-cache"
+        script_body = script.read()
+        assert b"voiceDialog form').addEventListener('submit'" in script_body
+        assert b"configureAssemblyAI').addEventListener('click'" in script_body
+        assert b"$('#configureAssemblyAI').hidden = state.view !== 'voice'" in script_body
+        assert b"$('#voiceStart').addEventListener('click'" in script_body
+        assert b"$('#voiceStop').addEventListener('click'" in script_body
         with pytest.raises(HTTPError) as denied:
             urlopen(base + "/api/system", timeout=2)
         assert denied.value.code == 401
@@ -225,3 +234,25 @@ def test_dashboard_assets_expose_quick_start_guidance_and_window_states():
     assert "Desktop windows" in script
     assert "CAPABILITY DISCOVERY" in script
     assert "state === 'minimized'" in script and "state === 'maximized'" in script
+    assert "voice.assistant_question" in script and "ANSWER ALOUD" in script
+    assert "WAITING FOR REPLY · MIC CONNECTED" in script
+    assert "wake_word" not in script
+    assert "Planning starts after you finish your request" in script
+    assert "voice.request_collection" in script
+
+
+def test_dashboard_theme_is_responsive_and_self_contained():
+    from pathlib import Path
+    static = Path("app/dashboard/static")
+    markup = (static / "index.html").read_text(encoding="utf-8")
+    styles = (static / "styles.css").read_text(encoding="utf-8")
+    assert 'aria-label="Toggle human takeover mode"' in markup
+    assert 'id="configureAssemblyAI"' in markup
+    assert 'id="voiceStart"' in markup and 'id="voiceStop"' in markup
+    assert markup.index('id="configureAssemblyAI"') < markup.index('id="content"')
+    assert markup.index('id="voiceStart"') < markup.index('id="content"')
+    assert markup.index('id="voiceStop"') < markup.index('id="content"')
+    assert ":focus-visible" in styles
+    assert "@media (max-width: 760px)" in styles
+    assert "prefers-reduced-motion" in styles
+    assert "@import url(" not in styles

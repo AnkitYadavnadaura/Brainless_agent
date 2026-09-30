@@ -4,6 +4,7 @@ The operator owns lifecycle and state only. A supplied trusted mission runner mu
 existing TaskEngine/ActionRuntime paths; reasoning providers never receive this object.
 """
 from __future__ import annotations
+import logging
 from collections.abc import Awaitable, Callable
 from enum import Enum
 from typing import Protocol
@@ -39,10 +40,12 @@ class AutonomousOperator:
     def __init__(self, store: MissionStore, perception: PerceptionService, events: AutonomousEventBus,
                  runner: MissionRunner, *, takeover: UserTakeoverManager | None = None,
                  blockers: BlockerDetector | None = None,
-                 event_handlers: tuple[Callable[[AutonomousEvent], Awaitable[object]], ...] = ()) -> None:
+                 event_handlers: tuple[Callable[[AutonomousEvent], Awaitable[object]], ...] = (),
+                 on_mission_finished: Callable[[Mission], Awaitable[None]] | None = None) -> None:
         self.store, self.perception, self.events, self.runner = store, perception, events, runner
         self.takeover, self.blockers = takeover or UserTakeoverManager(), blockers or BlockerDetector()
         self.event_handlers = event_handlers
+        self.on_mission_finished = on_mission_finished
 
     async def create(self, mission: Mission) -> Mission:
         mission.status = MissionStatus.PLANNING; mission.touch(); self.store.save(mission)
@@ -70,7 +73,16 @@ class AutonomousOperator:
             safe_error = redact(str(error))
             mission.checkpoint["last_error"] = safe_error
             await self.events.publish(AutonomousEvent(EventType.AGENT_FAILED, mission_id, {"error": safe_error}))
+        latest = self.store.load(mission_id)
+        if latest and latest.status in {MissionStatus.CANCELLED, MissionStatus.PAUSED}:
+            # Human controls received while execution waited for consent win.
+            mission.status = latest.status
         mission.refresh_progress(); mission.touch(); self.store.save(mission)
+        if self.on_mission_finished:
+            try:
+                await self.on_mission_finished(mission)
+            except Exception:
+                logging.getLogger(__name__).exception("Could not present mission follow-up")
         return mission
 
     async def process_event(self, event: AutonomousEvent) -> Mission | None:

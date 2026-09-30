@@ -167,15 +167,19 @@ Example: user `Edit my video and add subtitles` mission create karta hai. Runtim
 
 Discovery ka matlab automatic trust ya installation nahi hai. Research mission purchase, signup, installation, private-file upload, aur external-agent execution nahi kar sakta. Candidate ko use karne se pehle real runtime adapter, permissions, policy/approval, sandboxing, and output verification required hain. Isliye personal agent new capabilities dhoondh sakta hai, lekin unavailable ability ka fake success claim nahi karega.
 
-## 6. Voice setup aur push-to-talk
+## 6. Voice setup aur browser-LLM prompt routing
 
-1. `assemblyai[extras]` `requirements.txt` ke saath install hota hai.
-2. OS microphone permission Python/terminal ko dein.
-3. `ASSEMBLYAI_API_KEY` environment mein set karein, ya authenticated Voice page se current session ke liye configure karein.
-4. Dashboard start karein.
-5. Voice page par **Hold to talk** press karke bolein, release karke finalized turn bhejein.
+1. Dependencies install karein aur Python/terminal ko microphone permission dein.
+2. `ASSEMBLYAI_API_KEY` set karein, ya authenticated Voice page se configure karein.
+3. Dashboard mein **Start listening** press karein. Mic **Stop voice** ya session timeout tak connected rahega; mouse release se disconnect nahi hota.
+4. Apna poora task multiple spoken parts mein batayein. Gap ke baad overlay poochega ki aur kuch add karna hai. **Yes** bolkar continue karein; **no** ya **that's all** par collected request ek baar analyze hoti hai.
+5. Missing information aur profile questions ka seedha jawab dein. Permission prompt par **yes, continue** approval hai aur **no** denial; task-completion wala no permission nahi deta.
 
-Recommended cost-safe default `push_to_talk` hai. Partial transcript sirf UI update karta hai; runtime command finalized turn se hi banti hai. Voice input tools ko directly call nahi karta—intent mission/operator, policy, permissions, execution, observation, aur verification pipeline se guzarta hai.
+`VOICE_TASK_PAUSE_SECONDS` ka default 1.5 seconds hai. `VOICE_COLLECT_TASKS=false` purana immediate-turn mode restore karta hai. Silence se task submit nahi hota. **Start over** pending request clear karta hai; **Stop voice** unfinished speech discard karta hai. Unclear speech repeat karni hoti hai.
+
+Gmail ke liye selected installed profile reuse hota hai; selection na ho to ek baar poocha jata hai. Approval ke baad Gmail khulta hai, phir missing recipient ya email details li jati hain. Send ke liye alag high-risk runtime approval chahiye. Browser-opening failure par wahi profile retain hota hai aur **continue** retry karta hai.
+
+Browser follow-ups selected window aur current tab use karte hain. Fresh screen/OCR observation next action ko guide karti hai. LLM output sirf plan hai; har action registered tool, permission aur verification checks se guzarta hai. Full usage aur limits ke liye [EXTERNAL_BROWSER.md](EXTERNAL_BROWSER.md) dekhein.
 
 ## 7. First automation checklist
 

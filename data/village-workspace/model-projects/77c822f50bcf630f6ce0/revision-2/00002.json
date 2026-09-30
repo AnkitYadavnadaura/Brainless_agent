@@ -1,0 +1,1 @@
+{"operation": "add_cube", "objects": [{"name": "Taj_Ground", "type": "MESH", "location": [0.0, 0.0, 0.0], "rotation": [0.0, 0.0, 0.0], "scale": [32.0, 28.0, 1.0]}, {"name": "Taj_MainPlatform", "type": "MESH", "location": [0.0, 0.0, 0.6000000238418579], "rotation": [0.0, 0.0, 0.0], "scale": [18.0, 12.0, 0.6000000238418579]}]}

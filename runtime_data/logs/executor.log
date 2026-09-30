@@ -1,0 +1,40 @@
+2026-09-23 14:07:33,450 | ERROR | Fatal executor error.
+Traceback (most recent call last):
+  File "C:\Users\user\OneDrive\Desktop\Brainless_agent-main\Brainless_agent\executor.py", line 1055, in main
+    task = load_task(task_file)
+  File "C:\Users\user\OneDrive\Desktop\Brainless_agent-main\Brainless_agent\executor.py", line 1029, in load_task
+    raise FileNotFoundError(
+        f"Task file does not exist: {task_path}"
+    )
+FileNotFoundError: Task file does not exist: task.json
+2026-09-23 14:08:43,645 | INFO | Starting task: Play music on YouTube
+2026-09-23 14:08:43,648 | INFO | Executing step 1: open_application
+2026-09-23 14:08:43,661 | INFO | Chrome is already running.
+2026-09-23 14:08:43,671 | INFO | Executing step 2: navigate
+2026-09-23 14:08:43,677 | INFO | Navigating to https://www.youtube.com
+2026-09-23 14:08:45,035 | INFO | Executing step 3: wait
+2026-09-23 14:08:47,036 | INFO | Executing step 4: inspect
+2026-09-23 14:08:47,037 | INFO | Inspecting target: YouTube homepage
+2026-09-23 14:08:47,324 | INFO | Screenshot saved: C:\Users\user\OneDrive\Desktop\Brainless_agent-main\Brainless_agent\runtime_data\screenshots\step_4_20260923_140847_037425_inspection.png
+2026-09-23 14:08:47,325 | INFO | Executing step 5: click
+2026-09-23 14:08:47,325 | WARNING | Step 5 failed on attempt 1/4: Semantic click target 'YouTube search box' could not be resolved by the current UI adapter. Resolved target: {'type': 'ui', 'description': 'YouTube search box'}
+2026-09-23 14:08:47,461 | INFO | Screenshot saved: C:\Users\user\OneDrive\Desktop\Brainless_agent-main\Brainless_agent\runtime_data\screenshots\step_5_20260923_140847_325891_failure.png
+2026-09-23 14:08:47,596 | INFO | Screenshot saved: C:\Users\user\OneDrive\Desktop\Brainless_agent-main\Brainless_agent\runtime_data\screenshots\step_5_20260923_140847_461401_recovery.png
+2026-09-23 14:08:49,600 | WARNING | Step 5 failed on attempt 2/4: Semantic click target 'YouTube search box' could not be resolved by the current UI adapter. Resolved target: {'type': 'ui', 'description': 'YouTube search box'}
+2026-09-23 14:08:49,788 | INFO | Screenshot saved: C:\Users\user\OneDrive\Desktop\Brainless_agent-main\Brainless_agent\runtime_data\screenshots\step_5_20260923_140849_602062_failure.png
+2026-09-23 14:08:50,005 | INFO | Screenshot saved: C:\Users\user\OneDrive\Desktop\Brainless_agent-main\Brainless_agent\runtime_data\screenshots\step_5_20260923_140849_793163_recovery.png
+2026-09-23 14:08:52,008 | WARNING | Step 5 failed on attempt 3/4: Semantic click target 'YouTube search box' could not be resolved by the current UI adapter. Resolved target: {'type': 'ui', 'description': 'YouTube search box'}
+2026-09-23 14:08:52,373 | INFO | Screenshot saved: C:\Users\user\OneDrive\Desktop\Brainless_agent-main\Brainless_agent\runtime_data\screenshots\step_5_20260923_140852_009114_failure.png
+2026-09-23 14:08:52,733 | INFO | Screenshot saved: C:\Users\user\OneDrive\Desktop\Brainless_agent-main\Brainless_agent\runtime_data\screenshots\step_5_20260923_140852_374170_recovery.png
+2026-09-23 14:08:54,736 | WARNING | Step 5 failed on attempt 4/4: Semantic click target 'YouTube search box' could not be resolved by the current UI adapter. Resolved target: {'type': 'ui', 'description': 'YouTube search box'}
+2026-09-23 14:08:55,325 | INFO | Screenshot saved: C:\Users\user\OneDrive\Desktop\Brainless_agent-main\Brainless_agent\runtime_data\screenshots\step_5_20260923_140854_748781_failure.png
+2026-09-23 14:08:55,332 | ERROR | Task execution failed.
+Traceback (most recent call last):
+  File "C:\Users\user\OneDrive\Desktop\Brainless_agent-main\Brainless_agent\executor.py", line 480, in execute
+    self.execute_step(step)
+    ~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\user\OneDrive\Desktop\Brainless_agent-main\Brainless_agent\executor.py", line 588, in execute_step
+    raise ActionError(
+    ...<2 lines>...
+    )
+ActionError: Step 5 failed after 4 attempts: Semantic click target 'YouTube search box' could not be resolved by the current UI adapter. Resolved target: {'type': 'ui', 'description': 'YouTube search box'}

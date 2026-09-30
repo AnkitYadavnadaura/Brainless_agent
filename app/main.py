@@ -41,7 +41,8 @@ async def main() -> None:
                 task = TaskManager(application.providers.names).create(objective)
                 print("\n" + format_cli_result(await application.runtime.run(task)))
     finally:
-        await application.close()
+        print("\n Printing logs and shutting down...")
+        #await application.close()
 
 
 if __name__ == "__main__":

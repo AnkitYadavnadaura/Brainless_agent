@@ -97,7 +97,8 @@ class DashboardServer:
                 return commands.authorized(supplied)
             def _file(self,name,content_type):
                 body=(_STATIC/name).read_bytes(); self.send_response(HTTPStatus.OK); self._security_headers()
-                self.send_header("Content-Type",content_type); self.send_header("Content-Length",str(len(body))); self.end_headers(); self.wfile.write(body)
+                self.send_header("Content-Type",content_type); self.send_header("Cache-Control","no-cache")
+                self.send_header("Content-Length",str(len(body))); self.end_headers(); self.wfile.write(body)
             def _json(self,status,payload):
                 body=json.dumps(payload,default=str).encode(); self.send_response(status); self._security_headers()
                 self.send_header("Content-Type","application/json"); self.send_header("Cache-Control","no-store"); self.send_header("Content-Length",str(len(body))); self.end_headers(); self.wfile.write(body)

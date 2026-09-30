@@ -1,0 +1,6814 @@
+{
+  "kind": "model",
+  "steps": [
+    {
+      "operation": "create_scene",
+      "args": {},
+      "label": "initialize building scene"
+    },
+    {
+      "operation": "add_cube",
+      "args": {
+        "name": "Dwarika_Headquarters_Main",
+        "location": [
+          0,
+          0,
+          8
+        ],
+        "scale": [
+          18,
+          14,
+          8
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ]
+      },
+      "label": "large central headquarters mass"
+    },
+    {
+      "operation": "add_cube",
+      "args": {
+        "name": "Dwarika_Headquarters_LeftWing",
+        "location": [
+          -22,
+          0,
+          6
+        ],
+        "scale": [
+          4,
+          11,
+          6
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ]
+      },
+      "label": "left wing"
+    },
+    {
+      "operation": "add_cube",
+      "args": {
+        "name": "Dwarika_Headquarters_RightWing",
+        "location": [
+          22,
+          0,
+          6
+        ],
+        "scale": [
+          4,
+          11,
+          6
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ]
+      },
+      "label": "right wing"
+    },
+    {
+      "operation": "add_cube",
+      "args": {
+        "name": "Dwarika_Headquarters_Entrance",
+        "location": [
+          0,
+          -15,
+          5
+        ],
+        "scale": [
+          8,
+          2,
+          5
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ]
+      },
+      "label": "main entrance block"
+    },
+    {
+      "operation": "add_arch",
+      "args": {
+        "name": "Dwarika_MainEntranceArch",
+        "location": [
+          0,
+          -17,
+          2
+        ],
+        "scale": [
+          5,
+          1,
+          4.5
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ]
+      },
+      "label": "grand pointed entrance"
+    },
+    {
+      "operation": "add_cube",
+      "args": {
+        "name": "Dwarika_UpperFloor",
+        "location": [
+          0,
+          0,
+          17
+        ],
+        "scale": [
+          15,
+          11,
+          1.5
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ]
+      },
+      "label": "upper architectural tier"
+    },
+    {
+      "operation": "add_cube",
+      "args": {
+        "name": "Dwarika_RoofDeck",
+        "location": [
+          0,
+          0,
+          20
+        ],
+        "scale": [
+          18,
+          14,
+          1
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ]
+      },
+      "label": "roof deck"
+    },
+    {
+      "operation": "add_dome",
+      "args": {
+        "name": "Dwarika_CentralDome",
+        "location": [
+          0,
+          0,
+          21
+        ],
+        "scale": [
+          7,
+          7,
+          4
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ]
+      },
+      "label": "central dome"
+    },
+    {
+      "operation": "add_dome",
+      "args": {
+        "name": "Dwarika_LeftDome",
+        "location": [
+          -12,
+          0,
+          20
+        ],
+        "scale": [
+          3.5,
+          3.5,
+          2.5
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ]
+      },
+      "label": "left roof dome"
+    },
+    {
+      "operation": "add_dome",
+      "args": {
+        "name": "Dwarika_RightDome",
+        "location": [
+          12,
+          0,
+          20
+        ],
+        "scale": [
+          3.5,
+          3.5,
+          2.5
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ]
+      },
+      "label": "right roof dome"
+    },
+    {
+      "operation": "add_cube",
+      "args": {
+        "name": "Dwarika_Nameplate",
+        "location": [
+          0,
+          -17.1,
+          10
+        ],
+        "scale": [
+          6,
+          0.3,
+          1.2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ]
+      },
+      "label": "top-front nameplate base"
+    },
+    {
+      "operation": "add_cube",
+      "args": {
+        "name": "Dwarika_NameplateTop",
+        "location": [
+          0,
+          -17.1,
+          22.5
+        ],
+        "scale": [
+          7,
+          0.4,
+          1
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ]
+      },
+      "label": "top nameplate for Dwarika Head quarter"
+    },
+    {
+      "operation": "add_cylinder",
+      "args": {
+        "name": "Dwarika_CentralTower",
+        "location": [
+          0,
+          0,
+          27
+        ],
+        "scale": [
+          3,
+          3,
+          6
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ]
+      },
+      "label": "central rooftop tower"
+    },
+    {
+      "operation": "add_dome",
+      "args": {
+        "name": "Dwarika_TowerDome",
+        "location": [
+          0,
+          0,
+          33
+        ],
+        "scale": [
+          3.5,
+          3.5,
+          2.5
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ]
+      },
+      "label": "tower crown"
+    },
+    {
+      "operation": "add_cone",
+      "args": {
+        "name": "Dwarika_TowerFinial",
+        "location": [
+          0,
+          0,
+          37
+        ],
+        "scale": [
+          0.8,
+          0.8,
+          2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ]
+      },
+      "label": "tower finial"
+    },
+    {
+      "operation": "add_cube",
+      "args": {
+        "name": "Dwarika_FrontCanopy",
+        "location": [
+          0,
+          -20,
+          3
+        ],
+        "scale": [
+          10,
+          4,
+          1
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ]
+      },
+      "label": "entrance canopy"
+    },
+    {
+      "operation": "add_cylinder",
+      "args": {
+        "name": "Dwarika_Column_FL",
+        "location": [
+          -8,
+          -19,
+          5
+        ],
+        "scale": [
+          0.8,
+          0.8,
+          5
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ]
+      },
+      "label": "front left column"
+    },
+    {
+      "operation": "add_cylinder",
+      "args": {
+        "name": "Dwarika_Column_FR",
+        "location": [
+          8,
+          -19,
+          5
+        ],
+        "scale": [
+          0.8,
+          0.8,
+          5
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ]
+      },
+      "label": "front right column"
+    },
+    {
+      "operation": "add_cylinder",
+      "args": {
+        "name": "Dwarika_Column_CL",
+        "location": [
+          -3,
+          -19,
+          5
+        ],
+        "scale": [
+          0.7,
+          0.7,
+          5
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ]
+      },
+      "label": "front center-left column"
+    },
+    {
+      "operation": "add_cylinder",
+      "args": {
+        "name": "Dwarika_Column_CR",
+        "location": [
+          3,
+          -19,
+          5
+        ],
+        "scale": [
+          0.7,
+          0.7,
+          5
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ]
+      },
+      "label": "front center-right column"
+    },
+    {
+      "operation": "add_arch",
+      "args": {
+        "name": "Dwarika_LeftFacadeArch",
+        "location": [
+          -9,
+          -14,
+          4
+        ],
+        "scale": [
+          2.5,
+          0.8,
+          3
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ]
+      },
+      "label": "left facade arch"
+    },
+    {
+      "operation": "add_arch",
+      "args": {
+        "name": "Dwarika_RightFacadeArch",
+        "location": [
+          9,
+          -14,
+          4
+        ],
+        "scale": [
+          2.5,
+          0.8,
+          3
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ]
+      },
+      "label": "right facade arch"
+    },
+    {
+      "operation": "add_cube",
+      "args": {
+        "name": "Dwarika_FrontTerrace",
+        "location": [
+          0,
+          -23,
+          1
+        ],
+        "scale": [
+          14,
+          5,
+          0.6
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ]
+      },
+      "label": "front terrace"
+    },
+    {
+      "operation": "add_cube",
+      "args": {
+        "name": "Dwarika_SideTerraceL",
+        "location": [
+          -27,
+          0,
+          1
+        ],
+        "scale": [
+          4,
+          13,
+          0.6
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ]
+      },
+      "label": "left terrace"
+    },
+    {
+      "operation": "add_cube",
+      "args": {
+        "name": "Dwarika_SideTerraceR",
+        "location": [
+          27,
+          0,
+          1
+        ],
+        "scale": [
+          4,
+          13,
+          0.6
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ]
+      },
+      "label": "right terrace"
+    },
+    {
+      "operation": "add_material",
+      "args": {
+        "target": "Dwarika_Headquarters_Main",
+        "name": "HeadquartersWall",
+        "color": [
+          0.72,
+          0.68,
+          0.58,
+          1
+        ]
+      },
+      "label": "main wall material"
+    },
+    {
+      "operation": "add_material",
+      "args": {
+        "target": "Dwarika_RoofDeck",
+        "name": "RoofMaterial",
+        "color": [
+          0.28,
+          0.25,
+          0.22,
+          1
+        ]
+      },
+      "label": "roof material"
+    },
+    {
+      "operation": "add_material",
+      "args": {
+        "target": "Dwarika_CentralDome",
+        "name": "DomeMaterial",
+        "color": [
+          0.82,
+          0.76,
+          0.62,
+          1
+        ]
+      },
+      "label": "central dome material"
+    },
+    {
+      "operation": "add_material",
+      "args": {
+        "target": "Dwarika_NameplateTop",
+        "name": "NameplateMaterial",
+        "color": [
+          0.16,
+          0.12,
+          0.08,
+          1
+        ]
+      },
+      "label": "nameplate material"
+    },
+    {
+      "operation": "bevel",
+      "args": {
+        "target": "Dwarika_Headquarters_Main",
+        "width": 0.35,
+        "segments": 3
+      },
+      "label": "soften main building edges"
+    },
+    {
+      "operation": "bevel",
+      "args": {
+        "target": "Dwarika_Headquarters_LeftWing",
+        "width": 0.3,
+        "segments": 3
+      },
+      "label": "soften left wing edges"
+    },
+    {
+      "operation": "bevel",
+      "args": {
+        "target": "Dwarika_Headquarters_RightWing",
+        "width": 0.3,
+        "segments": 3
+      },
+      "label": "soften right wing edges"
+    },
+    {
+      "operation": "bevel",
+      "args": {
+        "target": "Dwarika_Headquarters_Entrance",
+        "width": 0.25,
+        "segments": 3
+      },
+      "label": "soften entrance edges"
+    },
+    {
+      "operation": "bevel",
+      "args": {
+        "target": "Dwarika_NameplateTop",
+        "width": 0.12,
+        "segments": 2
+      },
+      "label": "soften top nameplate"
+    },
+    {
+      "operation": "smooth_shade",
+      "args": {
+        "target": "Dwarika_CentralDome"
+      },
+      "label": "smooth central dome"
+    },
+    {
+      "operation": "smooth_shade",
+      "args": {
+        "target": "Dwarika_LeftDome"
+      },
+      "label": "smooth left dome"
+    },
+    {
+      "operation": "smooth_shade",
+      "args": {
+        "target": "Dwarika_RightDome"
+      },
+      "label": "smooth right dome"
+    },
+    {
+      "operation": "smooth_shade",
+      "args": {
+        "target": "Dwarika_TowerDome"
+      },
+      "label": "smooth tower dome"
+    },
+    {
+      "operation": "smooth_shade",
+      "args": {
+        "target": "Dwarika_TowerFinial"
+      },
+      "label": "smooth tower finial"
+    },
+    {
+      "operation": "add_camera",
+      "args": {
+        "name": "Dwarika_MainCamera",
+        "location": [
+          48,
+          -62,
+          38
+        ],
+        "rotation": [
+          0.95,
+          0,
+          0.6
+        ]
+      },
+      "label": "architectural camera"
+    },
+    {
+      "operation": "add_light",
+      "args": {
+        "name": "Dwarika_KeyLight",
+        "location": [
+          25,
+          -35,
+          45
+        ],
+        "rotation": [
+          0.55,
+          0,
+          0.55
+        ],
+        "energy": 5000
+      },
+      "label": "main architectural light"
+    },
+    {
+      "operation": "add_light",
+      "args": {
+        "name": "Dwarika_FillLight",
+        "location": [
+          -30,
+          -15,
+          25
+        ],
+        "rotation": [
+          0.8,
+          0,
+          -0.8
+        ],
+        "energy": 2500
+      },
+      "label": "fill light"
+    },
+    {
+      "operation": "render",
+      "args": {
+        "samples": 256,
+        "resolution": 2560
+      },
+      "label": "final building render"
+    },
+    {
+      "operation": "export",
+      "args": {},
+      "label": "export completed headquarters model"
+    }
+  ],
+  "completed": [
+    {
+      "step": {
+        "operation": "create_scene",
+        "args": {},
+        "label": "initialize building scene"
+      },
+      "project": "model-projects\\5c0724c80c78610b8f36\\revision-4\\00000.blend",
+      "evidence": {
+        "operation": "create_scene",
+        "objects": []
+      },
+      "artifacts": {
+        "model-projects\\5c0724c80c78610b8f36\\revision-4\\00000.blend": "f11ca2d48d70f19c165b3b9d4f3dd3710eeb28c643b384ba9577a699019a0d3c",
+        "model-projects\\5c0724c80c78610b8f36\\revision-4\\00000.json": "f6936ab5bb8081e0736ac47887951e034d66b87923e82514cb42f783e24e21ce"
+      }
+    },
+    {
+      "step": {
+        "operation": "add_cube",
+        "args": {
+          "name": "Dwarika_Headquarters_Main",
+          "location": [
+            0,
+            0,
+            8
+          ],
+          "scale": [
+            18,
+            14,
+            8
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "label": "large central headquarters mass"
+      },
+      "project": "model-projects\\5c0724c80c78610b8f36\\revision-4\\00001.blend",
+      "evidence": {
+        "operation": "add_cube",
+        "objects": [
+          {
+            "name": "Dwarika_Headquarters_Main",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              8.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              18.0,
+              14.0,
+              8.0
+            ]
+          }
+        ]
+      },
+      "artifacts": {
+        "model-projects\\5c0724c80c78610b8f36\\revision-4\\00001.blend": "c00d86f169de76cf91b5ae9b34d378489ba9d2187adcdff1afb860db5e0c13d3",
+        "model-projects\\5c0724c80c78610b8f36\\revision-4\\00001.json": "50091ceef8c79cd53341b37eaee716acf4b579992fbac67e93d0ab6641e0a67a"
+      }
+    },
+    {
+      "step": {
+        "operation": "add_cube",
+        "args": {
+          "name": "Dwarika_Headquarters_LeftWing",
+          "location": [
+            -22,
+            0,
+            6
+          ],
+          "scale": [
+            4,
+            11,
+            6
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "label": "left wing"
+      },
+      "project": "model-projects\\5c0724c80c78610b8f36\\revision-4\\00002.blend",
+      "evidence": {
+        "operation": "add_cube",
+        "objects": [
+          {
+            "name": "Dwarika_Headquarters_Main",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              8.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              18.0,
+              14.0,
+              8.0
+            ]
+          },
+          {
+            "name": "Dwarika_Headquarters_LeftWing",
+            "type": "MESH",
+            "location": [
+              -22.0,
+              0.0,
+              6.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              4.0,
+              11.0,
+              6.0
+            ]
+          }
+        ]
+      },
+      "artifacts": {
+        "model-projects\\5c0724c80c78610b8f36\\revision-4\\00002.blend": "fc333f235be9283a5733ca5ee2917c7c02c1a753e5cb1ad7cabcd50ecd313717",
+        "model-projects\\5c0724c80c78610b8f36\\revision-4\\00002.json": "bbd0204dd65f0fae9ae64800dc1b82b2100ac75ed9b2630e9a206455d6e5edd7"
+      }
+    },
+    {
+      "step": {
+        "operation": "add_cube",
+        "args": {
+          "name": "Dwarika_Headquarters_RightWing",
+          "location": [
+            22,
+            0,
+            6
+          ],
+          "scale": [
+            4,
+            11,
+            6
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "label": "right wing"
+      },
+      "project": "model-projects\\5c0724c80c78610b8f36\\revision-4\\00003.blend",
+      "evidence": {
+        "operation": "add_cube",
+        "objects": [
+          {
+            "name": "Dwarika_Headquarters_Main",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              8.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              18.0,
+              14.0,
+              8.0
+            ]
+          },
+          {
+            "name": "Dwarika_Headquarters_LeftWing",
+            "type": "MESH",
+            "location": [
+              -22.0,
+              0.0,
+              6.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              4.0,
+              11.0,
+              6.0
+            ]
+          },
+          {
+            "name": "Dwarika_Headquarters_RightWing",
+            "type": "MESH",
+            "location": [
+              22.0,
+              0.0,
+              6.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              4.0,
+              11.0,
+              6.0
+            ]
+          }
+        ]
+      },
+      "artifacts": {
+        "model-projects\\5c0724c80c78610b8f36\\revision-4\\00003.blend": "29eb229ac69cbcb38b1d38538d941f51eb3e5ecc2dbac44c5945fd923c0bed22",
+        "model-projects\\5c0724c80c78610b8f36\\revision-4\\00003.json": "f03aad8ae6534ad783e96bba30e94d95e967ebd607a51f3d01055c7338014644"
+      }
+    },
+    {
+      "step": {
+        "operation": "add_cube",
+        "args": {
+          "name": "Dwarika_Headquarters_Entrance",
+          "location": [
+            0,
+            -15,
+            5
+          ],
+          "scale": [
+            8,
+            2,
+            5
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "label": "main entrance block"
+      },
+      "project": "model-projects\\5c0724c80c78610b8f36\\revision-4\\00004.blend",
+      "evidence": {
+        "operation": "add_cube",
+        "objects": [
+          {
+            "name": "Dwarika_Headquarters_Main",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              8.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              18.0,
+              14.0,
+              8.0
+            ]
+          },
+          {
+            "name": "Dwarika_Headquarters_LeftWing",
+            "type": "MESH",
+            "location": [
+              -22.0,
+              0.0,
+              6.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              4.0,
+              11.0,
+              6.0
+            ]
+          },
+          {
+            "name": "Dwarika_Headquarters_RightWing",
+            "type": "MESH",
+            "location": [
+              22.0,
+              0.0,
+              6.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              4.0,
+              11.0,
+              6.0
+            ]
+          },
+          {
+            "name": "Dwarika_Headquarters_Entrance",
+            "type": "MESH",
+            "location": [
+              0.0,
+              -15.0,
+              5.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              8.0,
+              2.0,
+              5.0
+            ]
+          }
+        ]
+      },
+      "artifacts": {
+        "model-projects\\5c0724c80c78610b8f36\\revision-4\\00004.blend": "05faae53cd5a6c7b92c574cfc00441c9fd35210bde750102709666bfcd2b53ca",
+        "model-projects\\5c0724c80c78610b8f36\\revision-4\\00004.json": "8810dde4588ed0fe14232a0d7e1dcee0dee4995c6662a94f76ec2ea9956a83f2"
+      }
+    },
+    {
+      "step": {
+        "operation": "add_arch",
+        "args": {
+          "name": "Dwarika_MainEntranceArch",
+          "location": [
+            0,
+            -17,
+            2
+          ],
+          "scale": [
+            5,
+            1,
+            4.5
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "label": "grand pointed entrance"
+      },
+      "project": "model-projects\\5c0724c80c78610b8f36\\revision-4\\00005.blend",
+      "evidence": {
+        "operation": "add_arch",
+        "objects": [
+          {
+            "name": "Dwarika_Headquarters_Main",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              8.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              18.0,
+              14.0,
+              8.0
+            ]
+          },
+          {
+            "name": "Dwarika_Headquarters_LeftWing",
+            "type": "MESH",
+            "location": [
+              -22.0,
+              0.0,
+              6.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              4.0,
+              11.0,
+              6.0
+            ]
+          },
+          {
+            "name": "Dwarika_Headquarters_RightWing",
+            "type": "MESH",
+            "location": [
+              22.0,
+              0.0,
+              6.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              4.0,
+              11.0,
+              6.0
+            ]
+          },
+          {
+            "name": "Dwarika_Headquarters_Entrance",
+            "type": "MESH",
+            "location": [
+              0.0,
+              -15.0,
+              5.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              8.0,
+              2.0,
+              5.0
+            ]
+          },
+          {
+            "name": "Dwarika_MainEntranceArch",
+            "type": "MESH",
+            "location": [
+              0.0,
+              -17.0,
+              2.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              5.0,
+              1.0,
+              4.5
+            ]
+          }
+        ]
+      },
+      "artifacts": {
+        "model-projects\\5c0724c80c78610b8f36\\revision-4\\00005.blend": "bb1937362c2f7754680e4e933af16c93b058cd29b05871fb9f0e1440c9340014",
+        "model-projects\\5c0724c80c78610b8f36\\revision-4\\00005.json": "d98c2d4c742374fb482cf809c98662a75e4d8cb0ee08ac1ea2337b62e0d13aad"
+      }
+    },
+    {
+      "step": {
+        "operation": "add_cube",
+        "args": {
+          "name": "Dwarika_UpperFloor",
+          "location": [
+            0,
+            0,
+            17
+          ],
+          "scale": [
+            15,
+            11,
+            1.5
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "label": "upper architectural tier"
+      },
+      "project": "model-projects\\5c0724c80c78610b8f36\\revision-4\\00006.blend",
+      "evidence": {
+        "operation": "add_cube",
+        "objects": [
+          {
+            "name": "Dwarika_Headquarters_Main",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              8.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              18.0,
+              14.0,
+              8.0
+            ]
+          },
+          {
+            "name": "Dwarika_Headquarters_LeftWing",
+            "type": "MESH",
+            "location": [
+              -22.0,
+              0.0,
+              6.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              4.0,
+              11.0,
+              6.0
+            ]
+          },
+          {
+            "name": "Dwarika_Headquarters_RightWing",
+            "type": "MESH",
+            "location": [
+              22.0,
+              0.0,
+              6.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              4.0,
+              11.0,
+              6.0
+            ]
+          },
+          {
+            "name": "Dwarika_Headquarters_Entrance",
+            "type": "MESH",
+            "location": [
+              0.0,
+              -15.0,
+              5.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              8.0,
+              2.0,
+              5.0
+            ]
+          },
+          {
+            "name": "Dwarika_MainEntranceArch",
+            "type": "MESH",
+            "location": [
+              0.0,
+              -17.0,
+              2.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              5.0,
+              1.0,
+              4.5
+            ]
+          },
+          {
+            "name": "Dwarika_UpperFloor",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              17.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              15.0,
+              11.0,
+              1.5
+            ]
+          }
+        ]
+      },
+      "artifacts": {
+        "model-projects\\5c0724c80c78610b8f36\\revision-4\\00006.blend": "d78a1fe56c3ebdaea5d789e24bb7040fdf6a03049e2f37fedff707bad6ca5d95",
+        "model-projects\\5c0724c80c78610b8f36\\revision-4\\00006.json": "a34907c07bdc2b854b3e9a805ac6984080e0a91480a300f2ed4725bf68efc2fa"
+      }
+    },
+    {
+      "step": {
+        "operation": "add_cube",
+        "args": {
+          "name": "Dwarika_RoofDeck",
+          "location": [
+            0,
+            0,
+            20
+          ],
+          "scale": [
+            18,
+            14,
+            1
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "label": "roof deck"
+      },
+      "project": "model-projects\\5c0724c80c78610b8f36\\revision-4\\00007.blend",
+      "evidence": {
+        "operation": "add_cube",
+        "objects": [
+          {
+            "name": "Dwarika_Headquarters_Main",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              8.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              18.0,
+              14.0,
+              8.0
+            ]
+          },
+          {
+            "name": "Dwarika_Headquarters_LeftWing",
+            "type": "MESH",
+            "location": [
+              -22.0,
+              0.0,
+              6.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              4.0,
+              11.0,
+              6.0
+            ]
+          },
+          {
+            "name": "Dwarika_Headquarters_RightWing",
+            "type": "MESH",
+            "location": [
+              22.0,
+              0.0,
+              6.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              4.0,
+              11.0,
+              6.0
+            ]
+          },
+          {
+            "name": "Dwarika_Headquarters_Entrance",
+            "type": "MESH",
+            "location": [
+              0.0,
+              -15.0,
+              5.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              8.0,
+              2.0,
+              5.0
+            ]
+          },
+          {
+            "name": "Dwarika_MainEntranceArch",
+            "type": "MESH",
+            "location": [
+              0.0,
+              -17.0,
+              2.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              5.0,
+              1.0,
+              4.5
+            ]
+          },
+          {
+            "name": "Dwarika_UpperFloor",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              17.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              15.0,
+              11.0,
+              1.5
+            ]
+          },
+          {
+            "name": "Dwarika_RoofDeck",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              20.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              18.0,
+              14.0,
+              1.0
+            ]
+          }
+        ]
+      },
+      "artifacts": {
+        "model-projects\\5c0724c80c78610b8f36\\revision-4\\00007.blend": "4afe313682e533f026b032715729a4de48ee57211f3be91c93d05c9332bf38f1",
+        "model-projects\\5c0724c80c78610b8f36\\revision-4\\00007.json": "2510c8c917bea4aa3b0f767b16a482135e70fc280a6c2ff40064b157d10212ea"
+      }
+    },
+    {
+      "step": {
+        "operation": "add_dome",
+        "args": {
+          "name": "Dwarika_CentralDome",
+          "location": [
+            0,
+            0,
+            21
+          ],
+          "scale": [
+            7,
+            7,
+            4
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "label": "central dome"
+      },
+      "project": "model-projects\\5c0724c80c78610b8f36\\revision-4\\00008.blend",
+      "evidence": {
+        "operation": "add_dome",
+        "objects": [
+          {
+            "name": "Dwarika_Headquarters_Main",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              8.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              18.0,
+              14.0,
+              8.0
+            ]
+          },
+          {
+            "name": "Dwarika_Headquarters_LeftWing",
+            "type": "MESH",
+            "location": [
+              -22.0,
+              0.0,
+              6.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              4.0,
+              11.0,
+              6.0
+            ]
+          },
+          {
+            "name": "Dwarika_Headquarters_RightWing",
+            "type": "MESH",
+            "location": [
+              22.0,
+              0.0,
+              6.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              4.0,
+              11.0,
+              6.0
+            ]
+          },
+          {
+            "name": "Dwarika_Headquarters_Entrance",
+            "type": "MESH",
+            "location": [
+              0.0,
+              -15.0,
+              5.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              8.0,
+              2.0,
+              5.0
+            ]
+          },
+          {
+            "name": "Dwarika_MainEntranceArch",
+            "type": "MESH",
+            "location": [
+              0.0,
+              -17.0,
+              2.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              5.0,
+              1.0,
+              4.5
+            ]
+          },
+          {
+            "name": "Dwarika_UpperFloor",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              17.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              15.0,
+              11.0,
+              1.5
+            ]
+          },
+          {
+            "name": "Dwarika_RoofDeck",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              20.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              18.0,
+              14.0,
+              1.0
+            ]
+          },
+          {
+            "name": "Dwarika_CentralDome",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              21.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              7.0,
+              7.0,
+              4.0
+            ]
+          }
+        ]
+      },
+      "artifacts": {
+        "model-projects\\5c0724c80c78610b8f36\\revision-4\\00008.blend": "e41bee0f2ea95732d323deb5819e305089f6d58bb2bdf5baf9448e96d1f66150",
+        "model-projects\\5c0724c80c78610b8f36\\revision-4\\00008.json": "b5812496f8e5baabf59d5b174cb1de2afa0b8dc9b76b1023b810488732c8a24d"
+      }
+    },
+    {
+      "step": {
+        "operation": "add_dome",
+        "args": {
+          "name": "Dwarika_LeftDome",
+          "location": [
+            -12,
+            0,
+            20
+          ],
+          "scale": [
+            3.5,
+            3.5,
+            2.5
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "label": "left roof dome"
+      },
+      "project": "model-projects\\5c0724c80c78610b8f36\\revision-4\\00009.blend",
+      "evidence": {
+        "operation": "add_dome",
+        "objects": [
+          {
+            "name": "Dwarika_Headquarters_Main",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              8.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              18.0,
+              14.0,
+              8.0
+            ]
+          },
+          {
+            "name": "Dwarika_Headquarters_LeftWing",
+            "type": "MESH",
+            "location": [
+              -22.0,
+              0.0,
+              6.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              4.0,
+              11.0,
+              6.0
+            ]
+          },
+          {
+            "name": "Dwarika_Headquarters_RightWing",
+            "type": "MESH",
+            "location": [
+              22.0,
+              0.0,
+              6.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              4.0,
+              11.0,
+              6.0
+            ]
+          },
+          {
+            "name": "Dwarika_Headquarters_Entrance",
+            "type": "MESH",
+            "location": [
+              0.0,
+              -15.0,
+              5.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              8.0,
+              2.0,
+              5.0
+            ]
+          },
+          {
+            "name": "Dwarika_MainEntranceArch",
+            "type": "MESH",
+            "location": [
+              0.0,
+              -17.0,
+              2.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              5.0,
+              1.0,
+              4.5
+            ]
+          },
+          {
+            "name": "Dwarika_UpperFloor",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              17.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              15.0,
+              11.0,
+              1.5
+            ]
+          },
+          {
+            "name": "Dwarika_RoofDeck",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              20.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              18.0,
+              14.0,
+              1.0
+            ]
+          },
+          {
+            "name": "Dwarika_CentralDome",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              21.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              7.0,
+              7.0,
+              4.0
+            ]
+          },
+          {
+            "name": "Dwarika_LeftDome",
+            "type": "MESH",
+            "location": [
+              -12.0,
+              0.0,
+              20.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              3.5,
+              3.5,
+              2.5
+            ]
+          }
+        ]
+      },
+      "artifacts": {
+        "model-projects\\5c0724c80c78610b8f36\\revision-4\\00009.blend": "2431d63f7c91e5af1a2c1bfae8456db311d89e650e765f54ad17adaf214a0581",
+        "model-projects\\5c0724c80c78610b8f36\\revision-4\\00009.json": "a671e03902ed28f15ac1826c066a840a8517bfffa725ddd339dee1995c72d468"
+      }
+    },
+    {
+      "step": {
+        "operation": "add_dome",
+        "args": {
+          "name": "Dwarika_RightDome",
+          "location": [
+            12,
+            0,
+            20
+          ],
+          "scale": [
+            3.5,
+            3.5,
+            2.5
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "label": "right roof dome"
+      },
+      "project": "model-projects\\5c0724c80c78610b8f36\\revision-4\\00010.blend",
+      "evidence": {
+        "operation": "add_dome",
+        "objects": [
+          {
+            "name": "Dwarika_Headquarters_Main",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              8.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              18.0,
+              14.0,
+              8.0
+            ]
+          },
+          {
+            "name": "Dwarika_Headquarters_LeftWing",
+            "type": "MESH",
+            "location": [
+              -22.0,
+              0.0,
+              6.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              4.0,
+              11.0,
+              6.0
+            ]
+          },
+          {
+            "name": "Dwarika_Headquarters_RightWing",
+            "type": "MESH",
+            "location": [
+              22.0,
+              0.0,
+              6.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              4.0,
+              11.0,
+              6.0
+            ]
+          },
+          {
+            "name": "Dwarika_Headquarters_Entrance",
+            "type": "MESH",
+            "location": [
+              0.0,
+              -15.0,
+              5.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              8.0,
+              2.0,
+              5.0
+            ]
+          },
+          {
+            "name": "Dwarika_MainEntranceArch",
+            "type": "MESH",
+            "location": [
+              0.0,
+              -17.0,
+              2.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              5.0,
+              1.0,
+              4.5
+            ]
+          },
+          {
+            "name": "Dwarika_UpperFloor",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              17.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              15.0,
+              11.0,
+              1.5
+            ]
+          },
+          {
+            "name": "Dwarika_RoofDeck",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              20.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              18.0,
+              14.0,
+              1.0
+            ]
+          },
+          {
+            "name": "Dwarika_CentralDome",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              21.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              7.0,
+              7.0,
+              4.0
+            ]
+          },
+          {
+            "name": "Dwarika_LeftDome",
+            "type": "MESH",
+            "location": [
+              -12.0,
+              0.0,
+              20.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              3.5,
+              3.5,
+              2.5
+            ]
+          },
+          {
+            "name": "Dwarika_RightDome",
+            "type": "MESH",
+            "location": [
+              12.0,
+              0.0,
+              20.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              3.5,
+              3.5,
+              2.5
+            ]
+          }
+        ]
+      },
+      "artifacts": {
+        "model-projects\\5c0724c80c78610b8f36\\revision-4\\00010.blend": "9ad00612ae4672980cdfff3f9e1143a103f234c4a62d270b427369633659c8ef",
+        "model-projects\\5c0724c80c78610b8f36\\revision-4\\00010.json": "e3c463c668f71b00d0d9b7e26ff49b28c51e72bb13063967194721eeba8e4977"
+      }
+    },
+    {
+      "step": {
+        "operation": "add_cube",
+        "args": {
+          "name": "Dwarika_Nameplate",
+          "location": [
+            0,
+            -17.1,
+            10
+          ],
+          "scale": [
+            6,
+            0.3,
+            1.2
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "label": "top-front nameplate base"
+      },
+      "project": "model-projects\\5c0724c80c78610b8f36\\revision-4\\00011.blend",
+      "evidence": {
+        "operation": "add_cube",
+        "objects": [
+          {
+            "name": "Dwarika_Headquarters_Main",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              8.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              18.0,
+              14.0,
+              8.0
+            ]
+          },
+          {
+            "name": "Dwarika_Headquarters_LeftWing",
+            "type": "MESH",
+            "location": [
+              -22.0,
+              0.0,
+              6.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              4.0,
+              11.0,
+              6.0
+            ]
+          },
+          {
+            "name": "Dwarika_Headquarters_RightWing",
+            "type": "MESH",
+            "location": [
+              22.0,
+              0.0,
+              6.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              4.0,
+              11.0,
+              6.0
+            ]
+          },
+          {
+            "name": "Dwarika_Headquarters_Entrance",
+            "type": "MESH",
+            "location": [
+              0.0,
+              -15.0,
+              5.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              8.0,
+              2.0,
+              5.0
+            ]
+          },
+          {
+            "name": "Dwarika_MainEntranceArch",
+            "type": "MESH",
+            "location": [
+              0.0,
+              -17.0,
+              2.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              5.0,
+              1.0,
+              4.5
+            ]
+          },
+          {
+            "name": "Dwarika_UpperFloor",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              17.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              15.0,
+              11.0,
+              1.5
+            ]
+          },
+          {
+            "name": "Dwarika_RoofDeck",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              20.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              18.0,
+              14.0,
+              1.0
+            ]
+          },
+          {
+            "name": "Dwarika_CentralDome",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              21.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              7.0,
+              7.0,
+              4.0
+            ]
+          },
+          {
+            "name": "Dwarika_LeftDome",
+            "type": "MESH",
+            "location": [
+              -12.0,
+              0.0,
+              20.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              3.5,
+              3.5,
+              2.5
+            ]
+          },
+          {
+            "name": "Dwarika_RightDome",
+            "type": "MESH",
+            "location": [
+              12.0,
+              0.0,
+              20.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              3.5,
+              3.5,
+              2.5
+            ]
+          },
+          {
+            "name": "Dwarika_Nameplate",
+            "type": "MESH",
+            "location": [
+              0.0,
+              -17.100000381469727,
+              10.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              6.0,
+              0.30000001192092896,
+              1.2000000476837158
+            ]
+          }
+        ]
+      },
+      "artifacts": {
+        "model-projects\\5c0724c80c78610b8f36\\revision-4\\00011.blend": "229dec556bc8aecb64349a1b39d6e68350acd9447e37289b7ac7aa5652e024fc",
+        "model-projects\\5c0724c80c78610b8f36\\revision-4\\00011.json": "ca522024baeb1025eba0a44e6adca3e9785af31b1a461c3bc22744f9ce278ef4"
+      }
+    },
+    {
+      "step": {
+        "operation": "add_cube",
+        "args": {
+          "name": "Dwarika_NameplateTop",
+          "location": [
+            0,
+            -17.1,
+            22.5
+          ],
+          "scale": [
+            7,
+            0.4,
+            1
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "label": "top nameplate for Dwarika Head quarter"
+      },
+      "project": "model-projects\\5c0724c80c78610b8f36\\revision-4\\00012.blend",
+      "evidence": {
+        "operation": "add_cube",
+        "objects": [
+          {
+            "name": "Dwarika_Headquarters_Main",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              8.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              18.0,
+              14.0,
+              8.0
+            ]
+          },
+          {
+            "name": "Dwarika_Headquarters_LeftWing",
+            "type": "MESH",
+            "location": [
+              -22.0,
+              0.0,
+              6.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              4.0,
+              11.0,
+              6.0
+            ]
+          },
+          {
+            "name": "Dwarika_Headquarters_RightWing",
+            "type": "MESH",
+            "location": [
+              22.0,
+              0.0,
+              6.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              4.0,
+              11.0,
+              6.0
+            ]
+          },
+          {
+            "name": "Dwarika_Headquarters_Entrance",
+            "type": "MESH",
+            "location": [
+              0.0,
+              -15.0,
+              5.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              8.0,
+              2.0,
+              5.0
+            ]
+          },
+          {
+            "name": "Dwarika_MainEntranceArch",
+            "type": "MESH",
+            "location": [
+              0.0,
+              -17.0,
+              2.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              5.0,
+              1.0,
+              4.5
+            ]
+          },
+          {
+            "name": "Dwarika_UpperFloor",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              17.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              15.0,
+              11.0,
+              1.5
+            ]
+          },
+          {
+            "name": "Dwarika_RoofDeck",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              20.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              18.0,
+              14.0,
+              1.0
+            ]
+          },
+          {
+            "name": "Dwarika_CentralDome",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              21.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              7.0,
+              7.0,
+              4.0
+            ]
+          },
+          {
+            "name": "Dwarika_LeftDome",
+            "type": "MESH",
+            "location": [
+              -12.0,
+              0.0,
+              20.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              3.5,
+              3.5,
+              2.5
+            ]
+          },
+          {
+            "name": "Dwarika_RightDome",
+            "type": "MESH",
+            "location": [
+              12.0,
+              0.0,
+              20.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              3.5,
+              3.5,
+              2.5
+            ]
+          },
+          {
+            "name": "Dwarika_Nameplate",
+            "type": "MESH",
+            "location": [
+              0.0,
+              -17.100000381469727,
+              10.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              6.0,
+              0.30000001192092896,
+              1.2000000476837158
+            ]
+          },
+          {
+            "name": "Dwarika_NameplateTop",
+            "type": "MESH",
+            "location": [
+              0.0,
+              -17.100000381469727,
+              22.5
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              7.0,
+              0.4000000059604645,
+              1.0
+            ]
+          }
+        ]
+      },
+      "artifacts": {
+        "model-projects\\5c0724c80c78610b8f36\\revision-4\\00012.blend": "b1463811c7b855c54cb98e4b08c7e61fa1a019ad88e3bcc4292c6707d6100a59",
+        "model-projects\\5c0724c80c78610b8f36\\revision-4\\00012.json": "f23152d18c4589f27668918e36544b7029d5159e85329fcfdd39aa03ce420bec"
+      }
+    },
+    {
+      "step": {
+        "operation": "add_cylinder",
+        "args": {
+          "name": "Dwarika_CentralTower",
+          "location": [
+            0,
+            0,
+            27
+          ],
+          "scale": [
+            3,
+            3,
+            6
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "label": "central rooftop tower"
+      },
+      "project": "model-projects\\5c0724c80c78610b8f36\\revision-4\\00013.blend",
+      "evidence": {
+        "operation": "add_cylinder",
+        "objects": [
+          {
+            "name": "Dwarika_Headquarters_Main",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              8.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              18.0,
+              14.0,
+              8.0
+            ]
+          },
+          {
+            "name": "Dwarika_Headquarters_LeftWing",
+            "type": "MESH",
+            "location": [
+              -22.0,
+              0.0,
+              6.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              4.0,
+              11.0,
+              6.0
+            ]
+          },
+          {
+            "name": "Dwarika_Headquarters_RightWing",
+            "type": "MESH",
+            "location": [
+              22.0,
+              0.0,
+              6.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              4.0,
+              11.0,
+              6.0
+            ]
+          },
+          {
+            "name": "Dwarika_Headquarters_Entrance",
+            "type": "MESH",
+            "location": [
+              0.0,
+              -15.0,
+              5.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              8.0,
+              2.0,
+              5.0
+            ]
+          },
+          {
+            "name": "Dwarika_MainEntranceArch",
+            "type": "MESH",
+            "location": [
+              0.0,
+              -17.0,
+              2.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              5.0,
+              1.0,
+              4.5
+            ]
+          },
+          {
+            "name": "Dwarika_UpperFloor",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              17.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              15.0,
+              11.0,
+              1.5
+            ]
+          },
+          {
+            "name": "Dwarika_RoofDeck",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              20.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              18.0,
+              14.0,
+              1.0
+            ]
+          },
+          {
+            "name": "Dwarika_CentralDome",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              21.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              7.0,
+              7.0,
+              4.0
+            ]
+          },
+          {
+            "name": "Dwarika_LeftDome",
+            "type": "MESH",
+            "location": [
+              -12.0,
+              0.0,
+              20.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              3.5,
+              3.5,
+              2.5
+            ]
+          },
+          {
+            "name": "Dwarika_RightDome",
+            "type": "MESH",
+            "location": [
+              12.0,
+              0.0,
+              20.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              3.5,
+              3.5,
+              2.5
+            ]
+          },
+          {
+            "name": "Dwarika_Nameplate",
+            "type": "MESH",
+            "location": [
+              0.0,
+              -17.100000381469727,
+              10.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              6.0,
+              0.30000001192092896,
+              1.2000000476837158
+            ]
+          },
+          {
+            "name": "Dwarika_NameplateTop",
+            "type": "MESH",
+            "location": [
+              0.0,
+              -17.100000381469727,
+              22.5
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              7.0,
+              0.4000000059604645,
+              1.0
+            ]
+          },
+          {
+            "name": "Dwarika_CentralTower",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              27.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              3.0,
+              3.0,
+              6.0
+            ]
+          }
+        ]
+      },
+      "artifacts": {
+        "model-projects\\5c0724c80c78610b8f36\\revision-4\\00013.blend": "40cd4de23111633d56b993ab5e885375cc4f0f86f720af4e02c9ba626b6b0448",
+        "model-projects\\5c0724c80c78610b8f36\\revision-4\\00013.json": "620b0f268156f9ae1060c14a36de9cf643e0ae2e795a1d47182366dd7b664970"
+      }
+    },
+    {
+      "step": {
+        "operation": "add_dome",
+        "args": {
+          "name": "Dwarika_TowerDome",
+          "location": [
+            0,
+            0,
+            33
+          ],
+          "scale": [
+            3.5,
+            3.5,
+            2.5
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "label": "tower crown"
+      },
+      "project": "model-projects\\5c0724c80c78610b8f36\\revision-4\\00014.blend",
+      "evidence": {
+        "operation": "add_dome",
+        "objects": [
+          {
+            "name": "Dwarika_Headquarters_Main",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              8.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              18.0,
+              14.0,
+              8.0
+            ]
+          },
+          {
+            "name": "Dwarika_Headquarters_LeftWing",
+            "type": "MESH",
+            "location": [
+              -22.0,
+              0.0,
+              6.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              4.0,
+              11.0,
+              6.0
+            ]
+          },
+          {
+            "name": "Dwarika_Headquarters_RightWing",
+            "type": "MESH",
+            "location": [
+              22.0,
+              0.0,
+              6.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              4.0,
+              11.0,
+              6.0
+            ]
+          },
+          {
+            "name": "Dwarika_Headquarters_Entrance",
+            "type": "MESH",
+            "location": [
+              0.0,
+              -15.0,
+              5.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              8.0,
+              2.0,
+              5.0
+            ]
+          },
+          {
+            "name": "Dwarika_MainEntranceArch",
+            "type": "MESH",
+            "location": [
+              0.0,
+              -17.0,
+              2.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              5.0,
+              1.0,
+              4.5
+            ]
+          },
+          {
+            "name": "Dwarika_UpperFloor",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              17.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              15.0,
+              11.0,
+              1.5
+            ]
+          },
+          {
+            "name": "Dwarika_RoofDeck",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              20.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              18.0,
+              14.0,
+              1.0
+            ]
+          },
+          {
+            "name": "Dwarika_CentralDome",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              21.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              7.0,
+              7.0,
+              4.0
+            ]
+          },
+          {
+            "name": "Dwarika_LeftDome",
+            "type": "MESH",
+            "location": [
+              -12.0,
+              0.0,
+              20.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              3.5,
+              3.5,
+              2.5
+            ]
+          },
+          {
+            "name": "Dwarika_RightDome",
+            "type": "MESH",
+            "location": [
+              12.0,
+              0.0,
+              20.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              3.5,
+              3.5,
+              2.5
+            ]
+          },
+          {
+            "name": "Dwarika_Nameplate",
+            "type": "MESH",
+            "location": [
+              0.0,
+              -17.100000381469727,
+              10.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              6.0,
+              0.30000001192092896,
+              1.2000000476837158
+            ]
+          },
+          {
+            "name": "Dwarika_NameplateTop",
+            "type": "MESH",
+            "location": [
+              0.0,
+              -17.100000381469727,
+              22.5
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              7.0,
+              0.4000000059604645,
+              1.0
+            ]
+          },
+          {
+            "name": "Dwarika_CentralTower",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              27.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              3.0,
+              3.0,
+              6.0
+            ]
+          },
+          {
+            "name": "Dwarika_TowerDome",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              33.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              3.5,
+              3.5,
+              2.5
+            ]
+          }
+        ]
+      },
+      "artifacts": {
+        "model-projects\\5c0724c80c78610b8f36\\revision-4\\00014.blend": "b4a9fe57ba946cf6b0d728a6fbf3901b029b7e7ad530ee9c04db759cbd280525",
+        "model-projects\\5c0724c80c78610b8f36\\revision-4\\00014.json": "4c9f6fcea1f43f97670cc10cae75e1416347822ba76083274490ac01dc96bd1b"
+      }
+    },
+    {
+      "step": {
+        "operation": "add_cone",
+        "args": {
+          "name": "Dwarika_TowerFinial",
+          "location": [
+            0,
+            0,
+            37
+          ],
+          "scale": [
+            0.8,
+            0.8,
+            2
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "label": "tower finial"
+      },
+      "project": "model-projects\\5c0724c80c78610b8f36\\revision-4\\00015.blend",
+      "evidence": {
+        "operation": "add_cone",
+        "objects": [
+          {
+            "name": "Dwarika_Headquarters_Main",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              8.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              18.0,
+              14.0,
+              8.0
+            ]
+          },
+          {
+            "name": "Dwarika_Headquarters_LeftWing",
+            "type": "MESH",
+            "location": [
+              -22.0,
+              0.0,
+              6.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              4.0,
+              11.0,
+              6.0
+            ]
+          },
+          {
+            "name": "Dwarika_Headquarters_RightWing",
+            "type": "MESH",
+            "location": [
+              22.0,
+              0.0,
+              6.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              4.0,
+              11.0,
+              6.0
+            ]
+          },
+          {
+            "name": "Dwarika_Headquarters_Entrance",
+            "type": "MESH",
+            "location": [
+              0.0,
+              -15.0,
+              5.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              8.0,
+              2.0,
+              5.0
+            ]
+          },
+          {
+            "name": "Dwarika_MainEntranceArch",
+            "type": "MESH",
+            "location": [
+              0.0,
+              -17.0,
+              2.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              5.0,
+              1.0,
+              4.5
+            ]
+          },
+          {
+            "name": "Dwarika_UpperFloor",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              17.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              15.0,
+              11.0,
+              1.5
+            ]
+          },
+          {
+            "name": "Dwarika_RoofDeck",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              20.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              18.0,
+              14.0,
+              1.0
+            ]
+          },
+          {
+            "name": "Dwarika_CentralDome",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              21.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              7.0,
+              7.0,
+              4.0
+            ]
+          },
+          {
+            "name": "Dwarika_LeftDome",
+            "type": "MESH",
+            "location": [
+              -12.0,
+              0.0,
+              20.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              3.5,
+              3.5,
+              2.5
+            ]
+          },
+          {
+            "name": "Dwarika_RightDome",
+            "type": "MESH",
+            "location": [
+              12.0,
+              0.0,
+              20.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              3.5,
+              3.5,
+              2.5
+            ]
+          },
+          {
+            "name": "Dwarika_Nameplate",
+            "type": "MESH",
+            "location": [
+              0.0,
+              -17.100000381469727,
+              10.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              6.0,
+              0.30000001192092896,
+              1.2000000476837158
+            ]
+          },
+          {
+            "name": "Dwarika_NameplateTop",
+            "type": "MESH",
+            "location": [
+              0.0,
+              -17.100000381469727,
+              22.5
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              7.0,
+              0.4000000059604645,
+              1.0
+            ]
+          },
+          {
+            "name": "Dwarika_CentralTower",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              27.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              3.0,
+              3.0,
+              6.0
+            ]
+          },
+          {
+            "name": "Dwarika_TowerDome",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              33.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              3.5,
+              3.5,
+              2.5
+            ]
+          },
+          {
+            "name": "Dwarika_TowerFinial",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              37.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              0.800000011920929,
+              0.800000011920929,
+              2.0
+            ]
+          }
+        ]
+      },
+      "artifacts": {
+        "model-projects\\5c0724c80c78610b8f36\\revision-4\\00015.blend": "e22ef4c824db4e19bd3659017b9359e1729c751f4b4a58ee81e53c4921c62043",
+        "model-projects\\5c0724c80c78610b8f36\\revision-4\\00015.json": "cfd4e8682738bb10a4b544c74503edcf0d3ed7977588569d94d5fcd2185918a4"
+      }
+    },
+    {
+      "step": {
+        "operation": "add_cube",
+        "args": {
+          "name": "Dwarika_FrontCanopy",
+          "location": [
+            0,
+            -20,
+            3
+          ],
+          "scale": [
+            10,
+            4,
+            1
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "label": "entrance canopy"
+      },
+      "project": "model-projects\\5c0724c80c78610b8f36\\revision-4\\00016.blend",
+      "evidence": {
+        "operation": "add_cube",
+        "objects": [
+          {
+            "name": "Dwarika_Headquarters_Main",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              8.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              18.0,
+              14.0,
+              8.0
+            ]
+          },
+          {
+            "name": "Dwarika_Headquarters_LeftWing",
+            "type": "MESH",
+            "location": [
+              -22.0,
+              0.0,
+              6.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              4.0,
+              11.0,
+              6.0
+            ]
+          },
+          {
+            "name": "Dwarika_Headquarters_RightWing",
+            "type": "MESH",
+            "location": [
+              22.0,
+              0.0,
+              6.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              4.0,
+              11.0,
+              6.0
+            ]
+          },
+          {
+            "name": "Dwarika_Headquarters_Entrance",
+            "type": "MESH",
+            "location": [
+              0.0,
+              -15.0,
+              5.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              8.0,
+              2.0,
+              5.0
+            ]
+          },
+          {
+            "name": "Dwarika_MainEntranceArch",
+            "type": "MESH",
+            "location": [
+              0.0,
+              -17.0,
+              2.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              5.0,
+              1.0,
+              4.5
+            ]
+          },
+          {
+            "name": "Dwarika_UpperFloor",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              17.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              15.0,
+              11.0,
+              1.5
+            ]
+          },
+          {
+            "name": "Dwarika_RoofDeck",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              20.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              18.0,
+              14.0,
+              1.0
+            ]
+          },
+          {
+            "name": "Dwarika_CentralDome",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              21.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              7.0,
+              7.0,
+              4.0
+            ]
+          },
+          {
+            "name": "Dwarika_LeftDome",
+            "type": "MESH",
+            "location": [
+              -12.0,
+              0.0,
+              20.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              3.5,
+              3.5,
+              2.5
+            ]
+          },
+          {
+            "name": "Dwarika_RightDome",
+            "type": "MESH",
+            "location": [
+              12.0,
+              0.0,
+              20.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              3.5,
+              3.5,
+              2.5
+            ]
+          },
+          {
+            "name": "Dwarika_Nameplate",
+            "type": "MESH",
+            "location": [
+              0.0,
+              -17.100000381469727,
+              10.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              6.0,
+              0.30000001192092896,
+              1.2000000476837158
+            ]
+          },
+          {
+            "name": "Dwarika_NameplateTop",
+            "type": "MESH",
+            "location": [
+              0.0,
+              -17.100000381469727,
+              22.5
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              7.0,
+              0.4000000059604645,
+              1.0
+            ]
+          },
+          {
+            "name": "Dwarika_CentralTower",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              27.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              3.0,
+              3.0,
+              6.0
+            ]
+          },
+          {
+            "name": "Dwarika_TowerDome",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              33.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              3.5,
+              3.5,
+              2.5
+            ]
+          },
+          {
+            "name": "Dwarika_TowerFinial",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              37.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              0.800000011920929,
+              0.800000011920929,
+              2.0
+            ]
+          },
+          {
+            "name": "Dwarika_FrontCanopy",
+            "type": "MESH",
+            "location": [
+              0.0,
+              -20.0,
+              3.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              10.0,
+              4.0,
+              1.0
+            ]
+          }
+        ]
+      },
+      "artifacts": {
+        "model-projects\\5c0724c80c78610b8f36\\revision-4\\00016.blend": "818e95e2ad49e97b4ff3e368aa31688b8b1f256b25d3b1a3283ccea3706c21ee",
+        "model-projects\\5c0724c80c78610b8f36\\revision-4\\00016.json": "31439065989e0035e1052317105b3f693e2b9a67c81c78765620a81ac9bbe8eb"
+      }
+    },
+    {
+      "step": {
+        "operation": "add_cylinder",
+        "args": {
+          "name": "Dwarika_Column_FL",
+          "location": [
+            -8,
+            -19,
+            5
+          ],
+          "scale": [
+            0.8,
+            0.8,
+            5
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "label": "front left column"
+      },
+      "project": "model-projects\\5c0724c80c78610b8f36\\revision-4\\00017.blend",
+      "evidence": {
+        "operation": "add_cylinder",
+        "objects": [
+          {
+            "name": "Dwarika_Headquarters_Main",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              8.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              18.0,
+              14.0,
+              8.0
+            ]
+          },
+          {
+            "name": "Dwarika_Headquarters_LeftWing",
+            "type": "MESH",
+            "location": [
+              -22.0,
+              0.0,
+              6.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              4.0,
+              11.0,
+              6.0
+            ]
+          },
+          {
+            "name": "Dwarika_Headquarters_RightWing",
+            "type": "MESH",
+            "location": [
+              22.0,
+              0.0,
+              6.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              4.0,
+              11.0,
+              6.0
+            ]
+          },
+          {
+            "name": "Dwarika_Headquarters_Entrance",
+            "type": "MESH",
+            "location": [
+              0.0,
+              -15.0,
+              5.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              8.0,
+              2.0,
+              5.0
+            ]
+          },
+          {
+            "name": "Dwarika_MainEntranceArch",
+            "type": "MESH",
+            "location": [
+              0.0,
+              -17.0,
+              2.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              5.0,
+              1.0,
+              4.5
+            ]
+          },
+          {
+            "name": "Dwarika_UpperFloor",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              17.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              15.0,
+              11.0,
+              1.5
+            ]
+          },
+          {
+            "name": "Dwarika_RoofDeck",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              20.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              18.0,
+              14.0,
+              1.0
+            ]
+          },
+          {
+            "name": "Dwarika_CentralDome",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              21.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              7.0,
+              7.0,
+              4.0
+            ]
+          },
+          {
+            "name": "Dwarika_LeftDome",
+            "type": "MESH",
+            "location": [
+              -12.0,
+              0.0,
+              20.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              3.5,
+              3.5,
+              2.5
+            ]
+          },
+          {
+            "name": "Dwarika_RightDome",
+            "type": "MESH",
+            "location": [
+              12.0,
+              0.0,
+              20.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              3.5,
+              3.5,
+              2.5
+            ]
+          },
+          {
+            "name": "Dwarika_Nameplate",
+            "type": "MESH",
+            "location": [
+              0.0,
+              -17.100000381469727,
+              10.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              6.0,
+              0.30000001192092896,
+              1.2000000476837158
+            ]
+          },
+          {
+            "name": "Dwarika_NameplateTop",
+            "type": "MESH",
+            "location": [
+              0.0,
+              -17.100000381469727,
+              22.5
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              7.0,
+              0.4000000059604645,
+              1.0
+            ]
+          },
+          {
+            "name": "Dwarika_CentralTower",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              27.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              3.0,
+              3.0,
+              6.0
+            ]
+          },
+          {
+            "name": "Dwarika_TowerDome",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              33.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              3.5,
+              3.5,
+              2.5
+            ]
+          },
+          {
+            "name": "Dwarika_TowerFinial",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              37.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              0.800000011920929,
+              0.800000011920929,
+              2.0
+            ]
+          },
+          {
+            "name": "Dwarika_FrontCanopy",
+            "type": "MESH",
+            "location": [
+              0.0,
+              -20.0,
+              3.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              10.0,
+              4.0,
+              1.0
+            ]
+          },
+          {
+            "name": "Dwarika_Column_FL",
+            "type": "MESH",
+            "location": [
+              -8.0,
+              -19.0,
+              5.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              0.800000011920929,
+              0.800000011920929,
+              5.0
+            ]
+          }
+        ]
+      },
+      "artifacts": {
+        "model-projects\\5c0724c80c78610b8f36\\revision-4\\00017.blend": "f247401c5c21b1d61390014d73b01ad25619392c1e9650909353aa0babbac27b",
+        "model-projects\\5c0724c80c78610b8f36\\revision-4\\00017.json": "0767dd85272cd890fbe04c5a3db3c718e2ef3768bdc937486ee418add3a8ed86"
+      }
+    },
+    {
+      "step": {
+        "operation": "add_cylinder",
+        "args": {
+          "name": "Dwarika_Column_FR",
+          "location": [
+            8,
+            -19,
+            5
+          ],
+          "scale": [
+            0.8,
+            0.8,
+            5
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "label": "front right column"
+      },
+      "project": "model-projects\\5c0724c80c78610b8f36\\revision-4\\00018.blend",
+      "evidence": {
+        "operation": "add_cylinder",
+        "objects": [
+          {
+            "name": "Dwarika_Headquarters_Main",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              8.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              18.0,
+              14.0,
+              8.0
+            ]
+          },
+          {
+            "name": "Dwarika_Headquarters_LeftWing",
+            "type": "MESH",
+            "location": [
+              -22.0,
+              0.0,
+              6.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              4.0,
+              11.0,
+              6.0
+            ]
+          },
+          {
+            "name": "Dwarika_Headquarters_RightWing",
+            "type": "MESH",
+            "location": [
+              22.0,
+              0.0,
+              6.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              4.0,
+              11.0,
+              6.0
+            ]
+          },
+          {
+            "name": "Dwarika_Headquarters_Entrance",
+            "type": "MESH",
+            "location": [
+              0.0,
+              -15.0,
+              5.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              8.0,
+              2.0,
+              5.0
+            ]
+          },
+          {
+            "name": "Dwarika_MainEntranceArch",
+            "type": "MESH",
+            "location": [
+              0.0,
+              -17.0,
+              2.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              5.0,
+              1.0,
+              4.5
+            ]
+          },
+          {
+            "name": "Dwarika_UpperFloor",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              17.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              15.0,
+              11.0,
+              1.5
+            ]
+          },
+          {
+            "name": "Dwarika_RoofDeck",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              20.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              18.0,
+              14.0,
+              1.0
+            ]
+          },
+          {
+            "name": "Dwarika_CentralDome",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              21.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              7.0,
+              7.0,
+              4.0
+            ]
+          },
+          {
+            "name": "Dwarika_LeftDome",
+            "type": "MESH",
+            "location": [
+              -12.0,
+              0.0,
+              20.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              3.5,
+              3.5,
+              2.5
+            ]
+          },
+          {
+            "name": "Dwarika_RightDome",
+            "type": "MESH",
+            "location": [
+              12.0,
+              0.0,
+              20.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              3.5,
+              3.5,
+              2.5
+            ]
+          },
+          {
+            "name": "Dwarika_Nameplate",
+            "type": "MESH",
+            "location": [
+              0.0,
+              -17.100000381469727,
+              10.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              6.0,
+              0.30000001192092896,
+              1.2000000476837158
+            ]
+          },
+          {
+            "name": "Dwarika_NameplateTop",
+            "type": "MESH",
+            "location": [
+              0.0,
+              -17.100000381469727,
+              22.5
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              7.0,
+              0.4000000059604645,
+              1.0
+            ]
+          },
+          {
+            "name": "Dwarika_CentralTower",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              27.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              3.0,
+              3.0,
+              6.0
+            ]
+          },
+          {
+            "name": "Dwarika_TowerDome",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              33.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              3.5,
+              3.5,
+              2.5
+            ]
+          },
+          {
+            "name": "Dwarika_TowerFinial",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              37.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              0.800000011920929,
+              0.800000011920929,
+              2.0
+            ]
+          },
+          {
+            "name": "Dwarika_FrontCanopy",
+            "type": "MESH",
+            "location": [
+              0.0,
+              -20.0,
+              3.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              10.0,
+              4.0,
+              1.0
+            ]
+          },
+          {
+            "name": "Dwarika_Column_FL",
+            "type": "MESH",
+            "location": [
+              -8.0,
+              -19.0,
+              5.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              0.800000011920929,
+              0.800000011920929,
+              5.0
+            ]
+          },
+          {
+            "name": "Dwarika_Column_FR",
+            "type": "MESH",
+            "location": [
+              8.0,
+              -19.0,
+              5.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              0.800000011920929,
+              0.800000011920929,
+              5.0
+            ]
+          }
+        ]
+      },
+      "artifacts": {
+        "model-projects\\5c0724c80c78610b8f36\\revision-4\\00018.blend": "5e4eba535c6574b05e300bbaa0ce21b3d91ebfab1eeccd831af5ade1500625f2",
+        "model-projects\\5c0724c80c78610b8f36\\revision-4\\00018.json": "37d18de751e332396030c6f23e2a8152a22ac392c46a88deed77a1a5bf973e48"
+      }
+    },
+    {
+      "step": {
+        "operation": "add_cylinder",
+        "args": {
+          "name": "Dwarika_Column_CL",
+          "location": [
+            -3,
+            -19,
+            5
+          ],
+          "scale": [
+            0.7,
+            0.7,
+            5
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "label": "front center-left column"
+      },
+      "project": "model-projects\\5c0724c80c78610b8f36\\revision-4\\00019.blend",
+      "evidence": {
+        "operation": "add_cylinder",
+        "objects": [
+          {
+            "name": "Dwarika_Headquarters_Main",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              8.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              18.0,
+              14.0,
+              8.0
+            ]
+          },
+          {
+            "name": "Dwarika_Headquarters_LeftWing",
+            "type": "MESH",
+            "location": [
+              -22.0,
+              0.0,
+              6.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              4.0,
+              11.0,
+              6.0
+            ]
+          },
+          {
+            "name": "Dwarika_Headquarters_RightWing",
+            "type": "MESH",
+            "location": [
+              22.0,
+              0.0,
+              6.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              4.0,
+              11.0,
+              6.0
+            ]
+          },
+          {
+            "name": "Dwarika_Headquarters_Entrance",
+            "type": "MESH",
+            "location": [
+              0.0,
+              -15.0,
+              5.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              8.0,
+              2.0,
+              5.0
+            ]
+          },
+          {
+            "name": "Dwarika_MainEntranceArch",
+            "type": "MESH",
+            "location": [
+              0.0,
+              -17.0,
+              2.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              5.0,
+              1.0,
+              4.5
+            ]
+          },
+          {
+            "name": "Dwarika_UpperFloor",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              17.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              15.0,
+              11.0,
+              1.5
+            ]
+          },
+          {
+            "name": "Dwarika_RoofDeck",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              20.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              18.0,
+              14.0,
+              1.0
+            ]
+          },
+          {
+            "name": "Dwarika_CentralDome",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              21.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              7.0,
+              7.0,
+              4.0
+            ]
+          },
+          {
+            "name": "Dwarika_LeftDome",
+            "type": "MESH",
+            "location": [
+              -12.0,
+              0.0,
+              20.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              3.5,
+              3.5,
+              2.5
+            ]
+          },
+          {
+            "name": "Dwarika_RightDome",
+            "type": "MESH",
+            "location": [
+              12.0,
+              0.0,
+              20.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              3.5,
+              3.5,
+              2.5
+            ]
+          },
+          {
+            "name": "Dwarika_Nameplate",
+            "type": "MESH",
+            "location": [
+              0.0,
+              -17.100000381469727,
+              10.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              6.0,
+              0.30000001192092896,
+              1.2000000476837158
+            ]
+          },
+          {
+            "name": "Dwarika_NameplateTop",
+            "type": "MESH",
+            "location": [
+              0.0,
+              -17.100000381469727,
+              22.5
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              7.0,
+              0.4000000059604645,
+              1.0
+            ]
+          },
+          {
+            "name": "Dwarika_CentralTower",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              27.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              3.0,
+              3.0,
+              6.0
+            ]
+          },
+          {
+            "name": "Dwarika_TowerDome",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              33.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              3.5,
+              3.5,
+              2.5
+            ]
+          },
+          {
+            "name": "Dwarika_TowerFinial",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              37.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              0.800000011920929,
+              0.800000011920929,
+              2.0
+            ]
+          },
+          {
+            "name": "Dwarika_FrontCanopy",
+            "type": "MESH",
+            "location": [
+              0.0,
+              -20.0,
+              3.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              10.0,
+              4.0,
+              1.0
+            ]
+          },
+          {
+            "name": "Dwarika_Column_FL",
+            "type": "MESH",
+            "location": [
+              -8.0,
+              -19.0,
+              5.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              0.800000011920929,
+              0.800000011920929,
+              5.0
+            ]
+          },
+          {
+            "name": "Dwarika_Column_FR",
+            "type": "MESH",
+            "location": [
+              8.0,
+              -19.0,
+              5.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              0.800000011920929,
+              0.800000011920929,
+              5.0
+            ]
+          },
+          {
+            "name": "Dwarika_Column_CL",
+            "type": "MESH",
+            "location": [
+              -3.0,
+              -19.0,
+              5.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              0.699999988079071,
+              0.699999988079071,
+              5.0
+            ]
+          }
+        ]
+      },
+      "artifacts": {
+        "model-projects\\5c0724c80c78610b8f36\\revision-4\\00019.blend": "3f23df833d392d1c72f46af0dc7d2b68d6e724f23905c2b8eee6ade2834edef5",
+        "model-projects\\5c0724c80c78610b8f36\\revision-4\\00019.json": "adf981476d92954579285f33ba3cce490535d2335b61df044572f5d0ece88669"
+      }
+    },
+    {
+      "step": {
+        "operation": "add_cylinder",
+        "args": {
+          "name": "Dwarika_Column_CR",
+          "location": [
+            3,
+            -19,
+            5
+          ],
+          "scale": [
+            0.7,
+            0.7,
+            5
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "label": "front center-right column"
+      },
+      "project": "model-projects\\5c0724c80c78610b8f36\\revision-4\\00020.blend",
+      "evidence": {
+        "operation": "add_cylinder",
+        "objects": [
+          {
+            "name": "Dwarika_Headquarters_Main",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              8.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              18.0,
+              14.0,
+              8.0
+            ]
+          },
+          {
+            "name": "Dwarika_Headquarters_LeftWing",
+            "type": "MESH",
+            "location": [
+              -22.0,
+              0.0,
+              6.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              4.0,
+              11.0,
+              6.0
+            ]
+          },
+          {
+            "name": "Dwarika_Headquarters_RightWing",
+            "type": "MESH",
+            "location": [
+              22.0,
+              0.0,
+              6.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              4.0,
+              11.0,
+              6.0
+            ]
+          },
+          {
+            "name": "Dwarika_Headquarters_Entrance",
+            "type": "MESH",
+            "location": [
+              0.0,
+              -15.0,
+              5.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              8.0,
+              2.0,
+              5.0
+            ]
+          },
+          {
+            "name": "Dwarika_MainEntranceArch",
+            "type": "MESH",
+            "location": [
+              0.0,
+              -17.0,
+              2.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              5.0,
+              1.0,
+              4.5
+            ]
+          },
+          {
+            "name": "Dwarika_UpperFloor",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              17.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              15.0,
+              11.0,
+              1.5
+            ]
+          },
+          {
+            "name": "Dwarika_RoofDeck",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              20.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              18.0,
+              14.0,
+              1.0
+            ]
+          },
+          {
+            "name": "Dwarika_CentralDome",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              21.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              7.0,
+              7.0,
+              4.0
+            ]
+          },
+          {
+            "name": "Dwarika_LeftDome",
+            "type": "MESH",
+            "location": [
+              -12.0,
+              0.0,
+              20.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              3.5,
+              3.5,
+              2.5
+            ]
+          },
+          {
+            "name": "Dwarika_RightDome",
+            "type": "MESH",
+            "location": [
+              12.0,
+              0.0,
+              20.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              3.5,
+              3.5,
+              2.5
+            ]
+          },
+          {
+            "name": "Dwarika_Nameplate",
+            "type": "MESH",
+            "location": [
+              0.0,
+              -17.100000381469727,
+              10.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              6.0,
+              0.30000001192092896,
+              1.2000000476837158
+            ]
+          },
+          {
+            "name": "Dwarika_NameplateTop",
+            "type": "MESH",
+            "location": [
+              0.0,
+              -17.100000381469727,
+              22.5
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              7.0,
+              0.4000000059604645,
+              1.0
+            ]
+          },
+          {
+            "name": "Dwarika_CentralTower",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              27.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              3.0,
+              3.0,
+              6.0
+            ]
+          },
+          {
+            "name": "Dwarika_TowerDome",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              33.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              3.5,
+              3.5,
+              2.5
+            ]
+          },
+          {
+            "name": "Dwarika_TowerFinial",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              37.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              0.800000011920929,
+              0.800000011920929,
+              2.0
+            ]
+          },
+          {
+            "name": "Dwarika_FrontCanopy",
+            "type": "MESH",
+            "location": [
+              0.0,
+              -20.0,
+              3.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              10.0,
+              4.0,
+              1.0
+            ]
+          },
+          {
+            "name": "Dwarika_Column_FL",
+            "type": "MESH",
+            "location": [
+              -8.0,
+              -19.0,
+              5.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              0.800000011920929,
+              0.800000011920929,
+              5.0
+            ]
+          },
+          {
+            "name": "Dwarika_Column_FR",
+            "type": "MESH",
+            "location": [
+              8.0,
+              -19.0,
+              5.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              0.800000011920929,
+              0.800000011920929,
+              5.0
+            ]
+          },
+          {
+            "name": "Dwarika_Column_CL",
+            "type": "MESH",
+            "location": [
+              -3.0,
+              -19.0,
+              5.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              0.699999988079071,
+              0.699999988079071,
+              5.0
+            ]
+          },
+          {
+            "name": "Dwarika_Column_CR",
+            "type": "MESH",
+            "location": [
+              3.0,
+              -19.0,
+              5.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              0.699999988079071,
+              0.699999988079071,
+              5.0
+            ]
+          }
+        ]
+      },
+      "artifacts": {
+        "model-projects\\5c0724c80c78610b8f36\\revision-4\\00020.blend": "734445fddc063a29cef738f3bc1c740fc1f0b61042d932b5b0133de21d92f8c5",
+        "model-projects\\5c0724c80c78610b8f36\\revision-4\\00020.json": "04fbdb0f48c5d88c66cad53a64ba724fa5c0e5cbff235d241749ab0ab770088d"
+      }
+    },
+    {
+      "step": {
+        "operation": "add_arch",
+        "args": {
+          "name": "Dwarika_LeftFacadeArch",
+          "location": [
+            -9,
+            -14,
+            4
+          ],
+          "scale": [
+            2.5,
+            0.8,
+            3
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "label": "left facade arch"
+      },
+      "project": "model-projects\\5c0724c80c78610b8f36\\revision-4\\00021.blend",
+      "evidence": {
+        "operation": "add_arch",
+        "objects": [
+          {
+            "name": "Dwarika_Headquarters_Main",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              8.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              18.0,
+              14.0,
+              8.0
+            ]
+          },
+          {
+            "name": "Dwarika_Headquarters_LeftWing",
+            "type": "MESH",
+            "location": [
+              -22.0,
+              0.0,
+              6.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              4.0,
+              11.0,
+              6.0
+            ]
+          },
+          {
+            "name": "Dwarika_Headquarters_RightWing",
+            "type": "MESH",
+            "location": [
+              22.0,
+              0.0,
+              6.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              4.0,
+              11.0,
+              6.0
+            ]
+          },
+          {
+            "name": "Dwarika_Headquarters_Entrance",
+            "type": "MESH",
+            "location": [
+              0.0,
+              -15.0,
+              5.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              8.0,
+              2.0,
+              5.0
+            ]
+          },
+          {
+            "name": "Dwarika_MainEntranceArch",
+            "type": "MESH",
+            "location": [
+              0.0,
+              -17.0,
+              2.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              5.0,
+              1.0,
+              4.5
+            ]
+          },
+          {
+            "name": "Dwarika_UpperFloor",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              17.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              15.0,
+              11.0,
+              1.5
+            ]
+          },
+          {
+            "name": "Dwarika_RoofDeck",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              20.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              18.0,
+              14.0,
+              1.0
+            ]
+          },
+          {
+            "name": "Dwarika_CentralDome",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              21.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              7.0,
+              7.0,
+              4.0
+            ]
+          },
+          {
+            "name": "Dwarika_LeftDome",
+            "type": "MESH",
+            "location": [
+              -12.0,
+              0.0,
+              20.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              3.5,
+              3.5,
+              2.5
+            ]
+          },
+          {
+            "name": "Dwarika_RightDome",
+            "type": "MESH",
+            "location": [
+              12.0,
+              0.0,
+              20.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              3.5,
+              3.5,
+              2.5
+            ]
+          },
+          {
+            "name": "Dwarika_Nameplate",
+            "type": "MESH",
+            "location": [
+              0.0,
+              -17.100000381469727,
+              10.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              6.0,
+              0.30000001192092896,
+              1.2000000476837158
+            ]
+          },
+          {
+            "name": "Dwarika_NameplateTop",
+            "type": "MESH",
+            "location": [
+              0.0,
+              -17.100000381469727,
+              22.5
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              7.0,
+              0.4000000059604645,
+              1.0
+            ]
+          },
+          {
+            "name": "Dwarika_CentralTower",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              27.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              3.0,
+              3.0,
+              6.0
+            ]
+          },
+          {
+            "name": "Dwarika_TowerDome",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              33.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              3.5,
+              3.5,
+              2.5
+            ]
+          },
+          {
+            "name": "Dwarika_TowerFinial",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              37.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              0.800000011920929,
+              0.800000011920929,
+              2.0
+            ]
+          },
+          {
+            "name": "Dwarika_FrontCanopy",
+            "type": "MESH",
+            "location": [
+              0.0,
+              -20.0,
+              3.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              10.0,
+              4.0,
+              1.0
+            ]
+          },
+          {
+            "name": "Dwarika_Column_FL",
+            "type": "MESH",
+            "location": [
+              -8.0,
+              -19.0,
+              5.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              0.800000011920929,
+              0.800000011920929,
+              5.0
+            ]
+          },
+          {
+            "name": "Dwarika_Column_FR",
+            "type": "MESH",
+            "location": [
+              8.0,
+              -19.0,
+              5.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              0.800000011920929,
+              0.800000011920929,
+              5.0
+            ]
+          },
+          {
+            "name": "Dwarika_Column_CL",
+            "type": "MESH",
+            "location": [
+              -3.0,
+              -19.0,
+              5.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              0.699999988079071,
+              0.699999988079071,
+              5.0
+            ]
+          },
+          {
+            "name": "Dwarika_Column_CR",
+            "type": "MESH",
+            "location": [
+              3.0,
+              -19.0,
+              5.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              0.699999988079071,
+              0.699999988079071,
+              5.0
+            ]
+          },
+          {
+            "name": "Dwarika_LeftFacadeArch",
+            "type": "MESH",
+            "location": [
+              -9.0,
+              -14.0,
+              4.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              2.5,
+              0.800000011920929,
+              3.0
+            ]
+          }
+        ]
+      },
+      "artifacts": {
+        "model-projects\\5c0724c80c78610b8f36\\revision-4\\00021.blend": "e75ad753c15d373323f91015c58afb7e095f3929988e9bedd9503a6e530533ec",
+        "model-projects\\5c0724c80c78610b8f36\\revision-4\\00021.json": "212e767247526f5734cce91621d43f1f87077fc5fb8fb08cfd2de7cac93f916d"
+      }
+    },
+    {
+      "step": {
+        "operation": "add_arch",
+        "args": {
+          "name": "Dwarika_RightFacadeArch",
+          "location": [
+            9,
+            -14,
+            4
+          ],
+          "scale": [
+            2.5,
+            0.8,
+            3
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "label": "right facade arch"
+      },
+      "project": "model-projects\\5c0724c80c78610b8f36\\revision-4\\00022.blend",
+      "evidence": {
+        "operation": "add_arch",
+        "objects": [
+          {
+            "name": "Dwarika_Headquarters_Main",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              8.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              18.0,
+              14.0,
+              8.0
+            ]
+          },
+          {
+            "name": "Dwarika_Headquarters_LeftWing",
+            "type": "MESH",
+            "location": [
+              -22.0,
+              0.0,
+              6.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              4.0,
+              11.0,
+              6.0
+            ]
+          },
+          {
+            "name": "Dwarika_Headquarters_RightWing",
+            "type": "MESH",
+            "location": [
+              22.0,
+              0.0,
+              6.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              4.0,
+              11.0,
+              6.0
+            ]
+          },
+          {
+            "name": "Dwarika_Headquarters_Entrance",
+            "type": "MESH",
+            "location": [
+              0.0,
+              -15.0,
+              5.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              8.0,
+              2.0,
+              5.0
+            ]
+          },
+          {
+            "name": "Dwarika_MainEntranceArch",
+            "type": "MESH",
+            "location": [
+              0.0,
+              -17.0,
+              2.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              5.0,
+              1.0,
+              4.5
+            ]
+          },
+          {
+            "name": "Dwarika_UpperFloor",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              17.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              15.0,
+              11.0,
+              1.5
+            ]
+          },
+          {
+            "name": "Dwarika_RoofDeck",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              20.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              18.0,
+              14.0,
+              1.0
+            ]
+          },
+          {
+            "name": "Dwarika_CentralDome",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              21.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              7.0,
+              7.0,
+              4.0
+            ]
+          },
+          {
+            "name": "Dwarika_LeftDome",
+            "type": "MESH",
+            "location": [
+              -12.0,
+              0.0,
+              20.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              3.5,
+              3.5,
+              2.5
+            ]
+          },
+          {
+            "name": "Dwarika_RightDome",
+            "type": "MESH",
+            "location": [
+              12.0,
+              0.0,
+              20.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              3.5,
+              3.5,
+              2.5
+            ]
+          },
+          {
+            "name": "Dwarika_Nameplate",
+            "type": "MESH",
+            "location": [
+              0.0,
+              -17.100000381469727,
+              10.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              6.0,
+              0.30000001192092896,
+              1.2000000476837158
+            ]
+          },
+          {
+            "name": "Dwarika_NameplateTop",
+            "type": "MESH",
+            "location": [
+              0.0,
+              -17.100000381469727,
+              22.5
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              7.0,
+              0.4000000059604645,
+              1.0
+            ]
+          },
+          {
+            "name": "Dwarika_CentralTower",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              27.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              3.0,
+              3.0,
+              6.0
+            ]
+          },
+          {
+            "name": "Dwarika_TowerDome",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              33.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              3.5,
+              3.5,
+              2.5
+            ]
+          },
+          {
+            "name": "Dwarika_TowerFinial",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              37.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              0.800000011920929,
+              0.800000011920929,
+              2.0
+            ]
+          },
+          {
+            "name": "Dwarika_FrontCanopy",
+            "type": "MESH",
+            "location": [
+              0.0,
+              -20.0,
+              3.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              10.0,
+              4.0,
+              1.0
+            ]
+          },
+          {
+            "name": "Dwarika_Column_FL",
+            "type": "MESH",
+            "location": [
+              -8.0,
+              -19.0,
+              5.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              0.800000011920929,
+              0.800000011920929,
+              5.0
+            ]
+          },
+          {
+            "name": "Dwarika_Column_FR",
+            "type": "MESH",
+            "location": [
+              8.0,
+              -19.0,
+              5.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              0.800000011920929,
+              0.800000011920929,
+              5.0
+            ]
+          },
+          {
+            "name": "Dwarika_Column_CL",
+            "type": "MESH",
+            "location": [
+              -3.0,
+              -19.0,
+              5.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              0.699999988079071,
+              0.699999988079071,
+              5.0
+            ]
+          },
+          {
+            "name": "Dwarika_Column_CR",
+            "type": "MESH",
+            "location": [
+              3.0,
+              -19.0,
+              5.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              0.699999988079071,
+              0.699999988079071,
+              5.0
+            ]
+          },
+          {
+            "name": "Dwarika_LeftFacadeArch",
+            "type": "MESH",
+            "location": [
+              -9.0,
+              -14.0,
+              4.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              2.5,
+              0.800000011920929,
+              3.0
+            ]
+          },
+          {
+            "name": "Dwarika_RightFacadeArch",
+            "type": "MESH",
+            "location": [
+              9.0,
+              -14.0,
+              4.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              2.5,
+              0.800000011920929,
+              3.0
+            ]
+          }
+        ]
+      },
+      "artifacts": {
+        "model-projects\\5c0724c80c78610b8f36\\revision-4\\00022.blend": "c8b82b9b55522872e46bb67a75c6ff630953485ef0c0c220ff400325d2e7ce1f",
+        "model-projects\\5c0724c80c78610b8f36\\revision-4\\00022.json": "f6ccff4d4347a7efdf9552297267ad3fbee4bdb39ad5f829b82c0c54ebd7dc69"
+      }
+    },
+    {
+      "step": {
+        "operation": "add_cube",
+        "args": {
+          "name": "Dwarika_FrontTerrace",
+          "location": [
+            0,
+            -23,
+            1
+          ],
+          "scale": [
+            14,
+            5,
+            0.6
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "label": "front terrace"
+      },
+      "project": "model-projects\\5c0724c80c78610b8f36\\revision-4\\00023.blend",
+      "evidence": {
+        "operation": "add_cube",
+        "objects": [
+          {
+            "name": "Dwarika_Headquarters_Main",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              8.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              18.0,
+              14.0,
+              8.0
+            ]
+          },
+          {
+            "name": "Dwarika_Headquarters_LeftWing",
+            "type": "MESH",
+            "location": [
+              -22.0,
+              0.0,
+              6.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              4.0,
+              11.0,
+              6.0
+            ]
+          },
+          {
+            "name": "Dwarika_Headquarters_RightWing",
+            "type": "MESH",
+            "location": [
+              22.0,
+              0.0,
+              6.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              4.0,
+              11.0,
+              6.0
+            ]
+          },
+          {
+            "name": "Dwarika_Headquarters_Entrance",
+            "type": "MESH",
+            "location": [
+              0.0,
+              -15.0,
+              5.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              8.0,
+              2.0,
+              5.0
+            ]
+          },
+          {
+            "name": "Dwarika_MainEntranceArch",
+            "type": "MESH",
+            "location": [
+              0.0,
+              -17.0,
+              2.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              5.0,
+              1.0,
+              4.5
+            ]
+          },
+          {
+            "name": "Dwarika_UpperFloor",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              17.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              15.0,
+              11.0,
+              1.5
+            ]
+          },
+          {
+            "name": "Dwarika_RoofDeck",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              20.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              18.0,
+              14.0,
+              1.0
+            ]
+          },
+          {
+            "name": "Dwarika_CentralDome",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              21.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              7.0,
+              7.0,
+              4.0
+            ]
+          },
+          {
+            "name": "Dwarika_LeftDome",
+            "type": "MESH",
+            "location": [
+              -12.0,
+              0.0,
+              20.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              3.5,
+              3.5,
+              2.5
+            ]
+          },
+          {
+            "name": "Dwarika_RightDome",
+            "type": "MESH",
+            "location": [
+              12.0,
+              0.0,
+              20.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              3.5,
+              3.5,
+              2.5
+            ]
+          },
+          {
+            "name": "Dwarika_Nameplate",
+            "type": "MESH",
+            "location": [
+              0.0,
+              -17.100000381469727,
+              10.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              6.0,
+              0.30000001192092896,
+              1.2000000476837158
+            ]
+          },
+          {
+            "name": "Dwarika_NameplateTop",
+            "type": "MESH",
+            "location": [
+              0.0,
+              -17.100000381469727,
+              22.5
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              7.0,
+              0.4000000059604645,
+              1.0
+            ]
+          },
+          {
+            "name": "Dwarika_CentralTower",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              27.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              3.0,
+              3.0,
+              6.0
+            ]
+          },
+          {
+            "name": "Dwarika_TowerDome",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              33.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              3.5,
+              3.5,
+              2.5
+            ]
+          },
+          {
+            "name": "Dwarika_TowerFinial",
+            "type": "MESH",
+            "location": [
+              0.0,
+              0.0,
+              37.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              0.800000011920929,
+              0.800000011920929,
+              2.0
+            ]
+          },
+          {
+            "name": "Dwarika_FrontCanopy",
+            "type": "MESH",
+            "location": [
+              0.0,
+              -20.0,
+              3.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              10.0,
+              4.0,
+              1.0
+            ]
+          },
+          {
+            "name": "Dwarika_Column_FL",
+            "type": "MESH",
+            "location": [
+              -8.0,
+              -19.0,
+              5.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              0.800000011920929,
+              0.800000011920929,
+              5.0
+            ]
+          },
+          {
+            "name": "Dwarika_Column_FR",
+            "type": "MESH",
+            "location": [
+              8.0,
+              -19.0,
+              5.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              0.800000011920929,
+              0.800000011920929,
+              5.0
+            ]
+          },
+          {
+            "name": "Dwarika_Column_CL",
+            "type": "MESH",
+            "location": [
+              -3.0,
+              -19.0,
+              5.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              0.699999988079071,
+              0.699999988079071,
+              5.0
+            ]
+          },
+          {
+            "name": "Dwarika_Column_CR",
+            "type": "MESH",
+            "location": [
+              3.0,
+              -19.0,
+              5.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              0.699999988079071,
+              0.699999988079071,
+              5.0
+            ]
+          },
+          {
+            "name": "Dwarika_LeftFacadeArch",
+            "type": "MESH",
+            "location": [
+              -9.0,
+              -14.0,
+              4.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              2.5,
+              0.800000011920929,
+              3.0
+            ]
+          },
+          {
+            "name": "Dwarika_RightFacadeArch",
+            "type": "MESH",
+            "location": [
+              9.0,
+              -14.0,
+              4.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              2.5,
+              0.800000011920929,
+              3.0
+            ]
+          },
+          {
+            "name": "Dwarika_FrontTerrace",
+            "type": "MESH",
+            "location": [
+              0.0,
+              -23.0,
+              1.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              14.0,
+              5.0,
+              0.6000000238418579
+            ]
+          }
+        ]
+      },
+      "artifacts": {
+        "model-projects\\5c0724c80c78610b8f36\\revision-4\\00023.blend": "299559a1e9c5857d5a51613db1bdad6b62df96a183be8f36beebc9317e7a6c69",
+        "model-projects\\5c0724c80c78610b8f36\\revision-4\\00023.json": "339d4559724e17791cc54b5c49ae246f65888faaad380f1aed973ff86386e639"
+      }
+    }
+  ],
+  "source": null,
+  "source_digest": null,
+  "source_evidence": null,
+  "limitations": [
+    "Exact readable 3D text spelling \u201cDwarika Head quarter at top\u201d cannot be created because no text operation is available; the top nameplate geometry is provided as a placeholder.",
+    "Doors, windows, interior furnishing, landscaping, structural engineering details, and microscopic architectural ornament require additional supported primitive assemblies and are not fully represented in this iteration.",
+    "Historical or architectural exactness is not guaranteed; the design is an approximate advanced headquarters building assembled from the available primitives."
+  ]
+}

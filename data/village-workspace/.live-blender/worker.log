@@ -1,0 +1,183 @@
+Read blend: "C:\Users\user\OneDrive\Desktop\Brainless_agent-main\Brainless_agent\data\village-workspace\connected-villages\cafd49c35b5daf074c05\00017.blend"
+Traceback (most recent call last):
+  File "C:\Users\user\OneDrive\Desktop\Brainless_agent-main\Brainless_agent\app\autonomy\live_blender_runtime.py", line 47, in tick
+    write(ROOT/'heartbeat.json',dict(time=time.time(),pid=os.getpid()))
+  File "C:\Users\user\OneDrive\Desktop\Brainless_agent-main\Brainless_agent\app\autonomy\live_blender_runtime.py", line 22, in write
+    temporary.replace(path)
+  File "C:\Program Files\Blender Foundation\Blender 4.5\4.5\python\Lib\pathlib.py", line 1188, in replace
+    os.replace(self, target)
+PermissionError: [WinError 5] Access is denied: 'C:\\Users\\user\\OneDrive\\Desktop\\Brainless_agent-main\\Brainless_agent\\data\\village-workspace\\.live-blender\\heartbeat.tmp' -> 'C:\\Users\\user\\OneDrive\\Desktop\\Brainless_agent-main\\Brainless_agent\\data\\village-workspace\\.live-blender\\heartbeat.json'
+Info: Saved "00028.blend"
+Info: Saved as "00018.blend"
+Info: Saved as "00019.blend"
+Info: Saved as "00020.blend"
+Info: Saved as "00021.blend"
+Info: Saved as "00022.blend"
+Info: Saved as "00023.blend"
+Info: Saved as "00024.blend"
+Info: Saved as "00025.blend"
+Info: Saved as "00026.blend"
+Info: Saved as "00027.blend"
+Info: Saved as "00028.blend"
+Saved session recovery to "C:\Users\user\AppData\Local\Temp\quit.blend"
+
+Blender quit
+Traceback (most recent call last):
+  File "C:\Users\user\OneDrive\Desktop\Brainless_agent-main\Brainless_agent\app\autonomy\live_blender_runtime.py", line 108, in tick
+    write(ROOT/'heartbeat.json',dict(time=time.time(),pid=os.getpid()))
+  File "C:\Users\user\OneDrive\Desktop\Brainless_agent-main\Brainless_agent\app\autonomy\live_blender_runtime.py", line 24, in write
+    temporary.replace(path)
+  File "C:\Program Files\Blender Foundation\Blender 4.5\4.5\python\Lib\pathlib.py", line 1188, in replace
+    os.replace(self, target)
+PermissionError: [WinError 5] Access is denied: 'C:\\Users\\user\\OneDrive\\Desktop\\Brainless_agent-main\\Brainless_agent\\data\\village-workspace\\.live-blender\\heartbeat.tmp' -> 'C:\\Users\\user\\OneDrive\\Desktop\\Brainless_agent-main\\Brainless_agent\\data\\village-workspace\\.live-blender\\heartbeat.json'
+Read blend: "C:\Users\user\OneDrive\Desktop\Brainless_agent-main\Brainless_agent\data\village-workspace\model-projects\77c822f50bcf630f6ce0\revision-2\00023.blend"
+Traceback (most recent call last):
+  File "C:\Users\user\OneDrive\Desktop\Brainless_agent-main\Brainless_agent\app\autonomy\live_blender_runtime.py", line 108, in tick
+    write(ROOT/'heartbeat.json',dict(time=time.time(),pid=os.getpid()))
+  File "C:\Users\user\OneDrive\Desktop\Brainless_agent-main\Brainless_agent\app\autonomy\live_blender_runtime.py", line 24, in write
+    temporary.replace(path)
+  File "C:\Program Files\Blender Foundation\Blender 4.5\4.5\python\Lib\pathlib.py", line 1188, in replace
+    os.replace(self, target)
+PermissionError: [WinError 5] Access is denied: 'C:\\Users\\user\\OneDrive\\Desktop\\Brainless_agent-main\\Brainless_agent\\data\\village-workspace\\.live-blender\\heartbeat.tmp' -> 'C:\\Users\\user\\OneDrive\\Desktop\\Brainless_agent-main\\Brainless_agent\\data\\village-workspace\\.live-blender\\heartbeat.json'
+Read blend: "C:\Users\user\OneDrive\Desktop\Brainless_agent-main\Brainless_agent\data\village-workspace\model-projects\77c822f50bcf630f6ce0\revision-2\00039.blend"
+Saved: 'C:\Users\user\OneDrive\Desktop\Brainless_agent-main\Brainless_agent\data\village-workspace\model-projects\77c822f50bcf630f6ce0\revision-2\00052.png'
+Time: 04:21.11 (Saving: 00:01.09)
+
+Info: Saved as "00040.blend"
+Info: Saved as "00041.blend"
+Info: Saved as "00042.blend"
+Info: Saved as "00043.blend"
+Info: Saved as "00044.blend"
+Info: Saved as "00045.blend"
+Info: Saved as "00046.blend"
+Info: Saved as "00047.blend"
+Info: Saved as "00048.blend"
+Info: Saved as "00049.blend"
+Info: Saved as "00050.blend"
+Info: Saved as "00051.blend"
+Info: Saved as "00052.blend"
+INFO Draco mesh compression is available, use library at C:\Program Files\Blender Foundation\Blender 4.5\4.5\scripts\addons_core\io_scene_gltf2\extern_draco.dll
+14:39:29 | INFO: Starting glTF 2.0 export
+14:39:29 | INFO: Extracting primitive: Plane
+14:39:29 | INFO: Primitives created: 1
+14:39:29 | INFO: Extracting primitive: Cube
+14:39:29 | INFO: Primitives created: 1
+14:39:29 | INFO: Extracting primitive: Cube.001
+14:39:29 | INFO: Primitives created: 1
+14:39:29 | INFO: Extracting primitive: Cube.002
+14:39:29 | INFO: Primitives created: 1
+14:39:29 | INFO: Extracting primitive: Cube.003
+14:39:29 | INFO: Primitives created: 1
+14:39:29 | INFO: Extracting primitive: Cube.004
+14:39:29 | INFO: Primitives created: 1
+14:39:29 | INFO: Extracting primitive: Cube.005
+14:39:29 | INFO: Primitives created: 1
+14:39:29 | INFO: Extracting primitive: Taj_MainArch
+14:39:29 | INFO: Primitives created: 1
+14:39:29 | INFO: Extracting primitive: Taj_LeftArch
+14:39:29 | INFO: Primitives created: 1
+14:39:29 | INFO: Extracting primitive: Taj_RightArch
+14:39:29 | INFO: Primitives created: 1
+14:39:29 | INFO: Extracting primitive: Taj_CentralDome
+14:39:29 | INFO: Primitives created: 1
+14:39:29 | INFO: Extracting primitive: Cylinder
+14:39:29 | INFO: Primitives created: 1
+14:39:29 | INFO: Extracting primitive: Cone
+14:39:29 | INFO: Primitives created: 1
+14:39:29 | INFO: Extracting primitive: Taj_LeftDome
+14:39:29 | INFO: Primitives created: 1
+14:39:29 | INFO: Extracting primitive: Taj_RightDome
+14:39:29 | INFO: Primitives created: 1
+14:39:29 | INFO: Extracting primitive: Cone.001
+14:39:29 | INFO: Primitives created: 1
+14:39:29 | INFO: Extracting primitive: Cone.002
+14:39:29 | INFO: Primitives created: 1
+14:39:29 | INFO: Extracting primitive: Cylinder.001
+14:39:29 | INFO: Primitives created: 1
+14:39:29 | INFO: Extracting primitive: Cylinder.002
+14:39:29 | INFO: Primitives created: 1
+14:39:29 | INFO: Extracting primitive: Cylinder.003
+14:39:29 | INFO: Primitives created: 1
+14:39:29 | INFO: Extracting primitive: Cylinder.004
+14:39:29 | INFO: Primitives created: 1
+14:39:29 | INFO: Extracting primitive: Taj_MinaretCap_FL
+14:39:29 | INFO: Primitives created: 1
+14:39:29 | INFO: Extracting primitive: Taj_MinaretCap_FR
+14:39:29 | INFO: Primitives created: 1
+14:39:29 | INFO: Extracting primitive: Taj_MinaretCap_BL
+14:39:29 | INFO: Primitives created: 1
+14:39:29 | INFO: Extracting primitive: Taj_MinaretCap_BR
+14:39:29 | INFO: Primitives created: 1
+14:39:29 | INFO: Extracting primitive: Cone.003
+14:39:29 | INFO: Primitives created: 1
+14:39:29 | INFO: Extracting primitive: Cone.004
+14:39:29 | INFO: Primitives created: 1
+14:39:29 | INFO: Extracting primitive: Cone.005
+14:39:29 | INFO: Primitives created: 1
+14:39:29 | INFO: Extracting primitive: Cone.006
+14:39:29 | INFO: Primitives created: 1
+14:39:29 | INFO: Extracting primitive: Torus
+14:39:29 | INFO: Primitives created: 1
+14:39:29 | INFO: Extracting primitive: Torus.001
+14:39:29 | INFO: Primitives created: 1
+14:39:29 | INFO: Extracting primitive: Torus.002
+14:39:29 | INFO: Primitives created: 1
+14:39:29 | INFO: Extracting primitive: Cube.006
+14:39:29 | INFO: Primitives created: 1
+14:39:29 | INFO: Extracting primitive: Cube.007
+14:39:29 | INFO: Primitives created: 1
+14:39:29 | INFO: Extracting primitive: Cube.008
+14:39:29 | INFO: Primitives created: 1
+14:39:29 | INFO: Extracting primitive: Cube.009
+14:39:29 | INFO: Primitives created: 1
+14:39:29 | INFO: Finished glTF 2.0 export in 0.13712787628173828 s
+Traceback (most recent call last):
+  File "C:\Users\user\OneDrive\Desktop\Brainless_agent-main\Brainless_agent\app\autonomy\live_blender_runtime.py", line 108, in tick
+    write(ROOT/'heartbeat.json',dict(time=time.time(),pid=os.getpid()))
+  File "C:\Users\user\OneDrive\Desktop\Brainless_agent-main\Brainless_agent\app\autonomy\live_blender_runtime.py", line 24, in write
+    temporary.replace(path)
+  File "C:\Program Files\Blender Foundation\Blender 4.5\4.5\python\Lib\pathlib.py", line 1188, in replace
+    os.replace(self, target)
+PermissionError: [WinError 5] Access is denied: 'C:\\Users\\user\\OneDrive\\Desktop\\Brainless_agent-main\\Brainless_agent\\data\\village-workspace\\.live-blender\\heartbeat.tmp' -> 'C:\\Users\\user\\OneDrive\\Desktop\\Brainless_agent-main\\Brainless_agent\\data\\village-workspace\\.live-blender\\heartbeat.json'
+
+Info: Saved as "00053.blend"
+Saved session recovery to "C:\Users\user\AppData\Local\Temp\quit.blend"
+
+Blender quit
+Traceback (most recent call last):
+  File "C:\Users\user\OneDrive\Desktop\Brainless_agent-main\Brainless_agent\app\autonomy\live_blender_runtime.py", line 108, in tick
+    write(ROOT/'heartbeat.json',dict(time=time.time(),pid=os.getpid()))
+  File "C:\Users\user\OneDrive\Desktop\Brainless_agent-main\Brainless_agent\app\autonomy\live_blender_runtime.py", line 24, in write
+    temporary.replace(path)
+  File "C:\Program Files\Blender Foundation\Blender 4.5\4.5\python\Lib\pathlib.py", line 1188, in replace
+    os.replace(self, target)
+PermissionError: [WinError 5] Access is denied: 'C:\\Users\\user\\OneDrive\\Desktop\\Brainless_agent-main\\Brainless_agent\\data\\village-workspace\\.live-blender\\heartbeat.tmp' -> 'C:\\Users\\user\\OneDrive\\Desktop\\Brainless_agent-main\\Brainless_agent\\data\\village-workspace\\.live-blender\\heartbeat.json'
+register_class(...):
+Info: Registering key-config preferences class: 'Prefs', bl_idname 'Blender' has been registered before, unregistering previous
+Info: Saved as "00000.blend"
+Info: Saved as "00001.blend"
+Info: Saved as "00002.blend"
+Info: Saved as "00003.blend"
+Info: Saved as "00004.blend"
+Info: Saved as "00005.blend"
+Info: Saved as "00006.blend"
+Info: Saved as "00007.blend"
+Info: Saved as "00008.blend"
+Info: Saved as "00009.blend"
+Info: Saved as "00010.blend"
+Info: Saved as "00011.blend"
+Info: Saved as "00012.blend"
+Info: Saved as "00013.blend"
+Info: Saved as "00014.blend"
+Info: Saved as "00015.blend"
+Info: Saved as "00016.blend"
+Info: Saved as "00017.blend"
+Info: Saved as "00018.blend"
+Info: Saved as "00019.blend"
+Info: Saved as "00020.blend"
+Info: Saved as "00021.blend"
+Info: Saved as "00022.blend"
+Info: Saved as "00023.blend"
+Saved session recovery to "C:\Users\user\AppData\Local\Temp\quit.blend"
+
+Blender quit

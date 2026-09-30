@@ -110,8 +110,10 @@ class AutonomousTaskEngine:
                     frozenset({node.tool}) if node.tool else frozenset(), "WorkflowAgent")
                     if node.capabilities or node.permissions or node.tool else None)
                 try:
-                    return node, await self.runtime.execute(root_agent_id, f"{task.task_id}:{node.task_id}",
-                        node.objective, decider_for(node), requirements), None
+                    node_task_id = node.task_id if node.task_id.startswith(f"{task.task_id}:") else f"{task.task_id}:{node.task_id}"
+                    return node, await self.runtime.execute(root_agent_id, node_task_id,
+                        node.objective, decider_for(node), requirements,
+                        use_agent_planner=node.arguments is None), None
                 except Exception as error:
                     return node, None, error
 

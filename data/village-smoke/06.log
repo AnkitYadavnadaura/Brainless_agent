@@ -1,0 +1,1168 @@
+Blender 4.5.3 LTS (hash 67807e1800cc built 2025-09-09 01:33:33)
+Read blend: "C:\Users\user\OneDrive\Desktop\Brainless_agent-main\Brainless_agent\data\village-smoke\05.blend"
+Fra:1 Mem:120.31M (Peak 121.79M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Landscape
+Fra:1 Mem:120.31M (Peak 121.79M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Village lane
+Fra:1 Mem:120.31M (Peak 121.79M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Village lane.001
+Fra:1 Mem:120.46M (Peak 121.79M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Cross lane.001
+Fra:1 Mem:120.46M (Peak 121.79M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Village lane.003
+Fra:1 Mem:120.77M (Peak 121.79M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Village lane.004
+Fra:1 Mem:120.77M (Peak 121.79M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Cross lane.004
+Fra:1 Mem:120.77M (Peak 121.79M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Village lane.006
+Fra:1 Mem:120.87M (Peak 121.79M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Cross lane.007
+Fra:1 Mem:120.88M (Peak 121.79M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | House_000
+Fra:1 Mem:120.88M (Peak 121.79M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Roof_000
+Fra:1 Mem:120.88M (Peak 121.79M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Foundation_001
+Fra:1 Mem:121.04M (Peak 121.79M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | House_001
+Fra:1 Mem:121.04M (Peak 121.79M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Roof_001
+Fra:1 Mem:121.04M (Peak 121.79M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | House_002
+Fra:1 Mem:121.07M (Peak 121.79M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Foundation_003
+Fra:1 Mem:121.07M (Peak 121.79M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | House_003
+Fra:1 Mem:121.08M (Peak 121.79M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Foundation_004
+Fra:1 Mem:121.22M (Peak 121.79M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | House_004
+Fra:1 Mem:121.23M (Peak 121.79M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | House_005
+Fra:1 Mem:121.25M (Peak 121.79M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Roof_005
+Fra:1 Mem:121.23M (Peak 121.79M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Roof_006
+Fra:1 Mem:121.23M (Peak 121.79M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Foundation_007
+Fra:1 Mem:121.25M (Peak 121.79M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | House_007
+Fra:1 Mem:121.26M (Peak 121.79M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Roof_007
+Fra:1 Mem:121.27M (Peak 121.79M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Roof_008
+Fra:1 Mem:121.27M (Peak 121.79M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Foundation_009
+Fra:1 Mem:121.27M (Peak 121.79M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Roof_009
+Fra:1 Mem:121.28M (Peak 121.79M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Roof_010
+Fra:1 Mem:121.28M (Peak 121.79M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | House_011
+Fra:1 Mem:121.38M (Peak 121.79M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Roof_011
+Fra:1 Mem:121.39M (Peak 121.79M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Foundation_012
+Fra:1 Mem:121.40M (Peak 121.79M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | House_012
+Fra:1 Mem:121.41M (Peak 121.79M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Roof_012
+Fra:1 Mem:121.42M (Peak 121.79M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Foundation_013
+Fra:1 Mem:121.43M (Peak 121.79M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Roof_013
+Fra:1 Mem:121.44M (Peak 121.79M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Foundation_014
+Fra:1 Mem:121.45M (Peak 121.79M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Roof_014
+Fra:1 Mem:121.51M (Peak 121.79M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | House_015
+Fra:1 Mem:121.53M (Peak 121.79M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Roof_015
+Fra:1 Mem:121.54M (Peak 121.79M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | House_016
+Fra:1 Mem:121.65M (Peak 121.79M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Roof_016
+Fra:1 Mem:121.55M (Peak 121.79M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Foundation_017
+Fra:1 Mem:121.56M (Peak 121.79M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Roof_017
+Fra:1 Mem:121.58M (Peak 121.79M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Foundation_018
+Fra:1 Mem:121.59M (Peak 121.79M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | House_018
+Fra:1 Mem:121.59M (Peak 121.79M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | House_019
+Fra:1 Mem:121.61M (Peak 121.79M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Roof_019
+Fra:1 Mem:121.62M (Peak 121.79M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Foundation_020
+Fra:1 Mem:121.62M (Peak 121.79M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Foundation_021
+Fra:1 Mem:121.63M (Peak 121.79M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | House_021
+Fra:1 Mem:121.63M (Peak 121.79M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Roof_021
+Fra:1 Mem:121.65M (Peak 121.79M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Roof_022
+Fra:1 Mem:121.66M (Peak 121.79M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Foundation_023
+Fra:1 Mem:121.67M (Peak 121.79M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Roof_023
+Fra:1 Mem:121.68M (Peak 121.79M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Foundation_024
+Fra:1 Mem:121.70M (Peak 121.79M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | House_024
+Fra:1 Mem:121.70M (Peak 121.79M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Roof_024
+Fra:1 Mem:121.71M (Peak 121.79M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Foundation_025
+Fra:1 Mem:121.72M (Peak 121.79M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | House_025
+Fra:1 Mem:121.72M (Peak 121.79M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Roof_025
+Fra:1 Mem:121.72M (Peak 121.79M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | House_026
+Fra:1 Mem:121.72M (Peak 121.79M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Roof_026
+Fra:1 Mem:121.74M (Peak 121.79M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Foundation_027
+Fra:1 Mem:121.75M (Peak 121.79M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | House_027
+Fra:1 Mem:121.76M (Peak 121.79M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Roof_027
+Fra:1 Mem:121.76M (Peak 121.79M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | House_028
+Fra:1 Mem:121.77M (Peak 121.79M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Foundation_029
+Fra:1 Mem:121.78M (Peak 121.79M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Roof_029
+Fra:1 Mem:121.79M (Peak 121.79M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Foundation_030
+Fra:1 Mem:121.79M (Peak 121.79M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | House_030
+Fra:1 Mem:121.80M (Peak 121.80M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Roof_030
+Fra:1 Mem:121.81M (Peak 121.81M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Foundation_031
+Fra:1 Mem:121.82M (Peak 121.82M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | House_031
+Fra:1 Mem:121.83M (Peak 121.83M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Roof_031
+Fra:1 Mem:121.83M (Peak 121.83M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | House_032
+Fra:1 Mem:121.83M (Peak 121.83M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Roof_032
+Fra:1 Mem:121.84M (Peak 121.84M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Foundation_033
+Fra:1 Mem:121.85M (Peak 121.85M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | House_033
+Fra:1 Mem:121.86M (Peak 121.86M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Roof_033
+Fra:1 Mem:121.86M (Peak 121.86M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Foundation_034
+Fra:1 Mem:121.87M (Peak 121.87M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | House_034
+Fra:1 Mem:121.87M (Peak 121.87M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Roof_034
+Fra:1 Mem:121.89M (Peak 121.89M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Foundation_035
+Fra:1 Mem:121.90M (Peak 121.90M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Roof_035
+Fra:1 Mem:121.91M (Peak 121.91M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Foundation_036
+Fra:1 Mem:121.92M (Peak 121.92M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | House_036
+Fra:1 Mem:121.93M (Peak 121.93M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Roof_036
+Fra:1 Mem:121.93M (Peak 121.93M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Foundation_037
+Fra:1 Mem:121.94M (Peak 121.94M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | House_037
+Fra:1 Mem:121.95M (Peak 121.95M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Roof_037
+Fra:1 Mem:121.95M (Peak 121.95M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Foundation_038
+Fra:1 Mem:121.96M (Peak 121.96M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | House_038
+Fra:1 Mem:121.96M (Peak 121.96M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Foundation_039
+Fra:1 Mem:121.97M (Peak 121.97M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | House_039
+Fra:1 Mem:121.98M (Peak 121.98M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Roof_039
+Fra:1 Mem:121.99M (Peak 121.99M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Door
+Fra:1 Mem:122.00M (Peak 122.00M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window frame
+Fra:1 Mem:122.01M (Peak 122.01M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window mullion
+Fra:1 Mem:122.01M (Peak 122.01M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window frame.001
+Fra:1 Mem:122.02M (Peak 122.02M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window pane.001
+Fra:1 Mem:122.03M (Peak 122.03M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window mullion.001
+Fra:1 Mem:122.04M (Peak 122.04M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Chimney
+Fra:1 Mem:122.04M (Peak 122.04M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch post.001
+Fra:1 Mem:122.04M (Peak 122.04M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch canopy
+Fra:1 Mem:122.04M (Peak 122.04M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tiled roof_000
+Fra:1 Mem:122.06M (Peak 122.06M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Corner timber
+Fra:1 Mem:122.11M (Peak 122.11M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window sill
+Fra:1 Mem:122.15M (Peak 122.15M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Corner timber.001
+Fra:1 Mem:122.18M (Peak 122.18M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window sill.001
+Fra:1 Mem:122.20M (Peak 122.20M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post
+Fra:1 Mem:122.20M (Peak 122.20M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.001
+Fra:1 Mem:122.20M (Peak 122.20M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.002
+Fra:1 Mem:122.23M (Peak 122.23M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.004
+Fra:1 Mem:122.24M (Peak 122.24M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.005
+Fra:1 Mem:122.28M (Peak 122.28M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.006
+Fra:1 Mem:122.25M (Peak 122.28M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence rail.001
+Fra:1 Mem:122.25M (Peak 122.28M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Door.001
+Fra:1 Mem:122.26M (Peak 122.28M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window frame.002
+Fra:1 Mem:122.27M (Peak 122.28M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window mullion.002
+Fra:1 Mem:122.28M (Peak 122.28M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window pane.003
+Fra:1 Mem:122.28M (Peak 122.28M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window mullion.003
+Fra:1 Mem:122.28M (Peak 122.28M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch post.002
+Fra:1 Mem:122.29M (Peak 122.29M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch canopy.001
+Fra:1 Mem:122.29M (Peak 122.29M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tiled roof_001
+Fra:1 Mem:122.30M (Peak 122.30M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Corner timber.002
+Fra:1 Mem:122.30M (Peak 122.30M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window sill.002
+Fra:1 Mem:122.32M (Peak 122.32M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.007
+Fra:1 Mem:122.32M (Peak 122.32M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.008
+Fra:1 Mem:122.32M (Peak 122.32M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.009
+Fra:1 Mem:122.33M (Peak 122.33M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.011
+Fra:1 Mem:122.34M (Peak 122.34M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.013
+Fra:1 Mem:122.34M (Peak 122.34M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence rail.003
+Fra:1 Mem:122.35M (Peak 122.35M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Door.002
+Fra:1 Mem:122.35M (Peak 122.35M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window frame.004
+Fra:1 Mem:122.37M (Peak 122.37M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window pane.004
+Fra:1 Mem:122.37M (Peak 122.37M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window mullion.004
+Fra:1 Mem:122.37M (Peak 122.37M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window pane.005
+Fra:1 Mem:122.38M (Peak 122.38M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Chimney.002
+Fra:1 Mem:122.39M (Peak 122.39M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch post.004
+Fra:1 Mem:122.39M (Peak 122.39M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch post.005
+Fra:1 Mem:122.40M (Peak 122.40M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch canopy.002
+Fra:1 Mem:122.40M (Peak 122.40M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Corner timber.004
+Fra:1 Mem:122.40M (Peak 122.40M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window sill.004
+Fra:1 Mem:122.42M (Peak 122.42M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Corner timber.005
+Fra:1 Mem:122.43M (Peak 122.43M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.014
+Fra:1 Mem:122.44M (Peak 122.44M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.016
+Fra:1 Mem:122.44M (Peak 122.44M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.017
+Fra:1 Mem:122.45M (Peak 122.45M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.019
+Fra:1 Mem:122.55M (Peak 122.55M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.020
+Fra:1 Mem:122.63M (Peak 122.63M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence rail.005
+Fra:1 Mem:122.70M (Peak 122.70M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Door.003
+Fra:1 Mem:122.75M (Peak 122.75M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window frame.006
+Fra:1 Mem:122.75M (Peak 122.75M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window frame.007
+Fra:1 Mem:122.78M (Peak 122.78M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window pane.007
+Fra:1 Mem:122.80M (Peak 122.80M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window mullion.007
+Fra:1 Mem:122.83M (Peak 122.83M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Chimney.003
+Fra:1 Mem:122.83M (Peak 122.83M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch canopy.003
+Fra:1 Mem:122.84M (Peak 122.84M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tiled roof_003
+Fra:1 Mem:122.93M (Peak 122.93M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Corner timber.006
+Fra:1 Mem:122.92M (Peak 122.93M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.021
+Fra:1 Mem:122.95M (Peak 122.95M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.022
+Fra:1 Mem:122.96M (Peak 122.96M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.024
+Fra:1 Mem:122.96M (Peak 122.96M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.026
+Fra:1 Mem:122.98M (Peak 122.98M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.027
+Fra:1 Mem:122.98M (Peak 122.98M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Door.004
+Fra:1 Mem:123.01M (Peak 123.01M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window frame.008
+Fra:1 Mem:123.05M (Peak 123.05M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window pane.008
+Fra:1 Mem:123.03M (Peak 123.05M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window mullion.009
+Fra:1 Mem:123.03M (Peak 123.05M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Chimney.004
+Fra:1 Mem:123.03M (Peak 123.05M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch post.009
+Fra:1 Mem:123.04M (Peak 123.05M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch canopy.004
+Fra:1 Mem:123.05M (Peak 123.05M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Corner timber.008
+Fra:1 Mem:123.06M (Peak 123.06M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window sill.008
+Fra:1 Mem:123.06M (Peak 123.06M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.028
+Fra:1 Mem:123.06M (Peak 123.06M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.029
+Fra:1 Mem:123.06M (Peak 123.06M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.030
+Fra:1 Mem:123.06M (Peak 123.06M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.031
+Fra:1 Mem:123.07M (Peak 123.07M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.032
+Fra:1 Mem:123.07M (Peak 123.07M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.034
+Fra:1 Mem:123.07M (Peak 123.07M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence rail.009
+Fra:1 Mem:123.08M (Peak 123.08M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Door step.004
+Fra:1 Mem:123.09M (Peak 123.09M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window frame.010
+Fra:1 Mem:123.10M (Peak 123.10M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window mullion.010
+Fra:1 Mem:123.11M (Peak 123.11M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window frame.011
+Fra:1 Mem:123.11M (Peak 123.11M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window pane.011
+Fra:1 Mem:123.12M (Peak 123.12M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window mullion.011
+Fra:1 Mem:123.12M (Peak 123.12M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch post.010
+Fra:1 Mem:123.12M (Peak 123.12M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch post.011
+Fra:1 Mem:123.13M (Peak 123.13M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tiled roof_005
+Fra:1 Mem:123.14M (Peak 123.14M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Corner timber.010
+Fra:1 Mem:123.23M (Peak 123.23M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Corner timber.011
+Fra:1 Mem:123.26M (Peak 123.26M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window sill.011
+Fra:1 Mem:123.28M (Peak 123.28M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.036
+Fra:1 Mem:123.29M (Peak 123.29M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.037
+Fra:1 Mem:123.29M (Peak 123.29M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.038
+Fra:1 Mem:123.29M (Peak 123.29M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.040
+Fra:1 Mem:123.29M (Peak 123.29M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.039
+Fra:1 Mem:123.32M (Peak 123.32M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence rail.011
+Fra:1 Mem:123.34M (Peak 123.34M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Door step.005
+Fra:1 Mem:123.35M (Peak 123.35M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Door.006
+Fra:1 Mem:123.36M (Peak 123.36M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window frame.012
+Fra:1 Mem:123.36M (Peak 123.36M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window mullion.012
+Fra:1 Mem:123.37M (Peak 123.37M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window frame.013
+Fra:1 Mem:123.37M (Peak 123.37M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window mullion.013
+Fra:1 Mem:123.38M (Peak 123.38M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Chimney.006
+Fra:1 Mem:123.44M (Peak 123.44M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch post.013
+Fra:1 Mem:123.44M (Peak 123.44M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch canopy.006
+Fra:1 Mem:123.50M (Peak 123.50M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tiled roof_006
+Fra:1 Mem:123.52M (Peak 123.52M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Corner timber.012
+Fra:1 Mem:123.58M (Peak 123.58M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window sill.012
+Fra:1 Mem:123.58M (Peak 123.58M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window sill.013
+Fra:1 Mem:123.65M (Peak 123.65M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.042
+Fra:1 Mem:123.66M (Peak 123.66M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.043
+Fra:1 Mem:123.68M (Peak 123.68M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.045
+Fra:1 Mem:123.70M (Peak 123.70M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.047
+Fra:1 Mem:123.70M (Peak 123.70M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.048
+Fra:1 Mem:123.70M (Peak 123.70M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence rail.012
+Fra:1 Mem:123.71M (Peak 123.71M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence rail.013
+Fra:1 Mem:123.75M (Peak 123.75M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Door.007
+Fra:1 Mem:123.75M (Peak 123.75M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window frame.014
+Fra:1 Mem:123.77M (Peak 123.77M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window mullion.014
+Fra:1 Mem:123.77M (Peak 123.77M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window frame.015
+Fra:1 Mem:123.77M (Peak 123.77M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window mullion.015
+Fra:1 Mem:123.77M (Peak 123.77M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Chimney.007
+Fra:1 Mem:123.79M (Peak 123.79M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch post.014
+Fra:1 Mem:123.79M (Peak 123.79M) | Time:00:00.21 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch canopy.007
+Fra:1 Mem:123.79M (Peak 123.79M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Corner timber.015
+Fra:1 Mem:123.80M (Peak 123.80M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window sill.014
+Fra:1 Mem:123.81M (Peak 123.81M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.049
+Fra:1 Mem:123.81M (Peak 123.81M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.050
+Fra:1 Mem:123.81M (Peak 123.81M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.051
+Fra:1 Mem:123.81M (Peak 123.81M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.052
+Fra:1 Mem:123.81M (Peak 123.81M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.053
+Fra:1 Mem:123.81M (Peak 123.81M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.054
+Fra:1 Mem:123.82M (Peak 123.82M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence rail.014
+Fra:1 Mem:123.82M (Peak 123.82M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Door step.007
+Fra:1 Mem:123.82M (Peak 123.82M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Door.008
+Fra:1 Mem:123.82M (Peak 123.82M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window frame.016
+Fra:1 Mem:123.85M (Peak 123.85M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window pane.016
+Fra:1 Mem:123.85M (Peak 123.85M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window mullion.016
+Fra:1 Mem:123.85M (Peak 123.85M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window frame.017
+Fra:1 Mem:123.85M (Peak 123.85M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Chimney.008
+Fra:1 Mem:123.86M (Peak 123.86M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch post.016
+Fra:1 Mem:123.87M (Peak 123.87M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch post.017
+Fra:1 Mem:123.87M (Peak 123.87M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tiled roof_008
+Fra:1 Mem:124.14M (Peak 124.14M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Corner timber.016
+Fra:1 Mem:124.15M (Peak 124.15M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window sill.016
+Fra:1 Mem:124.19M (Peak 124.19M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Corner timber.017
+Fra:1 Mem:124.19M (Peak 124.19M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window sill.017
+Fra:1 Mem:124.19M (Peak 124.19M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.056
+Fra:1 Mem:124.20M (Peak 124.20M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.057
+Fra:1 Mem:124.20M (Peak 124.20M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.059
+Fra:1 Mem:124.21M (Peak 124.21M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.060
+Fra:1 Mem:124.25M (Peak 124.25M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.062
+Fra:1 Mem:124.28M (Peak 124.28M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence rail.016
+Fra:1 Mem:124.29M (Peak 124.29M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence rail.017
+Fra:1 Mem:124.32M (Peak 124.32M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Door.009
+Fra:1 Mem:124.29M (Peak 124.32M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window pane.018
+Fra:1 Mem:124.30M (Peak 124.32M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window mullion.018
+Fra:1 Mem:124.31M (Peak 124.32M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window frame.019
+Fra:1 Mem:124.31M (Peak 124.32M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window pane.019
+Fra:1 Mem:124.32M (Peak 124.32M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window mullion.019
+Fra:1 Mem:124.32M (Peak 124.32M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Chimney.009
+Fra:1 Mem:124.32M (Peak 124.32M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch post.019
+Fra:1 Mem:124.32M (Peak 124.32M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch canopy.009
+Fra:1 Mem:124.32M (Peak 124.32M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tiled roof_009
+Fra:1 Mem:124.33M (Peak 124.33M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Corner timber.018
+Fra:1 Mem:124.35M (Peak 124.35M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window sill.018
+Fra:1 Mem:124.35M (Peak 124.35M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Corner timber.019
+Fra:1 Mem:124.35M (Peak 124.35M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.065
+Fra:1 Mem:124.36M (Peak 124.36M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.066
+Fra:1 Mem:124.36M (Peak 124.36M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.067
+Fra:1 Mem:124.37M (Peak 124.37M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.068
+Fra:1 Mem:124.38M (Peak 124.38M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.069
+Fra:1 Mem:124.38M (Peak 124.38M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Door.010
+Fra:1 Mem:124.38M (Peak 124.38M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window pane.020
+Fra:1 Mem:124.39M (Peak 124.39M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window mullion.020
+Fra:1 Mem:124.39M (Peak 124.39M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window frame.021
+Fra:1 Mem:124.39M (Peak 124.39M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window mullion.021
+Fra:1 Mem:124.40M (Peak 124.40M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Chimney.010
+Fra:1 Mem:124.42M (Peak 124.42M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch post.020
+Fra:1 Mem:124.50M (Peak 124.50M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch post.021
+Fra:1 Mem:124.53M (Peak 124.53M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch canopy.010
+Fra:1 Mem:124.56M (Peak 124.56M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tiled roof_010
+Fra:1 Mem:124.55M (Peak 124.56M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Corner timber.020
+Fra:1 Mem:124.58M (Peak 124.58M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window sill.020
+Fra:1 Mem:124.61M (Peak 124.61M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.071
+Fra:1 Mem:124.61M (Peak 124.61M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.072
+Fra:1 Mem:124.61M (Peak 124.61M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.073
+Fra:1 Mem:124.61M (Peak 124.61M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.074
+Fra:1 Mem:124.61M (Peak 124.61M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence rail.020
+Fra:1 Mem:124.62M (Peak 124.62M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Door step.010
+Fra:1 Mem:124.63M (Peak 124.63M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Door.011
+Fra:1 Mem:124.64M (Peak 124.64M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window frame.022
+Fra:1 Mem:124.65M (Peak 124.65M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window pane.022
+Fra:1 Mem:124.65M (Peak 124.65M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window mullion.022
+Fra:1 Mem:124.66M (Peak 124.66M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window frame.023
+Fra:1 Mem:124.66M (Peak 124.66M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window pane.023
+Fra:1 Mem:124.66M (Peak 124.66M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Chimney.011
+Fra:1 Mem:124.66M (Peak 124.66M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch post.022
+Fra:1 Mem:124.67M (Peak 124.67M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch post.023
+Fra:1 Mem:124.67M (Peak 124.67M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch canopy.011
+Fra:1 Mem:124.68M (Peak 124.68M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tiled roof_011
+Fra:1 Mem:124.68M (Peak 124.68M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window sill.022
+Fra:1 Mem:124.70M (Peak 124.70M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Corner timber.023
+Fra:1 Mem:124.71M (Peak 124.71M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window sill.023
+Fra:1 Mem:124.71M (Peak 124.71M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.079
+Fra:1 Mem:124.72M (Peak 124.72M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.080
+Fra:1 Mem:124.72M (Peak 124.72M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.081
+Fra:1 Mem:124.72M (Peak 124.72M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.082
+Fra:1 Mem:124.73M (Peak 124.73M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence rail.022
+Fra:1 Mem:124.73M (Peak 124.73M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence rail.023
+Fra:1 Mem:124.73M (Peak 124.73M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Door step.011
+Fra:1 Mem:124.73M (Peak 124.73M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window frame.024
+Fra:1 Mem:124.74M (Peak 124.74M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window pane.024
+Fra:1 Mem:124.74M (Peak 124.74M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window mullion.024
+Fra:1 Mem:124.75M (Peak 124.75M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window pane.025
+Fra:1 Mem:124.75M (Peak 124.75M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Chimney.012
+Fra:1 Mem:124.76M (Peak 124.76M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch post.024
+Fra:1 Mem:124.77M (Peak 124.77M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch post.025
+Fra:1 Mem:124.77M (Peak 124.77M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tiled roof_012
+Fra:1 Mem:124.86M (Peak 124.86M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Corner timber.024
+Fra:1 Mem:124.98M (Peak 124.98M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window sill.024
+Fra:1 Mem:125.10M (Peak 125.10M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Corner timber.025
+Fra:1 Mem:125.11M (Peak 125.11M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window sill.025
+Fra:1 Mem:125.12M (Peak 125.12M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.084
+Fra:1 Mem:125.12M (Peak 125.12M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.086
+Fra:1 Mem:125.15M (Peak 125.15M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.089
+Fra:1 Mem:125.31M (Peak 125.31M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.090
+Fra:1 Mem:125.38M (Peak 125.38M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Door step.012
+Fra:1 Mem:125.43M (Peak 125.43M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Door.013
+Fra:1 Mem:125.40M (Peak 125.43M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window pane.026
+Fra:1 Mem:125.44M (Peak 125.44M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window frame.027
+Fra:1 Mem:125.45M (Peak 125.45M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window mullion.027
+Fra:1 Mem:125.49M (Peak 125.49M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Chimney.013
+Fra:1 Mem:125.45M (Peak 125.49M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch post.026
+Fra:1 Mem:125.46M (Peak 125.49M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch post.027
+Fra:1 Mem:125.46M (Peak 125.49M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch canopy.013
+Fra:1 Mem:125.47M (Peak 125.49M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Corner timber.026
+Fra:1 Mem:125.47M (Peak 125.49M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window sill.026
+Fra:1 Mem:125.48M (Peak 125.49M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Corner timber.027
+Fra:1 Mem:125.49M (Peak 125.49M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window sill.027
+Fra:1 Mem:125.49M (Peak 125.49M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.091
+Fra:1 Mem:125.49M (Peak 125.49M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.093
+Fra:1 Mem:125.49M (Peak 125.49M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.094
+Fra:1 Mem:125.49M (Peak 125.49M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.095
+Fra:1 Mem:125.49M (Peak 125.49M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.096
+Fra:1 Mem:125.50M (Peak 125.50M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.097
+Fra:1 Mem:125.50M (Peak 125.50M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence rail.026
+Fra:1 Mem:125.51M (Peak 125.51M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Door step.013
+Fra:1 Mem:125.58M (Peak 125.58M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Door.014
+Fra:1 Mem:125.66M (Peak 125.66M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window frame.028
+Fra:1 Mem:125.69M (Peak 125.69M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window pane.028
+Fra:1 Mem:125.70M (Peak 125.70M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window mullion.028
+Fra:1 Mem:125.69M (Peak 125.70M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Chimney.014
+Fra:1 Mem:125.71M (Peak 125.71M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch post.028
+Fra:1 Mem:125.71M (Peak 125.71M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch canopy.014
+Fra:1 Mem:125.75M (Peak 125.75M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Corner timber.028
+Fra:1 Mem:125.80M (Peak 125.80M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window sill.028
+Fra:1 Mem:125.77M (Peak 125.80M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.098
+Fra:1 Mem:125.78M (Peak 125.80M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.099
+Fra:1 Mem:125.78M (Peak 125.80M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.100
+Fra:1 Mem:125.78M (Peak 125.80M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.101
+Fra:1 Mem:125.79M (Peak 125.80M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.103
+Fra:1 Mem:125.79M (Peak 125.80M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.104
+Fra:1 Mem:125.79M (Peak 125.80M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence rail.028
+Fra:1 Mem:125.84M (Peak 125.84M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence rail.029
+Fra:1 Mem:125.87M (Peak 125.87M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Door step.014
+Fra:1 Mem:125.89M (Peak 125.89M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window frame.030
+Fra:1 Mem:125.92M (Peak 125.92M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window mullion.030
+Fra:1 Mem:125.92M (Peak 125.92M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window frame.031
+Fra:1 Mem:125.92M (Peak 125.92M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window pane.031
+Fra:1 Mem:125.93M (Peak 125.93M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Chimney.015
+Fra:1 Mem:125.96M (Peak 125.96M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch post.030
+Fra:1 Mem:126.00M (Peak 126.00M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch post.031
+Fra:1 Mem:125.98M (Peak 126.00M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tiled roof_015
+Fra:1 Mem:125.98M (Peak 126.00M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Corner timber.031
+Fra:1 Mem:126.03M (Peak 126.03M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window sill.031
+Fra:1 Mem:126.08M (Peak 126.08M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.105
+Fra:1 Mem:126.11M (Peak 126.11M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.109
+Fra:1 Mem:126.10M (Peak 126.11M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.110
+Fra:1 Mem:126.11M (Peak 126.11M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence rail.030
+Fra:1 Mem:126.11M (Peak 126.11M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Door step.015
+Fra:1 Mem:126.14M (Peak 126.14M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Door.016
+Fra:1 Mem:126.18M (Peak 126.18M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window frame.032
+Fra:1 Mem:126.16M (Peak 126.18M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window frame.033
+Fra:1 Mem:126.16M (Peak 126.18M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window pane.033
+Fra:1 Mem:126.16M (Peak 126.18M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window mullion.033
+Fra:1 Mem:126.16M (Peak 126.18M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Chimney.016
+Fra:1 Mem:126.18M (Peak 126.18M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch post.032
+Fra:1 Mem:126.18M (Peak 126.18M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch post.033
+Fra:1 Mem:126.19M (Peak 126.19M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Corner timber.032
+Fra:1 Mem:126.19M (Peak 126.19M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window sill.032
+Fra:1 Mem:126.19M (Peak 126.19M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window sill.033
+Fra:1 Mem:126.22M (Peak 126.22M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.113
+Fra:1 Mem:126.22M (Peak 126.22M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.114
+Fra:1 Mem:126.23M (Peak 126.23M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.116
+Fra:1 Mem:126.23M (Peak 126.23M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.118
+Fra:1 Mem:126.23M (Peak 126.23M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence rail.032
+Fra:1 Mem:126.25M (Peak 126.25M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Door.017
+Fra:1 Mem:126.30M (Peak 126.30M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window frame.034
+Fra:1 Mem:126.34M (Peak 126.34M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window mullion.034
+Fra:1 Mem:126.36M (Peak 126.36M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window frame.035
+Fra:1 Mem:126.37M (Peak 126.37M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Chimney.017
+Fra:1 Mem:126.40M (Peak 126.40M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch post.034
+Fra:1 Mem:126.40M (Peak 126.40M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch post.035
+Fra:1 Mem:126.41M (Peak 126.41M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch canopy.017
+Fra:1 Mem:126.45M (Peak 126.45M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Corner timber.035
+Fra:1 Mem:126.46M (Peak 126.46M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window sill.035
+Fra:1 Mem:126.47M (Peak 126.47M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.119
+Fra:1 Mem:126.47M (Peak 126.47M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.121
+Fra:1 Mem:126.47M (Peak 126.47M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.123
+Fra:1 Mem:126.48M (Peak 126.48M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.124
+Fra:1 Mem:126.48M (Peak 126.48M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.125
+Fra:1 Mem:126.54M (Peak 126.54M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence rail.035
+Fra:1 Mem:126.58M (Peak 126.58M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Door.018
+Fra:1 Mem:126.61M (Peak 126.61M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window pane.036
+Fra:1 Mem:126.62M (Peak 126.62M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window mullion.036
+Fra:1 Mem:126.63M (Peak 126.63M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window frame.037
+Fra:1 Mem:126.65M (Peak 126.65M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Chimney.018
+Fra:1 Mem:126.66M (Peak 126.66M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch post.036
+Fra:1 Mem:126.66M (Peak 126.66M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch post.037
+Fra:1 Mem:126.67M (Peak 126.67M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch canopy.018
+Fra:1 Mem:126.67M (Peak 126.67M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tiled roof_018
+Fra:1 Mem:126.69M (Peak 126.69M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Corner timber.036
+Fra:1 Mem:126.74M (Peak 126.74M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window sill.036
+Fra:1 Mem:126.81M (Peak 126.81M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Corner timber.037
+Fra:1 Mem:126.81M (Peak 126.81M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window sill.037
+Fra:1 Mem:126.82M (Peak 126.82M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.126
+Fra:1 Mem:126.85M (Peak 126.85M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.127
+Fra:1 Mem:126.84M (Peak 126.85M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.128
+Fra:1 Mem:126.85M (Peak 126.85M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.129
+Fra:1 Mem:126.85M (Peak 126.85M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.130
+Fra:1 Mem:126.85M (Peak 126.85M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.131
+Fra:1 Mem:126.89M (Peak 126.89M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence rail.037
+Fra:1 Mem:126.89M (Peak 126.89M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Door step.018
+Fra:1 Mem:126.90M (Peak 126.90M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Door.019
+Fra:1 Mem:126.92M (Peak 126.92M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window frame.038
+Fra:1 Mem:126.92M (Peak 126.92M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window frame.039
+Fra:1 Mem:126.93M (Peak 126.93M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window pane.039
+Fra:1 Mem:126.93M (Peak 126.93M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window mullion.039
+Fra:1 Mem:126.94M (Peak 126.94M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch post.039
+Fra:1 Mem:126.94M (Peak 126.94M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch canopy.019
+Fra:1 Mem:126.95M (Peak 126.95M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tiled roof_019
+Fra:1 Mem:127.00M (Peak 127.00M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Corner timber.038
+Fra:1 Mem:127.04M (Peak 127.04M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window sill.038
+Fra:1 Mem:127.08M (Peak 127.08M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Corner timber.039
+Fra:1 Mem:127.09M (Peak 127.09M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window sill.039
+Fra:1 Mem:127.10M (Peak 127.10M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.133
+Fra:1 Mem:127.10M (Peak 127.10M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.135
+Fra:1 Mem:127.11M (Peak 127.11M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.136
+Fra:1 Mem:127.11M (Peak 127.11M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.137
+Fra:1 Mem:127.12M (Peak 127.12M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.139
+Fra:1 Mem:127.12M (Peak 127.12M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence rail.038
+Fra:1 Mem:127.15M (Peak 127.15M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence rail.039
+Fra:1 Mem:127.15M (Peak 127.15M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Door.020
+Fra:1 Mem:127.19M (Peak 127.19M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window frame.040
+Fra:1 Mem:127.16M (Peak 127.19M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window mullion.040
+Fra:1 Mem:127.17M (Peak 127.19M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window frame.041
+Fra:1 Mem:127.18M (Peak 127.19M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window pane.041
+Fra:1 Mem:127.19M (Peak 127.19M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window mullion.041
+Fra:1 Mem:127.19M (Peak 127.19M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Chimney.020
+Fra:1 Mem:127.21M (Peak 127.21M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch post.041
+Fra:1 Mem:127.21M (Peak 127.21M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch canopy.020
+Fra:1 Mem:127.22M (Peak 127.22M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Corner timber.040
+Fra:1 Mem:127.23M (Peak 127.23M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window sill.040
+Fra:1 Mem:127.24M (Peak 127.24M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.140
+Fra:1 Mem:127.24M (Peak 127.24M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.142
+Fra:1 Mem:127.24M (Peak 127.24M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.143
+Fra:1 Mem:127.25M (Peak 127.25M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.144
+Fra:1 Mem:127.25M (Peak 127.25M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.145
+Fra:1 Mem:127.25M (Peak 127.25M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.146
+Fra:1 Mem:127.25M (Peak 127.25M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence rail.041
+Fra:1 Mem:127.25M (Peak 127.25M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Door step.020
+Fra:1 Mem:127.43M (Peak 127.43M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window frame.042
+Fra:1 Mem:127.44M (Peak 127.44M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window pane.042
+Fra:1 Mem:127.46M (Peak 127.46M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window frame.043
+Fra:1 Mem:127.46M (Peak 127.46M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window mullion.043
+Fra:1 Mem:127.46M (Peak 127.46M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Chimney.021
+Fra:1 Mem:127.51M (Peak 127.51M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch post.043
+Fra:1 Mem:127.51M (Peak 127.51M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tiled roof_021
+Fra:1 Mem:127.58M (Peak 127.58M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Corner timber.042
+Fra:1 Mem:127.66M (Peak 127.66M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window sill.042
+Fra:1 Mem:127.67M (Peak 127.67M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window sill.043
+Fra:1 Mem:127.69M (Peak 127.69M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.147
+Fra:1 Mem:127.70M (Peak 127.70M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.148
+Fra:1 Mem:127.70M (Peak 127.70M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.149
+Fra:1 Mem:127.71M (Peak 127.71M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.150
+Fra:1 Mem:127.75M (Peak 127.75M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.152
+Fra:1 Mem:127.75M (Peak 127.75M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence rail.042
+Fra:1 Mem:127.75M (Peak 127.75M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence rail.043
+Fra:1 Mem:127.76M (Peak 127.76M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Door.022
+Fra:1 Mem:127.77M (Peak 127.77M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window frame.044
+Fra:1 Mem:127.81M (Peak 127.81M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window pane.044
+Fra:1 Mem:127.77M (Peak 127.81M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window frame.045
+Fra:1 Mem:127.77M (Peak 127.81M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window mullion.045
+Fra:1 Mem:127.78M (Peak 127.81M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Chimney.022
+Fra:1 Mem:127.79M (Peak 127.81M) | Time:00:00.22 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch post.044
+Fra:1 Mem:127.80M (Peak 127.81M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch canopy.022
+Fra:1 Mem:127.81M (Peak 127.81M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tiled roof_022
+Fra:1 Mem:127.81M (Peak 127.81M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Corner timber.044
+Fra:1 Mem:127.82M (Peak 127.82M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window sill.044
+Fra:1 Mem:127.82M (Peak 127.82M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Corner timber.045
+Fra:1 Mem:127.83M (Peak 127.83M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window sill.045
+Fra:1 Mem:127.84M (Peak 127.84M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.155
+Fra:1 Mem:127.84M (Peak 127.84M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.156
+Fra:1 Mem:127.84M (Peak 127.84M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.158
+Fra:1 Mem:127.84M (Peak 127.84M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.159
+Fra:1 Mem:127.85M (Peak 127.85M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence rail.044
+Fra:1 Mem:127.85M (Peak 127.85M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Door step.022
+Fra:1 Mem:127.89M (Peak 127.89M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Door.023
+Fra:1 Mem:127.92M (Peak 127.92M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window frame.046
+Fra:1 Mem:127.97M (Peak 127.97M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window pane.046
+Fra:1 Mem:127.97M (Peak 127.97M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window mullion.046
+Fra:1 Mem:127.97M (Peak 127.97M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window mullion.047
+Fra:1 Mem:128.02M (Peak 128.02M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Chimney.023
+Fra:1 Mem:128.01M (Peak 128.02M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch post.047
+Fra:1 Mem:128.01M (Peak 128.02M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch canopy.023
+Fra:1 Mem:128.02M (Peak 128.02M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tiled roof_023
+Fra:1 Mem:128.02M (Peak 128.02M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Corner timber.047
+Fra:1 Mem:128.03M (Peak 128.03M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window sill.047
+Fra:1 Mem:128.04M (Peak 128.04M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.161
+Fra:1 Mem:128.05M (Peak 128.05M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.162
+Fra:1 Mem:128.05M (Peak 128.05M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.164
+Fra:1 Mem:128.06M (Peak 128.06M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.165
+Fra:1 Mem:128.07M (Peak 128.07M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.166
+Fra:1 Mem:128.07M (Peak 128.07M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence rail.046
+Fra:1 Mem:128.07M (Peak 128.07M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence rail.047
+Fra:1 Mem:128.07M (Peak 128.07M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Door step.023
+Fra:1 Mem:128.08M (Peak 128.08M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Door.024
+Fra:1 Mem:128.08M (Peak 128.08M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window pane.048
+Fra:1 Mem:128.09M (Peak 128.09M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window mullion.048
+Fra:1 Mem:128.09M (Peak 128.09M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window pane.049
+Fra:1 Mem:128.10M (Peak 128.10M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window mullion.049
+Fra:1 Mem:128.10M (Peak 128.10M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch post.048
+Fra:1 Mem:128.10M (Peak 128.10M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch post.049
+Fra:1 Mem:128.10M (Peak 128.10M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch canopy.024
+Fra:1 Mem:128.10M (Peak 128.10M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tiled roof_024
+Fra:1 Mem:128.16M (Peak 128.16M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Corner timber.048
+Fra:1 Mem:128.20M (Peak 128.20M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Corner timber.049
+Fra:1 Mem:128.22M (Peak 128.22M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.168
+Fra:1 Mem:128.25M (Peak 128.25M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.169
+Fra:1 Mem:128.25M (Peak 128.25M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.170
+Fra:1 Mem:128.25M (Peak 128.25M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.173
+Fra:1 Mem:128.31M (Peak 128.31M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.174
+Fra:1 Mem:128.29M (Peak 128.31M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence rail.049
+Fra:1 Mem:128.29M (Peak 128.31M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Door step.024
+Fra:1 Mem:128.29M (Peak 128.31M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window frame.050
+Fra:1 Mem:128.31M (Peak 128.31M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window pane.050
+Fra:1 Mem:128.32M (Peak 128.32M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window frame.051
+Fra:1 Mem:128.32M (Peak 128.32M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window mullion.051
+Fra:1 Mem:128.33M (Peak 128.33M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch post.050
+Fra:1 Mem:128.33M (Peak 128.33M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch canopy.025
+Fra:1 Mem:128.34M (Peak 128.34M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tiled roof_025
+Fra:1 Mem:128.34M (Peak 128.34M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window sill.050
+Fra:1 Mem:128.37M (Peak 128.37M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Corner timber.051
+Fra:1 Mem:128.37M (Peak 128.37M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window sill.051
+Fra:1 Mem:128.38M (Peak 128.38M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.179
+Fra:1 Mem:128.45M (Peak 128.45M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.180
+Fra:1 Mem:128.66M (Peak 128.66M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence rail.050
+Fra:1 Mem:128.69M (Peak 128.69M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence rail.051
+Fra:1 Mem:128.68M (Peak 128.69M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Door step.025
+Fra:1 Mem:128.73M (Peak 128.73M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Door.026
+Fra:1 Mem:128.77M (Peak 128.77M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window pane.052
+Fra:1 Mem:128.81M (Peak 128.81M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window mullion.052
+Fra:1 Mem:128.78M (Peak 128.81M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window pane.053
+Fra:1 Mem:128.82M (Peak 128.82M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window mullion.053
+Fra:1 Mem:128.79M (Peak 128.82M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Chimney.026
+Fra:1 Mem:128.79M (Peak 128.82M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch post.052
+Fra:1 Mem:128.79M (Peak 128.82M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch post.053
+Fra:1 Mem:128.80M (Peak 128.82M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch canopy.026
+Fra:1 Mem:128.80M (Peak 128.82M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Corner timber.052
+Fra:1 Mem:128.82M (Peak 128.82M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window sill.053
+Fra:1 Mem:128.83M (Peak 128.83M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.182
+Fra:1 Mem:128.83M (Peak 128.83M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.183
+Fra:1 Mem:128.84M (Peak 128.84M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.184
+Fra:1 Mem:128.84M (Peak 128.84M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.186
+Fra:1 Mem:128.84M (Peak 128.84M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.187
+Fra:1 Mem:128.84M (Peak 128.84M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.188
+Fra:1 Mem:128.89M (Peak 128.89M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence rail.052
+Fra:1 Mem:128.94M (Peak 128.94M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence rail.053
+Fra:1 Mem:128.96M (Peak 128.96M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Door step.026
+Fra:1 Mem:128.97M (Peak 128.97M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Door.027
+Fra:1 Mem:128.97M (Peak 128.97M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window pane.054
+Fra:1 Mem:128.99M (Peak 128.99M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window mullion.054
+Fra:1 Mem:129.00M (Peak 129.00M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window frame.055
+Fra:1 Mem:129.01M (Peak 129.01M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window pane.055
+Fra:1 Mem:129.02M (Peak 129.02M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window mullion.055
+Fra:1 Mem:129.02M (Peak 129.02M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch post.054
+Fra:1 Mem:129.03M (Peak 129.03M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch canopy.027
+Fra:1 Mem:129.04M (Peak 129.04M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tiled roof_027
+Fra:1 Mem:129.05M (Peak 129.05M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window sill.054
+Fra:1 Mem:129.06M (Peak 129.06M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Corner timber.055
+Fra:1 Mem:129.06M (Peak 129.06M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window sill.055
+Fra:1 Mem:129.07M (Peak 129.07M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.189
+Fra:1 Mem:129.07M (Peak 129.07M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.190
+Fra:1 Mem:129.07M (Peak 129.07M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.192
+Fra:1 Mem:129.07M (Peak 129.07M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.193
+Fra:1 Mem:129.08M (Peak 129.08M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.194
+Fra:1 Mem:129.08M (Peak 129.08M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.195
+Fra:1 Mem:129.08M (Peak 129.08M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence rail.055
+Fra:1 Mem:129.09M (Peak 129.09M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Door step.027
+Fra:1 Mem:129.09M (Peak 129.09M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window frame.056
+Fra:1 Mem:129.11M (Peak 129.11M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window pane.056
+Fra:1 Mem:129.11M (Peak 129.11M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window frame.057
+Fra:1 Mem:129.12M (Peak 129.12M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window pane.057
+Fra:1 Mem:129.13M (Peak 129.13M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Chimney.028
+Fra:1 Mem:129.13M (Peak 129.13M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch post.057
+Fra:1 Mem:129.14M (Peak 129.14M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch canopy.028
+Fra:1 Mem:129.15M (Peak 129.15M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Corner timber.056
+Fra:1 Mem:129.15M (Peak 129.15M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window sill.056
+Fra:1 Mem:129.17M (Peak 129.17M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Corner timber.057
+Fra:1 Mem:129.17M (Peak 129.17M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window sill.057
+Fra:1 Mem:129.17M (Peak 129.17M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.196
+Fra:1 Mem:129.18M (Peak 129.18M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.199
+Fra:1 Mem:129.20M (Peak 129.20M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.202
+Fra:1 Mem:129.24M (Peak 129.24M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence rail.056
+Fra:1 Mem:129.31M (Peak 129.31M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence rail.057
+Fra:1 Mem:129.42M (Peak 129.42M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Door.029
+Fra:1 Mem:129.45M (Peak 129.45M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window frame.058
+Fra:1 Mem:129.45M (Peak 129.45M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window mullion.058
+Fra:1 Mem:129.48M (Peak 129.48M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window mullion.059
+Fra:1 Mem:129.52M (Peak 129.52M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Chimney.029
+Fra:1 Mem:129.52M (Peak 129.52M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch post.058
+Fra:1 Mem:129.53M (Peak 129.53M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tiled roof_029
+Fra:1 Mem:129.53M (Peak 129.53M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window sill.058
+Fra:1 Mem:129.53M (Peak 129.53M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Corner timber.059
+Fra:1 Mem:129.54M (Peak 129.54M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.203
+Fra:1 Mem:129.54M (Peak 129.54M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.204
+Fra:1 Mem:129.54M (Peak 129.54M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.206
+Fra:1 Mem:129.54M (Peak 129.54M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.207
+Fra:1 Mem:129.54M (Peak 129.54M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.209
+Fra:1 Mem:129.55M (Peak 129.55M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence rail.058
+Fra:1 Mem:129.55M (Peak 129.55M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence rail.059
+Fra:1 Mem:129.55M (Peak 129.55M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Door step.029
+Fra:1 Mem:129.67M (Peak 129.67M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Door.030
+Fra:1 Mem:129.70M (Peak 129.70M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window frame.060
+Fra:1 Mem:129.70M (Peak 129.70M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window mullion.060
+Fra:1 Mem:129.71M (Peak 129.71M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window frame.061
+Fra:1 Mem:129.73M (Peak 129.73M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window pane.061
+Fra:1 Mem:129.73M (Peak 129.73M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Chimney.030
+Fra:1 Mem:129.77M (Peak 129.77M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch post.060
+Fra:1 Mem:129.80M (Peak 129.80M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch post.061
+Fra:1 Mem:129.77M (Peak 129.80M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch canopy.030
+Fra:1 Mem:129.79M (Peak 129.80M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Corner timber.060
+Fra:1 Mem:129.79M (Peak 129.80M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Corner timber.061
+Fra:1 Mem:129.79M (Peak 129.80M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window sill.061
+Fra:1 Mem:129.81M (Peak 129.81M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.211
+Fra:1 Mem:129.81M (Peak 129.81M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.212
+Fra:1 Mem:129.81M (Peak 129.81M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.215
+Fra:1 Mem:129.82M (Peak 129.82M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.216
+Fra:1 Mem:129.82M (Peak 129.82M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence rail.060
+Fra:1 Mem:129.83M (Peak 129.83M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence rail.061
+Fra:1 Mem:129.87M (Peak 129.87M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Door step.030
+Fra:1 Mem:129.91M (Peak 129.91M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Door.031
+Fra:1 Mem:129.94M (Peak 129.94M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window frame.062
+Fra:1 Mem:129.97M (Peak 129.97M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window pane.062
+Fra:1 Mem:129.97M (Peak 129.97M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window mullion.062
+Fra:1 Mem:129.97M (Peak 129.97M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window pane.063
+Fra:1 Mem:129.97M (Peak 129.97M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Sun
+Fra:1 Mem:129.97M (Peak 129.97M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Chimney.031
+Fra:1 Mem:130.00M (Peak 130.00M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch post.062
+Fra:1 Mem:130.03M (Peak 130.03M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch post.063
+Fra:1 Mem:130.00M (Peak 130.03M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch canopy.031
+Fra:1 Mem:130.01M (Peak 130.03M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Corner timber.062
+Fra:1 Mem:130.06M (Peak 130.06M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window sill.062
+Fra:1 Mem:130.12M (Peak 130.12M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Corner timber.063
+Fra:1 Mem:130.14M (Peak 130.14M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.217
+Fra:1 Mem:130.14M (Peak 130.14M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.219
+Fra:1 Mem:130.15M (Peak 130.15M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.358
+Fra:1 Mem:130.18M (Peak 130.18M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.221
+Fra:1 Mem:130.22M (Peak 130.22M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.222
+Fra:1 Mem:130.20M (Peak 130.22M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence rail.063
+Fra:1 Mem:130.20M (Peak 130.22M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Door step.031
+Fra:1 Mem:130.20M (Peak 130.22M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Door.032
+Fra:1 Mem:130.22M (Peak 130.22M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window pane.064
+Fra:1 Mem:130.22M (Peak 130.22M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window mullion.064
+Fra:1 Mem:130.22M (Peak 130.22M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window frame.065
+Fra:1 Mem:130.22M (Peak 130.22M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Chimney.032
+Fra:1 Mem:130.23M (Peak 130.23M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch post.064
+Fra:1 Mem:130.24M (Peak 130.24M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch canopy.032
+Fra:1 Mem:130.24M (Peak 130.24M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Corner timber.064
+Fra:1 Mem:130.24M (Peak 130.24M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.356
+Fra:1 Mem:130.24M (Peak 130.24M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window sill.064
+Fra:1 Mem:130.25M (Peak 130.25M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.355
+Fra:1 Mem:130.26M (Peak 130.26M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Corner timber.065
+Fra:1 Mem:130.26M (Peak 130.26M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window sill.065
+Fra:1 Mem:130.26M (Peak 130.26M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.225
+Fra:1 Mem:130.27M (Peak 130.27M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.226
+Fra:1 Mem:130.27M (Peak 130.27M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.228
+Fra:1 Mem:130.27M (Peak 130.27M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.229
+Fra:1 Mem:130.28M (Peak 130.28M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.230
+Fra:1 Mem:130.28M (Peak 130.28M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence rail.064
+Fra:1 Mem:130.29M (Peak 130.29M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence rail.065
+Fra:1 Mem:130.29M (Peak 130.29M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Door step.032
+Fra:1 Mem:130.30M (Peak 130.30M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Door.033
+Fra:1 Mem:130.30M (Peak 130.30M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window frame.066
+Fra:1 Mem:130.31M (Peak 130.31M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window pane.066
+Fra:1 Mem:130.31M (Peak 130.31M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.354
+Fra:1 Mem:130.32M (Peak 130.32M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window frame.067
+Fra:1 Mem:130.32M (Peak 130.32M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window pane.067
+Fra:1 Mem:130.33M (Peak 130.33M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window mullion.067
+Fra:1 Mem:130.33M (Peak 130.33M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Chimney.033
+Fra:1 Mem:130.33M (Peak 130.33M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch post.066
+Fra:1 Mem:130.33M (Peak 130.33M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch post.067
+Fra:1 Mem:130.33M (Peak 130.33M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch canopy.033
+Fra:1 Mem:130.39M (Peak 130.39M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tiled roof_033
+Fra:1 Mem:130.54M (Peak 130.54M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Corner timber.066
+Fra:1 Mem:130.63M (Peak 130.63M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window sill.066
+Fra:1 Mem:130.66M (Peak 130.66M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Corner timber.067
+Fra:1 Mem:130.66M (Peak 130.66M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.231
+Fra:1 Mem:130.65M (Peak 130.66M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.233
+Fra:1 Mem:130.69M (Peak 130.69M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.235
+Fra:1 Mem:130.69M (Peak 130.69M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.236
+Fra:1 Mem:130.73M (Peak 130.73M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.237
+Fra:1 Mem:130.74M (Peak 130.74M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence rail.066
+Fra:1 Mem:130.74M (Peak 130.74M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Door step.033
+Fra:1 Mem:130.75M (Peak 130.75M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.353
+Fra:1 Mem:130.75M (Peak 130.75M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.352
+Fra:1 Mem:130.76M (Peak 130.76M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window pane.068
+Fra:1 Mem:130.76M (Peak 130.76M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.351
+Fra:1 Mem:130.77M (Peak 130.77M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window frame.069
+Fra:1 Mem:130.77M (Peak 130.77M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window pane.069
+Fra:1 Mem:130.77M (Peak 130.77M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window mullion.069
+Fra:1 Mem:130.77M (Peak 130.77M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Chimney.034
+Fra:1 Mem:130.77M (Peak 130.77M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch post.069
+Fra:1 Mem:130.78M (Peak 130.78M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch canopy.034
+Fra:1 Mem:130.80M (Peak 130.80M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tiled roof_034
+Fra:1 Mem:130.80M (Peak 130.80M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Corner timber.068
+Fra:1 Mem:130.81M (Peak 130.81M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Corner timber.069
+Fra:1 Mem:130.81M (Peak 130.81M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.238
+Fra:1 Mem:130.81M (Peak 130.81M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Cylinder.039
+Fra:1 Mem:130.81M (Peak 130.81M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.239
+Fra:1 Mem:130.82M (Peak 130.82M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.240
+Fra:1 Mem:130.82M (Peak 130.82M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.241
+Fra:1 Mem:130.82M (Peak 130.82M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.242
+Fra:1 Mem:130.82M (Peak 130.82M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.243
+Fra:1 Mem:130.83M (Peak 130.83M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence rail.068
+Fra:1 Mem:130.89M (Peak 130.89M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence rail.069
+Fra:1 Mem:130.97M (Peak 130.97M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Door.035
+Fra:1 Mem:131.00M (Peak 131.00M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window mullion.070
+Fra:1 Mem:131.00M (Peak 131.00M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window frame.071
+Fra:1 Mem:131.01M (Peak 131.01M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window pane.071
+Fra:1 Mem:131.02M (Peak 131.02M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Chimney.035
+Fra:1 Mem:131.05M (Peak 131.05M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch post.071
+Fra:1 Mem:131.06M (Peak 131.06M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch canopy.035
+Fra:1 Mem:131.06M (Peak 131.06M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Corner timber.070
+Fra:1 Mem:131.06M (Peak 131.06M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window sill.070
+Fra:1 Mem:131.07M (Peak 131.07M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Corner timber.071
+Fra:1 Mem:131.07M (Peak 131.07M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window sill.071
+Fra:1 Mem:131.07M (Peak 131.07M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.245
+Fra:1 Mem:131.08M (Peak 131.08M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.246
+Fra:1 Mem:131.08M (Peak 131.08M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.248
+Fra:1 Mem:131.09M (Peak 131.09M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.249
+Fra:1 Mem:131.09M (Peak 131.09M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.251
+Fra:1 Mem:131.09M (Peak 131.09M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence rail.070
+Fra:1 Mem:131.10M (Peak 131.10M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Door step.035
+Fra:1 Mem:131.12M (Peak 131.12M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Door.036
+Fra:1 Mem:131.23M (Peak 131.23M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window frame.072
+Fra:1 Mem:131.23M (Peak 131.23M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window mullion.072
+Fra:1 Mem:131.25M (Peak 131.25M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window frame.073
+Fra:1 Mem:131.25M (Peak 131.25M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.348
+Fra:1 Mem:131.26M (Peak 131.26M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window pane.073
+Fra:1 Mem:131.30M (Peak 131.30M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window mullion.073
+Fra:1 Mem:131.30M (Peak 131.30M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Chimney.036
+Fra:1 Mem:131.30M (Peak 131.30M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch post.072
+Fra:1 Mem:131.34M (Peak 131.34M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch canopy.036
+Fra:1 Mem:131.33M (Peak 131.34M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tiled roof_036
+Fra:1 Mem:131.35M (Peak 131.35M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Corner timber.072
+Fra:1 Mem:131.41M (Peak 131.41M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window sill.073
+Fra:1 Mem:131.44M (Peak 131.44M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.253
+Fra:1 Mem:131.50M (Peak 131.50M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.346
+Fra:1 Mem:131.51M (Peak 131.51M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.255
+Fra:1 Mem:131.51M (Peak 131.51M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.345
+Fra:1 Mem:131.51M (Peak 131.51M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.257
+Fra:1 Mem:131.56M (Peak 131.56M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence rail.072
+Fra:1 Mem:131.56M (Peak 131.56M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence rail.073
+Fra:1 Mem:131.57M (Peak 131.57M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Door.037
+Fra:1 Mem:131.61M (Peak 131.61M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window frame.074
+Fra:1 Mem:131.58M (Peak 131.61M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window pane.074
+Fra:1 Mem:131.59M (Peak 131.61M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window frame.075
+Fra:1 Mem:131.59M (Peak 131.61M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window mullion.075
+Fra:1 Mem:131.60M (Peak 131.61M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Chimney.037
+Fra:1 Mem:131.60M (Peak 131.61M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch post.075
+Fra:1 Mem:131.61M (Peak 131.61M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch canopy.037
+Fra:1 Mem:131.61M (Peak 131.61M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window sill.074
+Fra:1 Mem:131.62M (Peak 131.62M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Corner timber.075
+Fra:1 Mem:131.62M (Peak 131.62M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window sill.075
+Fra:1 Mem:131.63M (Peak 131.63M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.259
+Fra:1 Mem:131.63M (Peak 131.63M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.260
+Fra:1 Mem:131.63M (Peak 131.63M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.262
+Fra:1 Mem:131.63M (Peak 131.63M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.263
+Fra:1 Mem:131.63M (Peak 131.63M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.264
+Fra:1 Mem:131.64M (Peak 131.64M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.344
+Fra:1 Mem:131.64M (Peak 131.64M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.265
+Fra:1 Mem:131.64M (Peak 131.64M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence rail.074
+Fra:1 Mem:131.65M (Peak 131.65M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence rail.075
+Fra:1 Mem:131.65M (Peak 131.65M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Door step.037
+Fra:1 Mem:131.65M (Peak 131.65M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Door.038
+Fra:1 Mem:131.67M (Peak 131.67M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window frame.076
+Fra:1 Mem:131.67M (Peak 131.67M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window mullion.076
+Fra:1 Mem:131.67M (Peak 131.67M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window frame.077
+Fra:1 Mem:131.68M (Peak 131.68M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window pane.077
+Fra:1 Mem:131.68M (Peak 131.68M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window mullion.077
+Fra:1 Mem:131.68M (Peak 131.68M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Chimney.038
+Fra:1 Mem:131.68M (Peak 131.68M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch post.076
+Fra:1 Mem:131.69M (Peak 131.69M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch post.077
+Fra:1 Mem:131.69M (Peak 131.69M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.342
+Fra:1 Mem:131.77M (Peak 131.77M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tiled roof_038
+Fra:1 Mem:131.79M (Peak 131.79M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Corner timber.076
+Fra:1 Mem:131.89M (Peak 131.89M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window sill.076
+Fra:1 Mem:131.98M (Peak 131.98M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Corner timber.077
+Fra:1 Mem:131.98M (Peak 131.98M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.266
+Fra:1 Mem:132.04M (Peak 132.04M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.268
+Fra:1 Mem:132.05M (Peak 132.05M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.269
+Fra:1 Mem:132.06M (Peak 132.06M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.271
+Fra:1 Mem:132.06M (Peak 132.06M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence rail.076
+Fra:1 Mem:132.11M (Peak 132.11M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.341
+Fra:1 Mem:132.11M (Peak 132.11M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Door step.038
+Fra:1 Mem:132.15M (Peak 132.15M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Door.039
+Fra:1 Mem:132.12M (Peak 132.15M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window pane.078
+Fra:1 Mem:132.13M (Peak 132.15M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window mullion.078
+Fra:1 Mem:132.13M (Peak 132.15M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window frame.079
+Fra:1 Mem:132.13M (Peak 132.15M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window mullion.079
+Fra:1 Mem:132.14M (Peak 132.15M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Chimney.039
+Fra:1 Mem:132.14M (Peak 132.15M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch post.078
+Fra:1 Mem:132.14M (Peak 132.15M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Porch canopy.039
+Fra:1 Mem:132.15M (Peak 132.15M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tiled roof_039
+Fra:1 Mem:132.16M (Peak 132.16M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Corner timber.078
+Fra:1 Mem:132.17M (Peak 132.17M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window sill.078
+Fra:1 Mem:132.28M (Peak 132.28M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Corner timber.079
+Fra:1 Mem:132.32M (Peak 132.32M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Window sill.079
+Fra:1 Mem:132.32M (Peak 132.32M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.273
+Fra:1 Mem:132.32M (Peak 132.32M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.274
+Fra:1 Mem:132.32M (Peak 132.32M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.277
+Fra:1 Mem:132.33M (Peak 132.33M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.278
+Fra:1 Mem:132.34M (Peak 132.34M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence post.279
+Fra:1 Mem:132.34M (Peak 132.34M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden fence rail.079
+Fra:1 Mem:132.37M (Peak 132.37M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Cylinder
+Fra:1 Mem:132.38M (Peak 132.38M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Icosphere
+Fra:1 Mem:132.41M (Peak 132.41M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown
+Fra:1 Mem:132.38M (Peak 132.41M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.001
+Fra:1 Mem:132.38M (Peak 132.41M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.003
+Fra:1 Mem:132.39M (Peak 132.41M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.005
+Fra:1 Mem:132.39M (Peak 132.41M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.006
+Fra:1 Mem:132.40M (Peak 132.41M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.007
+Fra:1 Mem:132.40M (Peak 132.41M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.008
+Fra:1 Mem:132.40M (Peak 132.41M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.009
+Fra:1 Mem:132.41M (Peak 132.41M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.010
+Fra:1 Mem:132.41M (Peak 132.41M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.012
+Fra:1 Mem:132.42M (Peak 132.42M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.013
+Fra:1 Mem:132.42M (Peak 132.42M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.014
+Fra:1 Mem:132.42M (Peak 132.42M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.015
+Fra:1 Mem:132.42M (Peak 132.42M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.016
+Fra:1 Mem:132.43M (Peak 132.43M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Cylinder.002
+Fra:1 Mem:132.43M (Peak 132.43M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.018
+Fra:1 Mem:132.43M (Peak 132.43M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.019
+Fra:1 Mem:132.44M (Peak 132.44M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.020
+Fra:1 Mem:132.44M (Peak 132.44M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.022
+Fra:1 Mem:132.46M (Peak 132.46M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.023
+Fra:1 Mem:132.46M (Peak 132.46M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.025
+Fra:1 Mem:132.47M (Peak 132.47M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.026
+Fra:1 Mem:132.47M (Peak 132.47M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.027
+Fra:1 Mem:132.48M (Peak 132.48M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.028
+Fra:1 Mem:132.48M (Peak 132.48M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.029
+Fra:1 Mem:132.48M (Peak 132.48M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.030
+Fra:1 Mem:132.49M (Peak 132.49M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Cylinder.038
+Fra:1 Mem:132.49M (Peak 132.49M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.033
+Fra:1 Mem:132.49M (Peak 132.49M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.034
+Fra:1 Mem:132.50M (Peak 132.50M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Cylinder.004
+Fra:1 Mem:132.50M (Peak 132.50M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.035
+Fra:1 Mem:132.51M (Peak 132.51M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.037
+Fra:1 Mem:132.51M (Peak 132.51M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.038
+Fra:1 Mem:132.51M (Peak 132.51M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.039
+Fra:1 Mem:132.52M (Peak 132.52M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.041
+Fra:1 Mem:132.52M (Peak 132.52M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.042
+Fra:1 Mem:132.53M (Peak 132.53M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Cylinder.005
+Fra:1 Mem:132.53M (Peak 132.53M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.044
+Fra:1 Mem:132.54M (Peak 132.54M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.045
+Fra:1 Mem:132.54M (Peak 132.54M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.048
+Fra:1 Mem:132.55M (Peak 132.55M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.049
+Fra:1 Mem:132.55M (Peak 132.55M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.051
+Fra:1 Mem:132.55M (Peak 132.55M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Cylinder.006
+Fra:1 Mem:132.56M (Peak 132.56M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.053
+Fra:1 Mem:132.57M (Peak 132.57M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.340
+Fra:1 Mem:132.57M (Peak 132.57M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.056
+Fra:1 Mem:132.58M (Peak 132.58M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.339
+Fra:1 Mem:132.58M (Peak 132.58M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.057
+Fra:1 Mem:132.58M (Peak 132.58M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.058
+Fra:1 Mem:132.58M (Peak 132.58M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.059
+Fra:1 Mem:132.59M (Peak 132.59M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.061
+Fra:1 Mem:132.59M (Peak 132.59M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Cylinder.007
+Fra:1 Mem:132.60M (Peak 132.60M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.063
+Fra:1 Mem:132.60M (Peak 132.60M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.064
+Fra:1 Mem:132.61M (Peak 132.61M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.066
+Fra:1 Mem:132.61M (Peak 132.61M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.067
+Fra:1 Mem:132.61M (Peak 132.61M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.068
+Fra:1 Mem:132.62M (Peak 132.62M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.069
+Fra:1 Mem:132.62M (Peak 132.62M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.070
+Fra:1 Mem:132.62M (Peak 132.62M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Cylinder.008
+Fra:1 Mem:132.63M (Peak 132.63M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.072
+Fra:1 Mem:132.64M (Peak 132.64M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.073
+Fra:1 Mem:132.64M (Peak 132.64M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.074
+Fra:1 Mem:132.64M (Peak 132.64M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.076
+Fra:1 Mem:132.64M (Peak 132.64M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.077
+Fra:1 Mem:132.65M (Peak 132.65M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.078
+Fra:1 Mem:132.65M (Peak 132.65M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.079
+Fra:1 Mem:132.65M (Peak 132.65M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Cylinder.009
+Fra:1 Mem:132.65M (Peak 132.65M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.080
+Fra:1 Mem:132.66M (Peak 132.66M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.081
+Fra:1 Mem:132.66M (Peak 132.66M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.082
+Fra:1 Mem:132.66M (Peak 132.66M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.083
+Fra:1 Mem:132.67M (Peak 132.67M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.084
+Fra:1 Mem:132.68M (Peak 132.68M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.085
+Fra:1 Mem:132.68M (Peak 132.68M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.086
+Fra:1 Mem:132.68M (Peak 132.68M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.087
+Fra:1 Mem:132.68M (Peak 132.68M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.088
+Fra:1 Mem:132.69M (Peak 132.69M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Cylinder.010
+Fra:1 Mem:132.69M (Peak 132.69M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.089
+Fra:1 Mem:132.69M (Peak 132.69M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.091
+Fra:1 Mem:132.70M (Peak 132.70M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.092
+Fra:1 Mem:132.70M (Peak 132.70M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.094
+Fra:1 Mem:132.71M (Peak 132.71M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.338
+Fra:1 Mem:132.71M (Peak 132.71M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.095
+Fra:1 Mem:132.71M (Peak 132.71M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.097
+Fra:1 Mem:132.72M (Peak 132.72M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Cylinder.011
+Fra:1 Mem:132.72M (Peak 132.72M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.098
+Fra:1 Mem:132.73M (Peak 132.73M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.100
+Fra:1 Mem:132.73M (Peak 132.73M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.101
+Fra:1 Mem:132.73M (Peak 132.73M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.102
+Fra:1 Mem:132.74M (Peak 132.74M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.103
+Fra:1 Mem:132.74M (Peak 132.74M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.105
+Fra:1 Mem:132.75M (Peak 132.75M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.106
+Fra:1 Mem:132.75M (Peak 132.75M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Cylinder.012
+Fra:1 Mem:132.75M (Peak 132.75M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.107
+Fra:1 Mem:132.76M (Peak 132.76M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.108
+Fra:1 Mem:132.77M (Peak 132.77M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.110
+Fra:1 Mem:132.77M (Peak 132.77M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.112
+Fra:1 Mem:132.77M (Peak 132.77M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.113
+Fra:1 Mem:132.78M (Peak 132.78M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.114
+Fra:1 Mem:132.78M (Peak 132.78M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Cylinder.013
+Fra:1 Mem:132.79M (Peak 132.79M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.116
+Fra:1 Mem:132.79M (Peak 132.79M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.117
+Fra:1 Mem:132.80M (Peak 132.80M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.118
+Fra:1 Mem:132.80M (Peak 132.80M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.119
+Fra:1 Mem:132.80M (Peak 132.80M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.121
+Fra:1 Mem:132.81M (Peak 132.81M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.122
+Fra:1 Mem:132.81M (Peak 132.81M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.123
+Fra:1 Mem:132.82M (Peak 132.82M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.125
+Fra:1 Mem:132.82M (Peak 132.82M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.126
+Fra:1 Mem:132.83M (Peak 132.83M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.127
+Fra:1 Mem:132.83M (Peak 132.83M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.128
+Fra:1 Mem:132.84M (Peak 132.84M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.130
+Fra:1 Mem:132.84M (Peak 132.84M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.132
+Fra:1 Mem:132.84M (Peak 132.84M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.337
+Fra:1 Mem:132.85M (Peak 132.85M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.133
+Fra:1 Mem:132.85M (Peak 132.85M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.134
+Fra:1 Mem:132.86M (Peak 132.86M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.135
+Fra:1 Mem:132.87M (Peak 132.87M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.136
+Fra:1 Mem:132.87M (Peak 132.87M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.137
+Fra:1 Mem:132.87M (Peak 132.87M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.139
+Fra:1 Mem:132.87M (Peak 132.87M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.140
+Fra:1 Mem:132.87M (Peak 132.87M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.141
+Fra:1 Mem:132.88M (Peak 132.88M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.142
+Fra:1 Mem:132.89M (Peak 132.89M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Cylinder.016
+Fra:1 Mem:132.89M (Peak 132.89M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.145
+Fra:1 Mem:132.90M (Peak 132.90M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.146
+Fra:1 Mem:132.90M (Peak 132.90M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.147
+Fra:1 Mem:132.90M (Peak 132.90M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.148
+Fra:1 Mem:132.91M (Peak 132.91M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.150
+Fra:1 Mem:132.91M (Peak 132.91M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.151
+Fra:1 Mem:132.92M (Peak 132.92M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Cylinder.017
+Fra:1 Mem:132.92M (Peak 132.92M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.153
+Fra:1 Mem:132.92M (Peak 132.92M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.154
+Fra:1 Mem:132.93M (Peak 132.93M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.155
+Fra:1 Mem:132.93M (Peak 132.93M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.156
+Fra:1 Mem:132.93M (Peak 132.93M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.158
+Fra:1 Mem:132.94M (Peak 132.94M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.160
+Fra:1 Mem:132.95M (Peak 132.95M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Cylinder.018
+Fra:1 Mem:132.95M (Peak 132.95M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.161
+Fra:1 Mem:132.95M (Peak 132.95M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.162
+Fra:1 Mem:132.96M (Peak 132.96M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.163
+Fra:1 Mem:132.96M (Peak 132.96M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.165
+Fra:1 Mem:132.97M (Peak 132.97M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.166
+Fra:1 Mem:132.97M (Peak 132.97M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.167
+Fra:1 Mem:132.98M (Peak 132.98M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Cylinder.019
+Fra:1 Mem:132.98M (Peak 132.98M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.336
+Fra:1 Mem:132.99M (Peak 132.99M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.335
+Fra:1 Mem:132.99M (Peak 132.99M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.170
+Fra:1 Mem:133.00M (Peak 133.00M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.334
+Fra:1 Mem:133.00M (Peak 133.00M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.173
+Fra:1 Mem:133.01M (Peak 133.01M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.174
+Fra:1 Mem:133.01M (Peak 133.01M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.176
+Fra:1 Mem:133.01M (Peak 133.01M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.177
+Fra:1 Mem:133.02M (Peak 133.02M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.178
+Fra:1 Mem:133.02M (Peak 133.02M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Cylinder.020
+Fra:1 Mem:133.02M (Peak 133.02M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.179
+Fra:1 Mem:133.03M (Peak 133.03M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.180
+Fra:1 Mem:133.03M (Peak 133.03M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.181
+Fra:1 Mem:133.04M (Peak 133.04M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.182
+Fra:1 Mem:133.04M (Peak 133.04M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.184
+Fra:1 Mem:133.05M (Peak 133.05M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.186
+Fra:1 Mem:133.05M (Peak 133.05M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.187
+Fra:1 Mem:133.06M (Peak 133.06M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Cylinder.021
+Fra:1 Mem:133.06M (Peak 133.06M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.189
+Fra:1 Mem:133.06M (Peak 133.06M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.190
+Fra:1 Mem:133.07M (Peak 133.07M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.191
+Fra:1 Mem:133.07M (Peak 133.07M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.192
+Fra:1 Mem:133.08M (Peak 133.08M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.193
+Fra:1 Mem:133.08M (Peak 133.08M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.194
+Fra:1 Mem:133.08M (Peak 133.08M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Cylinder.022
+Fra:1 Mem:133.10M (Peak 133.10M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.198
+Fra:1 Mem:133.09M (Peak 133.10M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.199
+Fra:1 Mem:133.10M (Peak 133.10M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.201
+Fra:1 Mem:133.11M (Peak 133.11M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.202
+Fra:1 Mem:133.11M (Peak 133.11M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.204
+Fra:1 Mem:133.11M (Peak 133.11M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Cylinder.023
+Fra:1 Mem:133.12M (Peak 133.12M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.206
+Fra:1 Mem:133.12M (Peak 133.12M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.207
+Fra:1 Mem:133.13M (Peak 133.13M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.209
+Fra:1 Mem:133.13M (Peak 133.13M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.333
+Fra:1 Mem:133.13M (Peak 133.13M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.210
+Fra:1 Mem:133.14M (Peak 133.14M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.211
+Fra:1 Mem:133.15M (Peak 133.15M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.213
+Fra:1 Mem:133.15M (Peak 133.15M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.215
+Fra:1 Mem:133.15M (Peak 133.15M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.216
+Fra:1 Mem:133.16M (Peak 133.16M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.217
+Fra:1 Mem:133.17M (Peak 133.17M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.218
+Fra:1 Mem:133.17M (Peak 133.17M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.220
+Fra:1 Mem:133.17M (Peak 133.17M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.221
+Fra:1 Mem:133.18M (Peak 133.18M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.222
+Fra:1 Mem:133.18M (Peak 133.18M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.223
+Fra:1 Mem:133.18M (Peak 133.18M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Cylinder.025
+Fra:1 Mem:133.19M (Peak 133.19M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.225
+Fra:1 Mem:133.20M (Peak 133.20M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.227
+Fra:1 Mem:133.20M (Peak 133.20M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.228
+Fra:1 Mem:133.20M (Peak 133.21M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.229
+Fra:1 Mem:133.21M (Peak 133.21M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.230
+Fra:1 Mem:133.21M (Peak 133.21M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.231
+Fra:1 Mem:133.22M (Peak 133.22M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Cylinder.026
+Fra:1 Mem:133.22M (Peak 133.22M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.233
+Fra:1 Mem:133.23M (Peak 133.23M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.235
+Fra:1 Mem:133.23M (Peak 133.23M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.236
+Fra:1 Mem:133.23M (Peak 133.23M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.237
+Fra:1 Mem:133.24M (Peak 133.24M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.238
+Fra:1 Mem:133.24M (Peak 133.24M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.240
+Fra:1 Mem:133.24M (Peak 133.24M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.241
+Fra:1 Mem:133.25M (Peak 133.25M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Cylinder.027
+Fra:1 Mem:133.25M (Peak 133.25M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.242
+Fra:1 Mem:133.26M (Peak 133.26M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.243
+Fra:1 Mem:133.26M (Peak 133.26M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.244
+Fra:1 Mem:133.26M (Peak 133.26M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.245
+Fra:1 Mem:133.27M (Peak 133.27M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.247
+Fra:1 Mem:133.27M (Peak 133.27M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.248
+Fra:1 Mem:133.28M (Peak 133.28M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Cylinder.037
+Fra:1 Mem:133.28M (Peak 133.28M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Cylinder.028
+Fra:1 Mem:133.28M (Peak 133.28M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.251
+Fra:1 Mem:133.29M (Peak 133.29M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.252
+Fra:1 Mem:133.30M (Peak 133.30M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.253
+Fra:1 Mem:133.30M (Peak 133.30M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.254
+Fra:1 Mem:133.30M (Peak 133.30M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.255
+Fra:1 Mem:133.30M (Peak 133.30M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.257
+Fra:1 Mem:133.31M (Peak 133.31M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.258
+Fra:1 Mem:133.31M (Peak 133.31M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.259
+Fra:1 Mem:133.31M (Peak 133.31M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.260
+Fra:1 Mem:133.33M (Peak 133.33M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.331
+Fra:1 Mem:133.33M (Peak 133.33M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.262
+Fra:1 Mem:133.33M (Peak 133.33M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.263
+Fra:1 Mem:133.34M (Peak 133.34M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.330
+Fra:1 Mem:133.34M (Peak 133.34M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.265
+Fra:1 Mem:133.34M (Peak 133.34M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.267
+Fra:1 Mem:133.35M (Peak 133.35M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.268
+Fra:1 Mem:133.35M (Peak 133.35M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Cylinder.030
+Fra:1 Mem:133.36M (Peak 133.36M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.269
+Fra:1 Mem:133.36M (Peak 133.36M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.271
+Fra:1 Mem:133.37M (Peak 133.37M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.272
+Fra:1 Mem:133.37M (Peak 133.37M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.274
+Fra:1 Mem:133.37M (Peak 133.37M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.275
+Fra:1 Mem:133.38M (Peak 133.38M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Cylinder.031
+Fra:1 Mem:133.39M (Peak 133.39M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.278
+Fra:1 Mem:133.39M (Peak 133.39M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.279
+Fra:1 Mem:133.39M (Peak 133.39M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.280
+Fra:1 Mem:133.40M (Peak 133.40M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.281
+Fra:1 Mem:133.40M (Peak 133.40M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.282
+Fra:1 Mem:133.41M (Peak 133.41M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.283
+Fra:1 Mem:133.41M (Peak 133.41M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.285
+Fra:1 Mem:133.42M (Peak 133.42M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.286
+Fra:1 Mem:133.42M (Peak 133.42M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Cylinder.032
+Fra:1 Mem:133.42M (Peak 133.42M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.288
+Fra:1 Mem:133.43M (Peak 133.43M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.290
+Fra:1 Mem:133.44M (Peak 133.44M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.292
+Fra:1 Mem:133.44M (Peak 133.44M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.294
+Fra:1 Mem:133.45M (Peak 133.45M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.295
+Fra:1 Mem:133.45M (Peak 133.45M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Cylinder.033
+Fra:1 Mem:133.46M (Peak 133.46M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.297
+Fra:1 Mem:133.46M (Peak 133.46M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.298
+Fra:1 Mem:133.46M (Peak 133.46M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.300
+Fra:1 Mem:133.47M (Peak 133.47M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.328
+Fra:1 Mem:133.47M (Peak 133.47M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.301
+Fra:1 Mem:133.47M (Peak 133.47M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.327
+Fra:1 Mem:133.48M (Peak 133.48M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.302
+Fra:1 Mem:133.48M (Peak 133.48M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.304
+Fra:1 Mem:133.49M (Peak 133.49M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Cylinder.034
+Fra:1 Mem:133.49M (Peak 133.49M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.305
+Fra:1 Mem:133.49M (Peak 133.49M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.306
+Fra:1 Mem:133.51M (Peak 133.51M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.307
+Fra:1 Mem:133.52M (Peak 133.52M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.308
+Fra:1 Mem:133.52M (Peak 133.52M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Cylinder.035
+Fra:1 Mem:133.53M (Peak 133.53M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.314
+Fra:1 Mem:133.53M (Peak 133.53M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.316
+Fra:1 Mem:133.53M (Peak 133.53M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.317
+Fra:1 Mem:133.54M (Peak 133.54M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.319
+Fra:1 Mem:133.55M (Peak 133.55M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.320
+Fra:1 Mem:133.56M (Peak 133.56M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Cylinder.036
+Fra:1 Mem:133.56M (Peak 133.56M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.323
+Fra:1 Mem:133.56M (Peak 133.56M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.325
+Fra:1 Mem:133.57M (Peak 133.57M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Tree crown.326
+Fra:1 Mem:133.61M (Peak 133.61M) | Time:00:00.25 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Initializing
+Fra:1 Mem:81.61M (Peak 133.61M) | Time:00:00.29 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Waiting for render to start
+Fra:1 Mem:81.61M (Peak 133.61M) | Time:00:00.29 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Scene
+Fra:1 Mem:81.61M (Peak 133.61M) | Time:00:00.29 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Shaders
+Fra:1 Mem:81.61M (Peak 133.61M) | Time:00:00.29 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Loading render kernels (may take a few minutes the first time)
+Fra:1 Mem:81.79M (Peak 133.61M) | Time:00:00.29 | Mem:0.10M, Peak:0.10M | Scene, ViewLayer | Updating Procedurals
+Fra:1 Mem:81.79M (Peak 133.61M) | Time:00:00.29 | Mem:0.10M, Peak:0.10M | Scene, ViewLayer | Updating Background
+Fra:1 Mem:81.79M (Peak 133.61M) | Time:00:00.29 | Mem:0.10M, Peak:0.10M | Scene, ViewLayer | Updating Camera
+Fra:1 Mem:81.79M (Peak 133.61M) | Time:00:00.29 | Mem:0.10M, Peak:0.10M | Scene, ViewLayer | Updating Meshes Flags
+Fra:1 Mem:81.79M (Peak 133.61M) | Time:00:00.29 | Mem:0.10M, Peak:0.10M | Scene, ViewLayer | Updating Objects
+Fra:1 Mem:81.79M (Peak 133.61M) | Time:00:00.29 | Mem:0.10M, Peak:0.10M | Scene, ViewLayer | Updating Objects | Copying Transformations to device
+Fra:1 Mem:82.17M (Peak 133.61M) | Time:00:00.29 | Mem:0.46M, Peak:0.46M | Scene, ViewLayer | Updating Particle Systems
+Fra:1 Mem:82.17M (Peak 133.61M) | Time:00:00.29 | Mem:0.46M, Peak:0.46M | Scene, ViewLayer | Updating Particle Systems | Copying Particles to device
+Fra:1 Mem:82.17M (Peak 133.61M) | Time:00:00.29 | Mem:0.46M, Peak:0.46M | Scene, ViewLayer | Updating Meshes
+Fra:1 Mem:82.17M (Peak 133.61M) | Time:00:00.29 | Mem:0.46M, Peak:0.46M | Scene, ViewLayer | Updating Objects | Applying Static Transformations
+Fra:1 Mem:82.17M (Peak 133.61M) | Time:00:00.29 | Mem:0.46M, Peak:0.46M | Scene, ViewLayer | Updating Mesh | Computing attributes
+Fra:1 Mem:83.92M (Peak 133.61M) | Time:00:00.29 | Mem:0.56M, Peak:0.56M | Scene, ViewLayer | Updating Mesh | Copying Attributes to device
+Fra:1 Mem:83.74M (Peak 133.61M) | Time:00:00.29 | Mem:2.03M, Peak:2.03M | Scene, ViewLayer | Updating Scene BVH | Building
+Fra:1 Mem:83.76M (Peak 133.61M) | Time:00:00.29 | Mem:2.03M, Peak:2.03M | Scene, ViewLayer | Updating Scene BVH | Building BVH
+Fra:1 Mem:83.76M (Peak 133.61M) | Time:00:00.30 | Mem:6.13M, Peak:6.13M | Scene, ViewLayer | Updating Scene BVH | Building BVH 0%
+Fra:1 Mem:83.76M (Peak 133.61M) | Time:00:00.30 | Mem:10.58M, Peak:14.67M | Scene, ViewLayer | Updating Scene BVH | Copying BVH to device
+Fra:1 Mem:83.76M (Peak 133.61M) | Time:00:00.30 | Mem:10.58M, Peak:14.67M | Scene, ViewLayer | Updating Mesh | Computing normals
+Fra:1 Mem:88.76M (Peak 133.61M) | Time:00:00.31 | Mem:10.58M, Peak:14.67M | Scene, ViewLayer | Updating Mesh | Copying Mesh to device
+Fra:1 Mem:88.76M (Peak 133.61M) | Time:00:00.31 | Mem:15.58M, Peak:15.58M | Scene, ViewLayer | Updating Objects Flags
+Fra:1 Mem:88.76M (Peak 133.61M) | Time:00:00.31 | Mem:15.59M, Peak:15.59M | Scene, ViewLayer | Updating Primitive Offsets
+Fra:1 Mem:88.77M (Peak 133.61M) | Time:00:00.31 | Mem:15.60M, Peak:15.60M | Scene, ViewLayer | Updating Images
+Fra:1 Mem:88.77M (Peak 133.61M) | Time:00:00.31 | Mem:15.60M, Peak:15.60M | Scene, ViewLayer | Updating Images | Loading sky_nishita
+Fra:1 Mem:89.78M (Peak 133.61M) | Time:00:00.36 | Mem:16.60M, Peak:16.60M | Scene, ViewLayer | Updating Camera Volume
+Fra:1 Mem:89.78M (Peak 133.61M) | Time:00:00.36 | Mem:16.60M, Peak:16.60M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:89.78M (Peak 133.61M) | Time:00:00.36 | Mem:16.68M, Peak:16.68M | Scene, ViewLayer | Updating Lights
+Fra:1 Mem:89.78M (Peak 133.61M) | Time:00:00.36 | Mem:16.68M, Peak:16.68M | Scene, ViewLayer | Updating Lights | Importance map
+Fra:1 Mem:90.78M (Peak 133.61M) | Time:00:00.37 | Mem:17.70M, Peak:20.19M | Scene, ViewLayer | Updating Lights | Computing tree
+Fra:1 Mem:90.80M (Peak 133.61M) | Time:00:00.37 | Mem:17.71M, Peak:20.19M | Scene, ViewLayer | Updating Integrator
+Fra:1 Mem:90.80M (Peak 133.61M) | Time:00:00.37 | Mem:17.71M, Peak:20.19M | Scene, ViewLayer | Updating Film
+Fra:1 Mem:90.80M (Peak 133.61M) | Time:00:00.37 | Mem:17.63M, Peak:20.19M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:90.80M (Peak 133.61M) | Time:00:00.37 | Mem:17.71M, Peak:20.19M | Scene, ViewLayer | Updating Baking
+Fra:1 Mem:90.80M (Peak 133.61M) | Time:00:00.37 | Mem:17.71M, Peak:20.19M | Scene, ViewLayer | Updating Device | Writing constant memory
+Fra:1 Mem:90.83M (Peak 133.61M) | Time:00:00.37 | Mem:17.71M, Peak:20.19M | Scene, ViewLayer | Loading denoising kernels (may take a few minutes the first time)
+Fra:1 Mem:90.83M (Peak 133.61M) | Time:00:00.37 | Mem:17.71M, Peak:20.19M | Scene, ViewLayer | Sample 0/16
+Fra:1 Mem:107.72M (Peak 133.61M) | Time:00:00.52 | Remaining:00:02.26 | Mem:34.41M, Peak:34.41M | Scene, ViewLayer | Sample 1/16
+Fra:1 Mem:114.75M (Peak 133.61M) | Time:00:04.20 | Mem:34.41M, Peak:34.41M | Scene, ViewLayer | Sample 16/16
+Fra:1 Mem:114.75M (Peak 133.61M) | Time:00:04.20 | Mem:34.41M, Peak:34.41M | Scene, ViewLayer | Finished
+Saved: 'C:\Users\user\OneDrive\Desktop\Brainless_agent-main\Brainless_agent\data\village-smoke\village.png'
+Time: 00:04.48 (Saving: 00:00.27)
+
+Info: Saved as "06.blend"
+
+Blender quit

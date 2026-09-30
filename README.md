@@ -1,5 +1,60 @@
 # Brainless Agent
 
+## Persistent runtime service
+
+The existing browser-team and one-shot workflows remain available. For a
+durable queue that stays alive while idle, use the persistent runtime:
+
+```powershell
+# Start the service; it remains in IDLE when the queue is empty.
+python run.py runtime start
+
+# Submit work from another terminal.
+python run.py runtime submit "Describe the current project architecture" --priority 10
+
+# Inspect service state, queue, workers, or health.
+python run.py runtime status
+python run.py runtime tasks
+python run.py runtime agents
+python run.py runtime health
+
+# Request a graceful shutdown.
+python run.py runtime stop
+```
+
+`python run.py --service` is an alias for `runtime start`. The existing
+one-shot behavior is available as `python run.py --once` (or through the
+existing `cli` and `browser-team` commands). The service persists tasks in
+`data/runtime/service.sqlite3`, recovers tasks that were running during a
+previous process interruption as recoverable waiting tasks, limits retries and
+execution time, and records a heartbeat and structured task events. It does
+not silently modify Windows startup settings; install it as a Windows service
+only through an explicit operator-managed service wrapper.
+
+## Coordinated coding workers
+
+The browser leader remains the primary reasoning and authorization layer. Once
+it produces a bounded implementation plan, the runtime can use the local
+`vscode.*` tools to discover VS Code, Copilot, Codex, Python, and Git, open the
+workspace, run allow-listed validation, and persist a coordination packet.
+Packets identify the browser leader as authority and can be shared by the
+browser team, VS Code Copilot, Codex, and VS Code agents. These workers never
+grant themselves permissions or execute arbitrary shell strings; changes still
+pass through the repository's normal permissions, validation, and verification
+paths.
+
+The VS Code bridge can also open validated workspace files, list installed
+extensions, and install or uninstall validated extension identifiers. Extension
+changes are high-risk operations and must be explicitly selected by the
+browser-authorized plan. VS Code's extension host is not silently controlled as
+an unrestricted process; extension-specific behavior requires the extension's
+own supported command/API surface.
+
+Use the [installed-browser team](BROWSER_TEAM.md) to discover all supported Windows
+browser profiles and let their ChatGPT/Gemini sessions collaborate. Start with
+`python run.py browser-team inventory`, then
+`python run.py browser-team run "Your task" --setup`.
+
 Brainless Agent is a Python computer-use runtime. It orchestrates a real, persistent Chrome session and uses chatbot **websites** as interchangeable reasoning engines. It does not call OpenAI, Gemini, Anthropic, or another model reasoning API. The optional AssemblyAI key is used only for speech transcription and never grants reasoning or execution authority.
 
 ## vNext autonomous computer-agent runtime
@@ -51,6 +106,87 @@ it cannot bypass parent authority, tool registration, policy, approval, or verif
 
 The provider interface and adapters are implemented now so the runtime has no provider-specific branches. Gemini and Claude selectors are included, but their current UIs evolve frequently; verify the configured DOM selectors after logging in. The desktop GUI and bounded DOM/clipboard/OCR response-extraction fallbacks are available now. A system-wide emergency hotkey and visual-anchor discovery remain future work.
 
+### Autonomous capability lifecycle
+
+Missing capabilities can now be handled through the sandbox-first lifecycle in
+`app/autonomy/capability_lifecycle.py`. A runtime-owned builder stages a versioned
+candidate in an isolated workspace, runs a runtime-owned health check, and only
+then makes the typed handler available to `ToolRegistry`. Promotion records an
+active version; health failures can mark a candidate unusable and rollback restores
+the previous registered handler. Website reasoning may suggest metadata and sources,
+but it cannot provide executable Python, install arbitrary packages, or bypass the
+registry. Builders and health checks must therefore be explicitly registered by
+the deployment, and high-risk capabilities remain subject to the existing policy
+and approval gates.
+
+`WebsiteCapabilityDiscovery` connects the authenticated browser provider to this
+lifecycle. The provider may research and return metadata, but the runtime rejects
+unknown builders, changed tool identities, and non-catalog sources. The
+`RuntimeUpgradeManager` provides a separate hash-verified, health-checked,
+version-pointer upgrade channel with rollback; it activates a version for the
+next process start rather than replacing code inside a running process.
+
+`UniversalTaskRouter` is the automatic entry point for tasks: it checks the
+capability broker, asks the configured website provider to acquire a missing
+capability, and retries the original task only after the new capability is
+validated and promoted. If discovery is unavailable or rejected, the task fails
+closed instead of pretending it completed.
+
+The default composition root also registers a trusted `video.edit` builder backed
+by a locally installed FFmpeg executable. The adapter uses argument arrays (never
+shell strings), confines media paths to its capability sandbox, verifies the
+output file, and refuses to start when FFmpeg is unavailable. It is an example of
+how additional capabilities become fully automatic: add a runtime-owned builder
+and health check, then website research can select only that approved builder.
+
+Visible Windows desktop actions are also project-owned runtime tools in
+`app/computer/desktop.py`: `desktop.launch`, `desktop.type`, and
+`desktop.calculator`. They are allow-listed, permission-gated, and invoked
+through `ToolRegistry`; they are not ad-hoc scripts outside the application.
+
+The declarative catalog in `app/autonomy/automation_catalog.py` contains 100
+automation definitions across desktop, browser/internet research, files,
+video/FFmpeg, Blender, and Unreal Engine. Each entry declares its objective,
+required tool, external dependency, and is available to the website reasoning
+planner as structured metadata. Entries requiring Blender, Unreal, or FFmpeg
+remain dependency-gated until that software is installed and a corresponding
+trusted adapter is registered; the runtime never reports those tasks as
+completed without verified output.
+
+Trusted Blender and Unreal adapters are registered by the application composition
+root. Blender operations use a fixed allow-list and invoke the installed Blender
+binary with a runtime-generated operation script; Unreal operations use the
+installed Unreal Editor with a fixed allow-list and an editor Python bridge.
+Both adapters reject paths outside their capability sandbox and report a missing
+executable instead of claiming success. Multi-step work is represented as
+consecutive catalog operations, so a website reasoning plan can compose
+`create_scene -> add_cube -> add_light -> render` or
+`open_project -> create_level -> add_camera -> save -> verify`.
+
+The Blender adapter supports general website-planned automation, not only cars.
+ChatGPT may choose from a fixed runtime-owned operation vocabulary covering
+scene reset, cube/sphere/cylinder/cone/torus/plane primitives, camera and area
+lights, transforms, beveling, smooth shading, materials, rendering, exporting,
+and the trusted car helpers. The runtime validates every operation and JSON
+argument, rejects code/shell commands and unsafe paths, then executes the
+validated plan in visible Blender. The older car workflow remains available as
+one example of this general mechanism; render/export outputs are checked before
+success is returned.
+
+The catalog can also be executed sequentially through the project itself:
+
+```powershell
+python run.py catalog list
+python run.py catalog execute --arguments catalog-arguments.json
+```
+
+The arguments file is a JSON object keyed by automation ID. Every item is
+submitted individually through `AgentManager` and the runner prints
+`completed`, `failed`, `blocked`, or `needs_input`. Unregistered tools,
+missing external applications, missing inputs, and failed verification are
+reported explicitly; the runner never invokes a handler directly or turns an
+unavailable automation into a success.
+
 ## Architecture
 
 ```text
@@ -75,6 +211,40 @@ Agents can also be assembled from validated declarative building blocks in Pytho
 
 The runtime observes after navigation and before sending input. Provider adapters use DOM/accessibility locators instead of fixed screen coordinates. If a login, CAPTCHA, 2FA, or another security challenge is detected, the run stops and tells the user to complete it manually. The project never captures passwords, exports cookies, or attempts to bypass a security mechanism.
 
+### Generic browser automation
+
+Generic site automation is a separate layer from `NativeWebsiteClient`: the
+native client remains restricted to ChatGPT/Gemini, while `BrowserClient`
+provides owned tabs, structured observations, HTTPS-only navigation, and
+validated data-only actions. `BrowserPlanner` converts a goal and one
+observation into a single structured action; `BrowserAgent` then observes,
+executes that validated action, and observes again. Page observations are
+untrusted data; the planner is instructed to ignore embedded page commands and
+cannot supply executable JavaScript. External form
+submissions require both an explicit confirmation callback and the
+`browser.external_action` permission.
+
+The Playwright `BrowserManager` exposes `browser_client()` after `start()`.
+`BrowserFleet.browser_client()` is available when its Playwright Chromium leader
+is enabled; it creates separate tabs and never repurposes the provider tabs.
+Native installed-profile windows remain provider-only until a generic DOM
+transport is added. `BrowserSessionStore` persists only HTTPS tab metadata and
+can restore recorded tabs; it does not replace the provider-only
+`NativeSessionStore`.
+
+Initial domain wrappers are in `app/skills/`: `GenericWebSkill` for navigation,
+page extraction, and bounded same-origin crawling; `YouTubeSkill` for observed
+search/recommendation/player controls; and `GmailSkill` for visible-page
+reading and confirmed compose/send.
+The crawler follows only visible HTTPS links on the starting origin, skips
+obvious state-changing routes, and enforces limits of 50 pages, depth 5, 20,000
+characters per page, and 250,000 characters total. `BrowserPlanner` can return
+a crawl request and `BrowserAgent` executes it through this skill; the returned
+page text remains untrusted data and is never executed as instructions.
+The Gmail wrapper does not bypass sign-in or human verification, and its send
+operation requires explicit user confirmation plus the external-action
+permission. These wrappers are building blocks; the existing voice mission
+runtime and its profile-aware Gmail flow remain unchanged.
 
 ## Web Command Center
 
@@ -106,6 +276,10 @@ Architecture: `Browser UI -> authenticated dashboard API -> runtime projections/
 
 ### Voice control with AssemblyAI Streaming v3
 
+Installed-browser profile selection, persistent overlay status, and current-page
+OCR follow-ups are available through the governed voice runtime. See the
+[external browser guide](EXTERNAL_BROWSER.md) for the voice flow and OCR setup.
+
 Install dependencies, set `ASSEMBLYAI_API_KEY`, and select a bounded activation mode in `.env` or the process environment. Voice is disabled when the key is absent. The default `push_to_talk` mode does not open a microphone automatically; `voice_active` and `voice_session` start a microphone session with the Command Center. Audio is 16 kHz mono PCM16 and is streamed through the AssemblyAI Python SDK's v3 streaming client using `universal-3-5-pro` by default.
 
 ```bash
@@ -114,15 +288,19 @@ export VOICE_MODE="voice_session"
 BRAINLESS_DASHBOARD_TOKEN="replace-with-at-least-16-characters" python run_dashboard.py
 ```
 
-The voice architecture is `Microphone -> AssemblyAI Streaming v3 -> VoiceTurn -> VoiceIntentEngine -> VoiceRuntimeRouter -> AutonomousOperator -> validated mission runtime`. Partial turns update ephemeral dashboard state but never execute. Only deduplicated finalized turns are classified. Ordinary multi-step speech becomes one mission goal for the existing planner; deterministic stop, pause, takeover, status, and approval phrases are routed to existing runtime services. AssemblyAI and the voice service have no ToolRegistry, permission-grant, controller, or WorldState write path.
+The voice flow is `Microphone -> finalized speech parts -> complete-request confirmation -> clarification/planning -> governed mission runtime`. Describe the task across pauses. After 1.5 seconds of silence following a finalized part, the overlay asks whether you want to add anything. Say **yes** and continue, or **no** / **that's all** to analyze the collected request once. Partial speech and silence never execute a task. Low-confidence parts must be repeated. Unsubmitted speech stays in memory and is cleared by **Stop voice** or **start over**.
 
-Speech confidence, intent classification, authorization, and verification are separate decisions. Low-confidence speech waits for repetition. Sensitive language waits for an explicit `yes` or `confirm`, after which the resulting mission still passes through the autonomy governor, approval policy, permissions, scheduler, tools, observation, and verification. A spoken `approve` or `deny` resolves an approval only when exactly one pending runtime approval exists; otherwise the user is directed to the dashboard.
+Answers to specific questions, browser profile choices, and permission prompts continue their current flow directly. A **no** in a permission prompt denies that action; it is separate from completing a task description. Explicit stop, pause, takeover, resume, and status controls use a bounded local control path; contextual **continue** answers the current clarification or permission question. A new ordinary task begins a fresh collection without replaying previously submitted speech.
 
-Raw audio is never persisted. Transcript persistence defaults off; durable records contain session/intent/result metadata and `[NOT STORED]` in persisted event transcripts. If enabled, transcript storage is bounded and recursively redacts credential-like content. Session duration, idle timeout, reconnect count, language, confidence thresholds, transcript retention behavior, and model are environment-configurable. Connections use bounded exponential backoff and are explicitly terminated during runtime shutdown. The Voice dashboard shows the ephemeral live transcript, last finalized turn, connection/session state, active mission, bounded command history, confidence, errors, and real session metrics.
+The browser LLM receives a task-scoped catalog of registered functions and exact argument schemas. The runtime validates and executes the proposed sequence through normal permission, approval, and verification checks. Reasoning providers can fail over in configured order. Malformed plans receive one correction attempt; if planning still fails, the assistant asks for clarification. Provider output, webpage text, and OCR never grant permissions or execute functions directly. The executable inventory comes from `ToolRegistry`, not the Python-method index in `FUNCTION_INVENTORY.md`.
 
-Troubleshooting: `not_configured` means no API key was supplied; `disconnected` indicates no active bounded session; microphone failures require an OS input device and the SDK's audio extras. Keep `VOICE_STORE_AUDIO=false`—the implementation rejects raw-audio persistence. For cost control, prefer push-to-talk or a bounded voice session instead of continuous mode.
+Browser tasks ask for an installed profile or the managed browser. Follow-ups read the current page and reuse its tab. Gmail requests reuse a selected installed profile or ask for one once. The governed `gmail.open` action opens that profile's Gmail website before the agent collects remaining recipient or content details. Opening permission is distinct from the high-risk `gmail.send_email` approval. The selected profile and current email details survive a recoverable opening failure. Send success requires Gmail's confirmation; check Sent before retrying an uncertain send.
 
-The Voice page also supports runtime-only credential setup: select **Configure AssemblyAI**, enter the key in the password field, and then hold **Hold to talk**. This authenticated command is handled by the same runtime gateway as other dashboard controls. The key is validated, passed through a write-only control plane, and retained only inside the in-memory AssemblyAI client configuration; snapshots, responses, SSE events, audit details, and the voice metadata store never contain it. Restarting the process clears a dashboard-supplied key. Use `ASSEMBLYAI_API_KEY` when durable deployment configuration is required, and use a TLS reverse proxy before accessing the dashboard remotely because the built-in server intentionally binds plain HTTP to loopback.
+Press **Start listening** to connect the microphone and **Stop voice** to disconnect. Releasing the mouse does not end the conversation. The configured session limit still applies; the `push_to_talk` configuration remains a manually started session with an idle timeout, extended while awaiting a clarification. Hands-free modes listen until their session limit or Stop. The overlay stays visible with the current question or status. The dashboard shows collected-part count, pending completion, active mission, and command history.
+
+`VOICE_COLLECT_TASKS=true` enables collection by default; `VOICE_TASK_PAUSE_SECONDS=1.5` sets the pause interval. Use `VOICE_COLLECT_TASKS=false` for legacy immediate finalized-turn routing. Requests are bounded to 2,000 characters. Raw audio persistence is unsupported. Transcript storage defaults off; configured retention and credential redaction apply to stored command metadata. ASR turn IDs are scoped to each connection, and shutdown cancels pending collection and reasoning.
+
+The authenticated Voice page accepts an AssemblyAI key for the current process through **Configure AssemblyAI**. The write-only configuration plane keeps the key out of snapshots, events, and voice history. Alternatively set `ASSEMBLYAI_API_KEY` for startup configuration. `not_configured` means no key was supplied; microphone errors require checking the OS input device and installed SDK audio dependencies. See [EXTERNAL_BROWSER.md](EXTERNAL_BROWSER.md) for the full browser and email flow, and [PERMISSIONS.md](PERMISSIONS.md) for spoken consent and remembered grants.
 
 ### Multimodal perception architecture
 
@@ -188,8 +366,10 @@ Run the application once, let the visible Chrome window open, and manually sign 
 ## Run
 
 ```bash
-python run.py       # starts and opens the authenticated Command Center
-python run.py cli   # legacy interactive task CLI
+python run.py                 # browser team across installed profiles; prompts for a task
+python run.py cli             # same browser-team entry point
+python run.py single-browser  # legacy managed single-browser CLI
+python run_dashboard.py       # authenticated Command Center
 ```
 
 The CLI normally submits a task to the selected chatbot website and prints its advisory response.
@@ -198,6 +378,17 @@ values are requested in a native popup (with terminal fallback), Chrome is reuse
 and semantic controls are used to operate the authenticated Gmail website. The final Send click
 requires explicit confirmation. Successful workflows persist only structural labels and host names;
 recipients, message bodies, answers, credentials, selectors, and coordinates are not learned.
+
+Dashboard voice email tasks use a focused browser-LLM-assisted flow instead of the general
+multi-provider task planner. The active browser LLM selects or clarifies a discovered installed
+browser/profile, then the runtime launches an owned window in that profile and opens Gmail using
+Windows accessibility controls (not the browser-team's ChatGPT/Gemini tabs). The same active LLM
+asks only for essential missing details, generates the subject and message body from the user's
+stated intent, and does not ask the user to dictate them. Each email turn uses one active browser
+LLM, without cycling through ChatGPT/Gemini/Claude for routine clarifications. Sending still
+requires the runtime's high-risk approval and a positive Gmail confirmation. If the send click may
+have happened but Gmail confirmation is missing, check the account's Sent folder before retrying.
+Profile discovery reads browser/profile metadata only; it does not inspect saved credentials or history.
 
 The autonomous task engine has a continuous, evidence-driven learning loop. Every run through
 `run_with_learning` records its verified outcome, reuses an existing candidate instead of creating
@@ -283,3 +474,108 @@ Contracts can set an execution timeout and retry idempotency. A safe retry is al
 `app.learning` is a durable, advisory layer separate from execution. `ExperienceMemory` stores only structured runtime or human-approved execution outcomes and rejects externally sourced content; retrieval ranks goal/task/environment overlap and treats results as planning suggestions. `SkillRegistry` keeps versioned workflow definitions candidate-first: a skill cannot be registered as verified/trusted, and `SkillEvaluator` can reject a regressing candidate without changing the previous verified version. `WorkflowSynthesizer` turns discovered skills into a `TaskGraph`; the existing plan validator and action runtime remain responsible for permissions, contracts, resources, approval, execution, and verification.
 
 `LearningCoordinator` is the integration point for the experience-to-workflow loop: it persistently records verified runtime outcomes, produces candidate skills only from reusable structured workflows, then retrieves experience and verified skills for a later related goal. `SkillSandbox` statically validates candidate workflow permissions, capabilities, tools, contracts, and high-risk approval requirements with the existing `PlanValidator`; it cannot execute a skill or activate it.
+
+
+### Connected village construction checkpoints
+
+New runs divide construction into world, block ground, east/west and north/south
+gully roads, drainage, and individual objects. Each house or villa has separate
+foundation, south/north/west/east wall, roof, and entrance checkpoints, followed by
+refinement. Doors, stairs, gates, scenery, lighting, and rendering also receive
+execution checkpoints.
+
+The workspace stores `checkpoint.json`, numbered `.blend` scenes, and geometry
+reports under `connected-villages/<objective hash>/`. Run the same objective again
+to resume. Completed scenes are hash-verified; missing or changed output is rebuilt
+from the last verified scene. Older checkpoints retain the original sequence for
+started districts and use component stages for unstarted districts.
+
+Planning retries invalid responses and uses validated defaults when necessary.
+Invalid area plans fall back to a sparse two-home layout. Execution retries up to
+three times from the preceding scene, discarding only uncommitted output. Render
+retries halve samples and resolution within configured minimum bounds; actual
+settings are recorded in the checkpoint. Progress reports recovery and reduced
+quality. Persistent failures retain the pending job and error for the next run.
+Explicit review pauses, permission failures, cancellation, and incompatible
+checkpoint contracts are not overridden. Recovery cannot guarantee completion
+when Blender, storage, or the planning service remains unavailable.
+
+
+### Village projects and repeated user updates
+
+The village CLI now keeps a stable project ID and a SQLite database at
+`data/village-workspace/village-projects.sqlite3`. It records queued requests,
+revision plans, errors, completion states, events, and checkpoint snapshots.
+The original scenes remain available when a revision is created. A process lock
+allows one worker per project while another terminal can submit requests.
+
+New projects prioritize final rendering: 256 Cycles samples and at least 2560px
+width, adaptive sampling and denoising, procedural material variation, bevels,
+and physically based lighting. Existing lower-budget projects receive a separate
+final-quality pass. These controls improve procedural output; detailed assets and
+visual art direction are still needed for a cinematic result. GTA6 visual parity
+is not a verified completion criterion.
+
+After a run the CLI accepts another natural-language update. You can also use the
+project ID printed at startup from another terminal, in the `Brainless_agent`
+directory:
+
+```powershell
+python run.py village update PROJECT_ID "Set the sunlight angle to 35 degrees"
+python run.py village update PROJECT_ID "Increase wall weathering and roof detail in area-0-0"
+python run.py village status PROJECT_ID
+python run.py village resume PROJECT_ID
+```
+
+Queued updates run after the current revision finishes. Supported updates include
+render settings, sun elevation, replacement district object layouts, and object
+refinement. The planner checks each proposed change against existing district IDs,
+footprint contracts, and numeric bounds. A revision copies the verified checkpoint
+prefix and rebuilds from the earliest affected stage: lighting changes reuse
+geometry, and object refinements preserve preceding components. Requests requiring
+unsupported controls or unavailable assets remain `needs_input` with an explanation.
+
+SQLite restores missing or changed checkpoint metadata. Damaged Blender artifacts
+are rebuilt from the preceding verified scene. Execution retries are bounded, and
+persistent errors remain `failed` with resumable state. A recovery render below the
+requested budget is `needs_attention`, not a successful final-quality render;
+submit a render retry when resources allow. Validation checks geometry and output
+integrity, not a rendered image's aesthetic quality. User pauses, permission checks,
+and cancellation remain effective.
+
+
+### One-session live 3D modelling
+
+See [MODEL_WORKFLOW.md](MODEL_WORKFLOW.md) for the general 3D workflow. Products,
+robots, interiors, buildings and cities use a named-object operation planner;
+villages keep the district hierarchy. Both use one continuing ChatGPT tab and one
+visible Blender worker across checkpoints and revisions. The viewport animates
+primitive transforms and reveals district components in sequence. This is visible
+scripted modelling, with bounded operations, not mouse impersonation.
+
+Use `python run.py 3d update PROJECT_ID "request"`, `3d status PROJECT_ID`, and
+`3d resume PROJECT_ID` for any supported 3D project. Updates also work interactively
+after a revision completes. The `village` management commands remain aliases. The
+live worker can reconnect after a CLI restart and reload a verified scene after a
+Blender interruption. Heavy builds and final rendering can temporarily block UI
+refresh; uninterrupted real-time performance is not guaranteed.
+
+
+### Chat rollover and related-task recognition
+
+Long modelling sessions now replace the active project chat at a completed-turn
+boundary after 20 prompts / 100k characters, or after detected composer lag. The
+next chat receives a compact checkpoint summary; unrelated tabs stay open. A
+pending response is recovered before any new submission, preventing duplicate
+prompts after timeouts. General-model reviews cover up to eight upcoming actions
+while every operation still gets its own scene checkpoint.
+
+Follow-ups are classified against the current project, including across CLI
+restarts. `/update TEXT` explicitly edits the current scene; `/new TEXT` creates a
+separate project. Live viewport navigation tracks the edited object's evaluated
+bounds continuously, including existing-object bevel and material edits, without
+moving the render camera. Bevel `amount` is accepted as a bounded `width` alias.
+Domes, pointed arch frames and a validated approximate Taj Mahal starter improve
+architectural planning. See [MODEL_WORKFLOW.md](MODEL_WORKFLOW.md) for details.
+#   B r a i n l e s s _ a g e n t  
+ 

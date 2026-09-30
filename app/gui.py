@@ -21,6 +21,8 @@ class BrainlessWindow:
         self.intervention = UserInterventionGate(lambda message: self.events.put(("intervention", message)))
         self.application = Application(root_path, settings or load_settings(), intervention=self.intervention)
         self.worker: threading.Thread | None = None
+        self._team_loop = None
+        self._team_task = None
         self.window = tk.Tk()
         self.window.title("Brainless Agent")
         self.window.geometry("900x660")
@@ -36,7 +38,10 @@ class BrainlessWindow:
         ttk.Label(frame, text="Task").pack(anchor=tk.W)
         self.task = tk.Text(frame, height=7, wrap=tk.WORD)
         self.task.pack(fill=tk.X)
-        provider_frame = ttk.LabelFrame(frame, text="Providers", padding=8)
+        self.use_browser_team = tk.BooleanVar(value=True)
+        ttk.Checkbutton(frame, text='Use all installed browser profiles: ChatGPT + Gemini',
+                        variable=self.use_browser_team).pack(anchor=tk.W, pady=(8, 0))
+        provider_frame = ttk.LabelFrame(frame, text="Single-browser options (when browser team is off)", padding=8)
         provider_frame.pack(fill=tk.X, pady=12)
         self.provider_enabled = {name: tk.BooleanVar(value=True) for name in self.application.providers.names}
         for name, variable in self.provider_enabled.items():
@@ -79,6 +84,17 @@ class BrainlessWindow:
 
     def start(self) -> None:
         objective = self.task.get("1.0", tk.END).strip()
+        if self.use_browser_team.get():
+            if not objective:
+                messagebox.showwarning('Task required', 'Enter a task for the browser team.')
+                return
+            self.start_button.configure(state=tk.DISABLED)
+            self.pause_button.configure(state=tk.DISABLED)
+            self.stop_button.configure(state=tk.NORMAL)
+            self.status.set('Discovering all installed browser profiles')
+            self.worker = threading.Thread(target=self._run_team, args=(objective,), daemon=True)
+            self.worker.start()
+            return
         providers = [name for name, enabled in self.provider_enabled.items() if enabled.get()]
         if not objective or not providers:
             messagebox.showwarning("Task required", "Enter a task and select at least one provider.")
@@ -93,14 +109,33 @@ class BrainlessWindow:
         self.worker = threading.Thread(target=self._run_task, args=(task,), daemon=True)
         self.worker.start()
 
+    def _run_team(self, objective):
+        from app.browser.team_cli import run_browser_team
+        async def execute():
+            self._team_loop = asyncio.get_running_loop()
+            self._team_task = asyncio.current_task()
+            try:
+                return await run_browser_team(['run', objective, '--wait-ready', '120'], self.root_path,
+                    progress=lambda message: self.events.put(('progress', str(message))))
+            finally:
+                self._team_task = self._team_loop = None
+        try:
+            code = asyncio.run(execute())
+            self.events.put(('complete' if code == 0 else 'error',
+                             'Browser team finished.' if code == 0 else 'Browser team paused; see the profile diagnostics above.'))
+        except asyncio.CancelledError:
+            self.events.put(('error', 'Browser team stopped; submitted responses remain checkpointed.'))
+        except Exception as error:
+            self.events.put(('error', str(error)))
+
     def _run_task(self, task) -> None:
         async def execute() -> str:
             try:
                 return await self.application.runtime.run(task)
             finally:
-                # The worker owns this event loop. Close Playwright here so a later
-                # Start action can safely create a fresh loop and reuse the profile.
-                await self.application.browser.close()
+                # Do not close the browser here. Keep the persistent Playwright
+                # context open so the user can inspect and reuse tabs across runs.
+                pass
         try:
             result = asyncio.run(execute())
             self.events.put(("complete", result))
@@ -119,6 +154,9 @@ class BrainlessWindow:
             self.status.set("Paused at next action boundary")
 
     def stop(self) -> None:
+        loop, task = self._team_loop, self._team_task
+        if loop is not None and task is not None:
+            loop.call_soon_threadsafe(task.cancel)
         self.application.runtime.pause.resume()
         self.application.runtime.emergency_stop.trigger()
         self.status.set("Emergency stop requested")
@@ -135,6 +173,10 @@ class BrainlessWindow:
                 if kind == "intervention":
                     self.status.set(text)
                     self.continue_button.configure(state=tk.NORMAL)
+                    continue
+                if kind == 'progress':
+                    self._append(text)
+                    self.status.set('Browser team running; complete login in any waiting profile')
                     continue
                 self._append(text)
                 self.status.set("Completed" if kind == "complete" else "Failed or stopped")
